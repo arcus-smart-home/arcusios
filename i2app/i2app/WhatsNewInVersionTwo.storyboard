@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Npu-AA-Wph">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Whats New In Version Two-->
+        <scene sceneID="C9o-wt-wuK">
+            <objects>
+                <viewController id="Npu-AA-Wph" customClass="WhatsNewInVersionTwo" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sog-dN-KNV"/>
+                        <viewControllerLayoutGuide type="bottom" id="BBC-CQ-wKm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sid-Nm-fBJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qcO-Qr-2Rv" userLabel="TopNav">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ModalLogo" translatesAutoresizingMaskIntoConstraints="NO" id="817-ag-INW">
+                                        <rect key="frame" x="139" y="44" width="42" height="33"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5M7-SH-awN">
+                                        <rect key="frame" x="287" y="49" width="17" height="22"/>
+                                        <state key="normal" image="ExitButton"/>
+                                        <connections>
+                                            <action selector="closePressed" destination="Npu-AA-Wph" eventType="touchUpInside" id="6c8-Dx-zzq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="817-ag-INW" firstAttribute="centerY" secondItem="qcO-Qr-2Rv" secondAttribute="centerY" priority="250" id="553-E0-gMT"/>
+                                    <constraint firstItem="817-ag-INW" firstAttribute="centerX" secondItem="qcO-Qr-2Rv" secondAttribute="centerX" id="gkl-iZ-6OK"/>
+                                    <constraint firstItem="817-ag-INW" firstAttribute="centerY" secondItem="5M7-SH-awN" secondAttribute="centerY" id="zTI-Ab-Plq"/>
+                                </constraints>
+                            </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfo-eW-YrX">
+                                <rect key="frame" x="0.0" y="88" width="320" height="528"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Npu-AA-Wph" id="Nxv-Pi-3Yh"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qcO-Qr-2Rv" firstAttribute="baseline" secondItem="sog-dN-KNV" secondAttribute="bottom" constant="44" id="6SU-Pe-7Qb"/>
+                            <constraint firstItem="817-ag-INW" firstAttribute="top" secondItem="sog-dN-KNV" secondAttribute="bottom" id="7ZY-mr-9PD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5M7-SH-awN" secondAttribute="trailing" id="9vJ-z9-yzj"/>
+                            <constraint firstItem="qcO-Qr-2Rv" firstAttribute="top" secondItem="sid-Nm-fBJ" secondAttribute="top" id="HBi-Ji-1Kt"/>
+                            <constraint firstItem="tfo-eW-YrX" firstAttribute="leading" secondItem="sid-Nm-fBJ" secondAttribute="leading" id="PjS-t2-0er"/>
+                            <constraint firstAttribute="trailing" secondItem="tfo-eW-YrX" secondAttribute="trailing" id="bSx-fn-t8k"/>
+                            <constraint firstItem="qcO-Qr-2Rv" firstAttribute="leading" secondItem="sid-Nm-fBJ" secondAttribute="leading" id="fd1-6Q-jrh"/>
+                            <constraint firstItem="tfo-eW-YrX" firstAttribute="top" secondItem="qcO-Qr-2Rv" secondAttribute="bottom" id="fvG-TN-SP0"/>
+                            <constraint firstAttribute="trailing" secondItem="qcO-Qr-2Rv" secondAttribute="trailing" id="nEQ-8z-U5V"/>
+                            <constraint firstItem="BBC-CQ-wKm" firstAttribute="top" secondItem="tfo-eW-YrX" secondAttribute="bottom" id="xWt-BV-E7B"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="650"/>
+                    <connections>
+                        <outlet property="webView" destination="tfo-eW-YrX" id="dJw-gY-GR7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IDJ-Oo-Gj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78.400000000000006" y="423.68815592203902"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ExitButton" width="17" height="17"/>
+        <image name="ModalLogo" width="42" height="33"/>
+    </resources>
+</document>

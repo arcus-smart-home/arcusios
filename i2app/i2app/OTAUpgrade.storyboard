@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Attention-->
+        <scene sceneID="nbo-HM-gBM">
+            <objects>
+                <viewController storyboardIdentifier="OTAUpgradeViewController" title="Attention" id="7AJ-ez-0qe" customClass="OTAUpgradeViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UV4-xr-AwB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W73-PV-RgD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dip-ib-1su" userLabel="scrollViewContent">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firmware Upgrade Needed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRf-Wi-zZe">
+                                                <rect key="frame" x="73" y="35" width="229" height="25"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3b-sl-Dyq">
+                                                <rect key="frame" x="173" y="125" width="29" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGd-OA-Piy" customClass="ScleraButton" customModule="i2app" customModuleProvider="target">
+                                                <rect key="frame" x="31" y="524" width="313" height="54"/>
+                                                <color key="backgroundColor" red="0.23331674929999999" green="0.062228277329999998" blue="0.3225048184" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="KSq-mB-FeE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                <state key="normal" title="NEXT">
+                                                    <color key="titleColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="grayOnDisable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="actionButtonPressed:" destination="7AJ-ez-0qe" eventType="touchUpInside" id="flB-W8-RNA"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsN-m8-hJS">
+                                                <rect key="frame" x="62" y="164.5" width="250" height="306"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="bFf-wC-32H"/>
+                                                    <constraint firstAttribute="width" constant="250" id="mgg-tS-neR"/>
+                                                </constraints>
+                                                <string key="text">Updates to your recently paired devices may take a few minutes, during which your device may not be controllable 
+or work optimally.
+
+Please do not remove power or any ethernet cords (if applicable) from the device until the firmware 
+update is complete.
+
+Select ‘Next’ to continue setting up your device. The update will continue in the background.</string>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vAd-vt-YEC">
+                                                <rect key="frame" x="59" y="100" width="257" height="5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="5ua-62-p8A"/>
+                                                </constraints>
+                                                <color key="progressTintColor" red="0.0" green="0.74901960779999999" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="trackTintColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            </progressView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="PGd-OA-Piy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZsN-m8-hJS" secondAttribute="bottom" constant="25" id="2cO-qq-w5v"/>
+                                            <constraint firstItem="PGd-OA-Piy" firstAttribute="leading" secondItem="dip-ib-1su" secondAttribute="leading" constant="31" id="CH4-o4-d8H"/>
+                                            <constraint firstItem="HRf-Wi-zZe" firstAttribute="centerX" secondItem="dip-ib-1su" secondAttribute="centerX" id="Fgs-Aa-hYN"/>
+                                            <constraint firstItem="ZsN-m8-hJS" firstAttribute="centerX" secondItem="dip-ib-1su" secondAttribute="centerX" id="R63-N6-1DH"/>
+                                            <constraint firstItem="K3b-sl-Dyq" firstAttribute="top" secondItem="vAd-vt-YEC" secondAttribute="bottom" constant="20" id="TI2-Xr-ofG"/>
+                                            <constraint firstItem="ZsN-m8-hJS" firstAttribute="top" secondItem="K3b-sl-Dyq" secondAttribute="bottom" constant="20" id="YWD-t4-2m1"/>
+                                            <constraint firstItem="vAd-vt-YEC" firstAttribute="top" secondItem="HRf-Wi-zZe" secondAttribute="bottom" constant="40" id="ZG8-rd-Qgf"/>
+                                            <constraint firstItem="vAd-vt-YEC" firstAttribute="leading" secondItem="dip-ib-1su" secondAttribute="leading" constant="59" id="e7E-Kn-WH6"/>
+                                            <constraint firstAttribute="trailing" secondItem="PGd-OA-Piy" secondAttribute="trailing" constant="31" id="eIq-MO-u71"/>
+                                            <constraint firstItem="HRf-Wi-zZe" firstAttribute="top" secondItem="dip-ib-1su" secondAttribute="top" constant="35" id="hO2-W5-LWA"/>
+                                            <constraint firstAttribute="bottom" secondItem="PGd-OA-Piy" secondAttribute="bottom" constant="25" id="iSy-ms-OId"/>
+                                            <constraint firstItem="PGd-OA-Piy" firstAttribute="top" secondItem="ZsN-m8-hJS" secondAttribute="bottom" priority="900" constant="53.5" placeholder="YES" id="kxV-fh-uhB"/>
+                                            <constraint firstAttribute="trailing" secondItem="vAd-vt-YEC" secondAttribute="trailing" constant="59" id="qcQ-gw-lSi"/>
+                                            <constraint firstItem="K3b-sl-Dyq" firstAttribute="centerX" secondItem="dip-ib-1su" secondAttribute="centerX" id="trO-ag-Dy9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dip-ib-1su" firstAttribute="top" secondItem="W73-PV-RgD" secondAttribute="top" id="8AD-WF-Rnd"/>
+                                    <constraint firstItem="dip-ib-1su" firstAttribute="leading" secondItem="W73-PV-RgD" secondAttribute="leading" id="AFF-5W-ATZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="dip-ib-1su" secondAttribute="trailing" id="QsK-yC-LxW"/>
+                                    <constraint firstAttribute="bottom" secondItem="dip-ib-1su" secondAttribute="bottom" id="vyl-hc-PBC"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dip-ib-1su" firstAttribute="height" relation="greaterThanOrEqual" secondItem="UV4-xr-AwB" secondAttribute="height" id="6sf-1P-w8d"/>
+                            <constraint firstItem="W73-PV-RgD" firstAttribute="top" secondItem="UV4-xr-AwB" secondAttribute="top" id="9vl-8k-Eer"/>
+                            <constraint firstItem="W73-PV-RgD" firstAttribute="trailing" secondItem="aho-Rm-4df" secondAttribute="trailing" id="Qxd-SM-5FK"/>
+                            <constraint firstItem="dip-ib-1su" firstAttribute="width" secondItem="UV4-xr-AwB" secondAttribute="width" id="md6-ne-wVM"/>
+                            <constraint firstItem="W73-PV-RgD" firstAttribute="bottom" secondItem="UV4-xr-AwB" secondAttribute="bottom" id="nf7-Gt-a12"/>
+                            <constraint firstItem="W73-PV-RgD" firstAttribute="leading" secondItem="aho-Rm-4df" secondAttribute="leading" id="qZ2-iA-tU3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aho-Rm-4df"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="actionButton" destination="PGd-OA-Piy" id="JPP-Ac-fb4"/>
+                        <outlet property="descriptionLabel" destination="ZsN-m8-hJS" id="bNY-uM-1z9"/>
+                        <outlet property="titleLabel" destination="HRf-Wi-zZe" id="mnA-8q-CKc"/>
+                        <outlet property="upgradePercentLabel" destination="K3b-sl-Dyq" id="59k-gw-HCo"/>
+                        <outlet property="upgradeProgressView" destination="vAd-vt-YEC" id="590-FX-YgH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96b-Lx-Skt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="169.56521739130437"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,56 @@
+{
+  "name": "Cornea",
+  "version": "0.1.0",
+  "summary": "A short description of Cornea.",
+  "description": "Communicate with the Arcus Platform using Observables",
+  "homepage": "https://www.arcusbylowes.com",
+  "license": {
+    "type": "© Lowes Corporation",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Arcus By Lowe's": "support@arcusbylowes.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "swift_version": "3.2",
+  "source_files": [
+    "Cornea/Classes/**/*",
+    "Cornea/Classes/**/**/*"
+  ],
+  "public_header_files": [
+    "Cornea/Classes/PublicHeaders/*.h",
+    "Cornea/Classes/**/**/*.h"
+  ],
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "dependencies": {
+    "PromiseKit/Promise": [
+
+    ],
+    "CocoaLumberjack/Swift": [
+      "~> 3.0"
+    ],
+    "Locksmith": [
+
+    ],
+    "Starscream": [
+      "2.1.1"
+    ],
+    "RxSwift": [
+
+    ],
+    "RxSwiftExt": [
+      "2.5.1"
+    ],
+    "RxReachability": [
+
+    ]
+  }
+}

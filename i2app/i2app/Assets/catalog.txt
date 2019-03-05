@@ -1,0 +1,280 @@
+{"catalog": [{
+                "name": "Entry Door Lever",
+                "id": "10001",
+                "category": "Doors and locks",
+                "manufacturer": "Schlage",
+                "vendor": "Schlage"
+               },
+               {
+                "name": "Entry Door Deadbolt",
+                "id": "10002",
+                "category": "Doors and locks",
+                "manufacturer": "Schlage",
+                "vendor": "Schlage"
+               },
+               {
+                "name": "Smart Button",
+                "id": "10003",
+                "category": "Security",
+                "manufacturer": "Arcus",
+                "vendor": "Arcus"
+               },
+               {
+                "name": "Single-Cylinder Deadbolt",
+                "id": "10004",
+                "category": "Doors and locks",
+                "manufacturer": "Kwikset",
+                "vendor": "Kwikset"
+               },
+               {
+                "name": "Entry Door Lever",
+                "id": "10005",
+                "category": "Doors and locks",
+                "manufacturer": "Kwikset",
+                "vendor": "Kwikset"
+               },
+               {
+                "name": "Ge light switch",
+                "id": "10006",
+                "category": "Lights & Switches",
+                "manufacturer": "GE",
+                "vendor": "GE"
+               },
+               {
+                "name": "GE 3-Way Digital Dimmer",
+                "id": "10007",
+                "category": "Lights & Switches",
+                "manufacturer": "GE",
+                "vendor": "GE"
+               },
+               {
+                "name": "GE Decorator Light Switch",
+                "id": "10008",
+                "category": "Lights & Switches",
+                "manufacturer": "GE",
+                "vendor": "GE"
+               },
+               {
+                "name": "Smart plug",
+                "id": "10008-A",
+                "category": "Lights & Switches",
+                "manufacturer": "GE",
+                "vendor": "GE"
+               },
+               {
+                "name": "Irrigation Timer",
+                "id": "10009",
+                "category": "Water",
+                "manufacturer": "Orbit",
+                "vendor": "Orbit"
+               },
+               {
+                "name": "Arcus Water Timer",
+                "id": "10010",
+                "category": "Water",
+                "manufacturer": "Orbit",
+                "vendor": "Orbit"
+               },
+               {
+                "name": "Smoke Detector",
+                "id": "10011",
+                "category": "Alarms",
+                "manufacturer": "First Alert",
+                "vendor": "First Alert"
+               },
+               {
+                "name": "3-Volt Smoke Detector",
+                "id": "10012",
+                "category": "Alarms",
+                "manufacturer": "First Alert",
+                "vendor": "First Alert"
+               },
+               {
+                "name": "Contact Sensor",
+                "id": "10013",
+                "category": "Alarms",
+                "manufacturer": "Arcus",
+                "vendor": "Arcus"
+               },
+               {
+                "name": "85-Decibels Indoor Siren",
+                "id": "10014",
+                "category": "Alarms",
+                "manufacturer": "Utilitech",
+                "vendor": "Utilitech"
+               },
+               {
+                "name": "Water Leak Detector",
+                "id": "10015-A",
+                "category": "Alarms",
+                "manufacturer": "Utilitech",
+                "vendor": "Utilitech"
+               },
+               {
+                "name": "Door and Window Sensor",
+                "id": "10015",
+                "category": "Alarms",
+                "manufacturer": "NYCE Control",
+                "vendor": "NYCE Control"
+               },
+               {
+                "name": "Key Fob",
+                "id": "10016",
+                "category": "Security",
+                "manufacturer": "Arcus",
+                "vendor": "Arcus"
+               },
+               {
+                "name": "Security Camera",
+                "id": "10017",
+                "category": "Security",
+                "manufacturer": "Arcus USA",
+                "vendor": "Arcus USA"
+               },
+               {
+                "name": "Arcus Safe and Secure Kit",
+                "id": "10018",
+                "category": "Security",
+                "manufacturer": "Arcus",
+                "vendor": "Arcus"
+               },
+               {
+                "name": "Arcus motion sensor",
+                "id": "10019",
+                "category": "Security",
+                "manufacturer": "Arcus",
+                "vendor": "Arcus"
+               },
+               {
+                "name": "Care Pendant",
+                "id": "10020",
+                "category": "Security",
+                "manufacturer": "Arcus",
+                "vendor": "Arcus"
+               },
+               {
+                "name": "Thermostat",
+                "id": "10021",
+                "category": "Heating & Cooling",
+                "manufacturer": "Arcus",
+                "vendor": "Arcus"
+               },
+               {
+                "name": "Honeywell Thermostat",
+                "id": "10022",
+                "category": "Heating & Cooling",
+                "manufacturer": "Honeywell",
+                "vendor": "Honeywell"
+               },
+               {
+                "name": "Arcus Comfort and Control Kit",
+                "id": "10023",
+                "category": "Heating & Cooling",
+                "manufacturer": "Arcus",
+                "vendor": "Arcus"
+               },
+               {
+                "name": "Security Camera",
+                "id": "10024",
+                "category": "Cameras",
+                "manufacturer": "Arcus USA",
+                "vendor": "Arcus USA"
+               },
+               {
+                "name": "Keypad",
+                "id": "10025",
+                "category": "Security",
+                "manufacturer": "Arcus USA",
+                "vendor": "Arcus USA"
+               },
+               {
+                "name": "Single-Cylinder Deadbolt",
+                "id": "10026",
+                "category": "Doors & Windows",
+                "manufacturer": "Schlage",
+                "vendor": "Schlage"
+               },
+               {
+                "name": "Entry Door Lever",
+                "id": "10027",
+                "category": "Doors & Windows",
+                "manufacturer": "Schlage",
+                "vendor": "Schlage"
+               },
+               {
+                "name": "Entry Door Deadbolt",
+                "id": "10028",
+                "category": "Doors & Windows",
+                "manufacturer": "Kwikset",
+                "vendor": "Kwikset"
+               },
+               {
+                "name": "Entry Door Lever ",
+                "id": "10029",
+                "category": "Doors & Windows",
+                "manufacturer": "Kwikset",
+                "vendor": "Kwikset"
+               },
+               {
+                "name": "Garage Door Controller",
+                "id": "10030",
+                "category": "Doors & Windows",
+                "manufacturer": "Arcus",
+                "vendor": "Arcus"
+               },
+               {
+                "name": "Wall Pet Door",
+                "id": "10031",
+                "category": "Doors & Windows",
+                "manufacturer": "PetSafe",
+                "vendor": "PetSafe"
+               },
+               {
+                "name": "Arcus Smart Kit",
+                "id": "10032",
+                "category": "Kits",
+                "manufacturer": "Arcus",
+                "vendor": "Arcus"
+               },
+               {
+                "name": "Safe and Secure Kit",
+                "id": "10033",
+                "category": "Kits",
+                "manufacturer": "Arcus",
+                "vendor": "Arcus"
+               },
+               {
+                "name": "Comfort and Control Kit",
+                "id": "10034",
+                "category": "Kits",
+                "manufacturer": "Arcus",
+                "vendor": "Arcus"
+               },
+               {
+                "name": "Water Heater Controller",
+                "id": "10035",
+                "category": "Energy",
+                "manufacturer": "EnergySmart",
+                "vendor": "EnergySmart"
+               },
+               {
+                "name": "GE Lamp Module",
+                "id": "10036",
+                "category": "Energy",
+                "manufacturer": "GE",
+                "vendor": "GE"
+               },
+               {
+                "name": "Honeywell Thermostat",
+                "id": "10037",
+                "category": "Energy",
+                "manufacturer": "Honeywell",
+                "vendor": "Honeywell"
+               },
+               {
+                "name": "Arcus Thermostat",
+                "id": "10038",
+                "category": "Energy",
+                "manufacturer": "Arcus",
+                "vendor": "Arcus"
+               }]}

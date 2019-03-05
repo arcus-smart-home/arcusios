@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Cancel Legacy Alarm View Controller-->
+        <scene sceneID="lIE-L9-PH8">
+            <objects>
+                <viewController storyboardIdentifier="CancelLegacyAlarmViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Bd-IF-poi" customClass="CancelLegacyAlarmViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VSX-KH-Efa"/>
+                        <viewControllerLayoutGuide type="bottom" id="e0V-Q9-F9Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ppT-qy-owz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caS-Ae-bkS">
+                                <rect key="frame" x="0.0" y="250" width="375" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvM-Hz-aid">
+                                        <rect key="frame" x="162.5" y="15" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="ZLr-eo-wHK"/>
+                                            <constraint firstAttribute="height" constant="50" id="rIT-dC-X10"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="cancelButton"/>
+                                        <connections>
+                                            <action selector="cancelButtonPressed" destination="3Bd-IF-poi" eventType="touchUpInside" id="8Tc-4x-bMt"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NU-bY-FfA">
+                                        <rect key="frame" x="8" y="73" width="359" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="qY6-md-4Uq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1NU-bY-FfA" firstAttribute="top" secondItem="gvM-Hz-aid" secondAttribute="bottom" constant="8" id="12d-EK-c9C"/>
+                                    <constraint firstAttribute="trailing" secondItem="1NU-bY-FfA" secondAttribute="trailing" constant="8" id="SD3-gs-cCi"/>
+                                    <constraint firstItem="1NU-bY-FfA" firstAttribute="leading" secondItem="caS-Ae-bkS" secondAttribute="leading" constant="8" id="T5s-hi-7E8"/>
+                                    <constraint firstItem="gvM-Hz-aid" firstAttribute="centerX" secondItem="caS-Ae-bkS" secondAttribute="centerX" id="aUv-qD-Naz"/>
+                                    <constraint firstItem="gvM-Hz-aid" firstAttribute="centerY" secondItem="caS-Ae-bkS" secondAttribute="centerY" constant="-10" id="dvU-gK-Pqk"/>
+                                    <constraint firstAttribute="bottom" secondItem="1NU-bY-FfA" secondAttribute="bottom" constant="6" id="eW7-Lk-Tqv"/>
+                                    <constraint firstAttribute="height" constant="100" id="ent-3u-CDA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJr-AA-RkS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meD-uq-YBU" customClass="ArcusLabel">
+                                        <rect key="frame" x="8" y="84" width="359" height="82"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="82" id="acb-NP-w8E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="8z2-Ud-mJI"/>
+                                    <constraint firstAttribute="trailing" secondItem="meD-uq-YBU" secondAttribute="trailing" constant="8" id="Knp-ay-PuJ"/>
+                                    <constraint firstItem="meD-uq-YBU" firstAttribute="centerY" secondItem="DJr-AA-RkS" secondAttribute="centerY" id="OYT-4W-nNd"/>
+                                    <constraint firstItem="meD-uq-YBU" firstAttribute="leading" secondItem="DJr-AA-RkS" secondAttribute="leading" constant="8" id="WUq-pP-VAK"/>
+                                    <constraint firstItem="meD-uq-YBU" firstAttribute="centerX" secondItem="DJr-AA-RkS" secondAttribute="centerX" id="rHw-K5-FCe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DJr-AA-RkS" secondAttribute="trailing" id="3Ud-dj-WmA"/>
+                            <constraint firstItem="DJr-AA-RkS" firstAttribute="top" secondItem="ppT-qy-owz" secondAttribute="top" id="BBv-RE-xQc"/>
+                            <constraint firstAttribute="trailing" secondItem="caS-Ae-bkS" secondAttribute="trailing" id="JWc-WJ-Br4"/>
+                            <constraint firstItem="caS-Ae-bkS" firstAttribute="top" secondItem="DJr-AA-RkS" secondAttribute="bottom" id="JxQ-Ov-SwW"/>
+                            <constraint firstItem="caS-Ae-bkS" firstAttribute="leading" secondItem="ppT-qy-owz" secondAttribute="leading" id="mzA-9c-wcu"/>
+                            <constraint firstItem="DJr-AA-RkS" firstAttribute="leading" secondItem="ppT-qy-owz" secondAttribute="leading" id="yb9-NS-nwK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alarmLabel" destination="meD-uq-YBU" id="ga6-Ga-Ehd"/>
+                        <outlet property="cancelContainer" destination="caS-Ae-bkS" id="6IH-ii-FGp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZvK-c6-qwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="158"/>
+        </scene>
+        <!--Upgrade Alarm View Controller-->
+        <scene sceneID="Oxv-8O-2J7">
+            <objects>
+                <viewController storyboardIdentifier="UpgradeAlarmViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ISK-Aq-SaQ" customClass="UpgradeAlarmViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Ee-5w-Yxt"/>
+                        <viewControllerLayoutGuide type="bottom" id="lrQ-0e-ez4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eSb-SO-fxT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm Upgrade Needed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW6-sW-PxW" customClass="ArcusLabel">
+                                <rect key="frame" x="20" y="50" width="339" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEc-Mc-QLs" customClass="ArcusLabel">
+                                <rect key="frame" x="20" y="110" width="335" height="82"/>
+                                <string key="text">An upgrade to your Alarm System is needed in order to access your Security, Smoke, CO 
+and Panic Alarm Settings.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ze-X2-mR2">
+                                <rect key="frame" x="332" y="8" width="35" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="V58-mM-69Q"/>
+                                    <constraint firstAttribute="height" constant="36" id="gso-Se-Pgm"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="9" minY="7" maxX="9" maxY="7"/>
+                                <state key="normal" image="button_close"/>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="ISK-Aq-SaQ" eventType="touchUpInside" id="OHb-AK-fo6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ttz-wo-k8K">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7fT-bS-lCk"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Need Help? Call Support">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.68235294120000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="14" name="AvenirNext-Regular"/>
+                                                <font key="NSOriginalFont" size="14" name="AvenirNext-Regular"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="contactSupport:" destination="ISK-Aq-SaQ" eventType="touchUpInside" id="ZSU-hD-lg2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnH-fB-8f0" customClass="ArcusButton" customModule="i2app" customModuleProvider="target">
+                                <rect key="frame" x="16" y="561" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Xlq-IY-Iw1"/>
+                                </constraints>
+                                <state key="normal" title="Upgrade Now">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="upgradeAlarmPressed:" destination="ISK-Aq-SaQ" eventType="touchUpInside" id="FjM-WQ-yBd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0ze-X2-mR2" firstAttribute="top" secondItem="eSb-SO-fxT" secondAttribute="top" constant="8" id="3S4-0J-f4F"/>
+                            <constraint firstItem="CnH-fB-8f0" firstAttribute="trailing" secondItem="eSb-SO-fxT" secondAttribute="trailingMargin" id="4rO-m8-BA3"/>
+                            <constraint firstItem="cW6-sW-PxW" firstAttribute="leading" secondItem="eSb-SO-fxT" secondAttribute="leading" constant="20" id="9hD-yC-LM8"/>
+                            <constraint firstAttribute="trailing" secondItem="YEc-Mc-QLs" secondAttribute="trailing" constant="20" id="ARM-d8-TQl"/>
+                            <constraint firstItem="YEc-Mc-QLs" firstAttribute="top" secondItem="cW6-sW-PxW" secondAttribute="bottom" constant="39" id="Ibq-Y3-9R7"/>
+                            <constraint firstItem="ttz-wo-k8K" firstAttribute="leading" secondItem="eSb-SO-fxT" secondAttribute="leadingMargin" id="T1K-NJ-iNt"/>
+                            <constraint firstItem="YEc-Mc-QLs" firstAttribute="leading" secondItem="eSb-SO-fxT" secondAttribute="leading" constant="20" id="bOp-8R-iJC"/>
+                            <constraint firstItem="lrQ-0e-ez4" firstAttribute="top" secondItem="ttz-wo-k8K" secondAttribute="bottom" constant="20" id="fyg-gE-nka"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cW6-sW-PxW" secondAttribute="trailing" id="gVt-HQ-JGJ"/>
+                            <constraint firstItem="CnH-fB-8f0" firstAttribute="leading" secondItem="eSb-SO-fxT" secondAttribute="leadingMargin" id="gkC-pR-roi"/>
+                            <constraint firstItem="ttz-wo-k8K" firstAttribute="trailing" secondItem="eSb-SO-fxT" secondAttribute="trailingMargin" id="lnl-ZA-LKm"/>
+                            <constraint firstAttribute="trailing" secondItem="0ze-X2-mR2" secondAttribute="trailing" constant="8" id="n7m-82-SaG"/>
+                            <constraint firstItem="ttz-wo-k8K" firstAttribute="top" secondItem="CnH-fB-8f0" secondAttribute="bottom" constant="16" id="nEq-aN-RxL"/>
+                            <constraint firstItem="cW6-sW-PxW" firstAttribute="top" secondItem="0Ee-5w-Yxt" secondAttribute="bottom" constant="30" id="nlb-em-XeW"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPn-wX-Mww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="HHV-uZ-wd3"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="866"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_close" width="17" height="17"/>
+        <image name="cancelButton" width="50" height="50"/>
+    </resources>
+</document>

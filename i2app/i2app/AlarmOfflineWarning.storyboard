@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Alarm Offline Warning View Controller-->
+        <scene sceneID="Qv0-S2-k6H">
+            <objects>
+                <viewController storyboardIdentifier="AlarmOfflineWarning" id="8bc-Np-GN5" customClass="AlarmOfflineWarningViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wgQ-jU-gqr"/>
+                        <viewControllerLayoutGuide type="bottom" id="l8c-Yi-Kbw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zHp-85-0Rl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="UNABLE TO NOTIFY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLs-6c-mwT" customClass="ArcusLabel">
+                                <rect key="frame" x="234" y="45" width="132.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="huboffline_cloud_icon-small-ios" translatesAutoresizingMaskIntoConstraints="NO" id="8Kl-F6-Val">
+                                <rect key="frame" x="245.5" y="84.5" width="109" height="109"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oq6-ee-Ae8">
+                                <rect key="frame" x="150" y="193" width="300" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXO-fk-jIC" userLabel="hub text container">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="90"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maJ-3z-plc" customClass="ArcusLabel">
+                                                <rect key="frame" x="18" y="0.0" width="264" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="264" id="Mu1-rU-kqc"/>
+                                                    <constraint firstAttribute="height" constant="80" id="e0c-6w-DUt"/>
+                                                </constraints>
+                                                <string key="text">Arcus is unable to contact you because your Hub or Wi-Fi security device has lost connection to the internet. This may be a router or service provider issue.</string>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="maJ-3z-plc" firstAttribute="centerX" secondItem="cXO-fk-jIC" secondAttribute="centerX" id="IZl-KO-kqM"/>
+                                            <constraint firstItem="maJ-3z-plc" firstAttribute="top" secondItem="cXO-fk-jIC" secondAttribute="top" id="Wt3-xS-yC0"/>
+                                            <constraint firstAttribute="bottom" secondItem="maJ-3z-plc" secondAttribute="bottom" constant="10" id="seY-gY-hTV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6U-TM-yte" userLabel="pro mon text container">
+                                        <rect key="frame" x="0.0" y="90" width="300" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALL LOCAL AUTHORITIES IF YOU'RE EXPERIENCING AN EMERGENCY." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHl-An-dOl" customClass="ArcusLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="QJL-n9-wac"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="HHl-An-dOl" firstAttribute="top" secondItem="P6U-TM-yte" secondAttribute="top" id="3ND-tn-qDF"/>
+                                            <constraint firstAttribute="bottom" secondItem="HHl-An-dOl" secondAttribute="bottom" constant="10" id="8sk-CY-qng"/>
+                                            <constraint firstItem="HHl-An-dOl" firstAttribute="width" secondItem="P6U-TM-yte" secondAttribute="width" id="FXG-CU-efo"/>
+                                            <constraint firstItem="HHl-An-dOl" firstAttribute="centerX" secondItem="P6U-TM-yte" secondAttribute="centerX" id="Rom-aK-T24"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="H5O-m9-Y4A"/>
+                                    <constraint firstAttribute="width" constant="300" id="R0r-nZ-Z0j"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rB2-eE-R9F">
+                                <rect key="frame" x="150" y="349" width="300" height="61"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8H-Xx-85Z" userLabel="devidertop">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="q9n-o4-oCL" customClass="HairlineConstraint" customModule="i2app" customModuleProvider="target"/>
+                                            <constraint firstAttribute="width" constant="300" id="zY4-1i-evI"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYh-jQ-gW9" userLabel="offline since container">
+                                        <rect key="frame" x="0.0" y="1" width="300" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offline Since:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cga-wz-hnQ" customClass="ArcusLabel">
+                                                <rect key="frame" x="0.0" y="5.5" width="86.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:30 AM on Wed Apr 5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUG-go-gG8" customClass="ArcusLabel">
+                                                <rect key="frame" x="143" y="5.5" width="154.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="WUG-go-gG8" firstAttribute="centerY" secondItem="cga-wz-hnQ" secondAttribute="centerY" id="BD5-Kr-dJk"/>
+                                            <constraint firstItem="cga-wz-hnQ" firstAttribute="leading" secondItem="lYh-jQ-gW9" secondAttribute="leading" id="OBb-Mk-9fQ"/>
+                                            <constraint firstItem="cga-wz-hnQ" firstAttribute="centerY" secondItem="lYh-jQ-gW9" secondAttribute="centerY" id="UMy-BV-vcc"/>
+                                            <constraint firstAttribute="trailing" secondItem="WUG-go-gG8" secondAttribute="trailing" constant="2.5" id="ucI-tx-1ss"/>
+                                            <constraint firstAttribute="height" constant="30" id="xEO-f1-Jyu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYT-zx-yEN" userLabel="mode container">
+                                        <rect key="frame" x="0.0" y="31" width="300" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Known Security Alarm Mode:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THw-UK-lLd" customClass="ArcusLabel">
+                                                <rect key="frame" x="0.0" y="5.5" width="217" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Off" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGt-0e-k2k" customClass="ArcusLabel">
+                                                <rect key="frame" x="279.5" y="5.5" width="20" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="iGt-0e-k2k" secondAttribute="trailing" constant="0.5" id="6t0-XR-RIZ"/>
+                                            <constraint firstItem="iGt-0e-k2k" firstAttribute="centerY" secondItem="PYT-zx-yEN" secondAttribute="centerY" id="FKJ-ZG-PP7"/>
+                                            <constraint firstItem="THw-UK-lLd" firstAttribute="centerY" secondItem="iGt-0e-k2k" secondAttribute="centerY" id="iLn-SZ-D3B"/>
+                                            <constraint firstItem="THw-UK-lLd" firstAttribute="leading" secondItem="PYT-zx-yEN" secondAttribute="leading" id="jwU-h1-2wf"/>
+                                            <constraint firstAttribute="height" constant="30" id="oVb-y8-9mi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="M1B-pR-u0a"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8R-1z-uCv" userLabel="alarm infor container">
+                                <rect key="frame" x="150" y="414" width="300" height="71"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8mG-XT-PAG" userLabel="deviderbottom">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="dlk-cL-OWe"/>
+                                            <constraint firstAttribute="height" constant="1" id="kd1-62-GIS" customClass="HairlineConstraint" customModule="i2app" customModuleProvider="target"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dashboard_alarm" translatesAutoresizingMaskIntoConstraints="NO" id="S0q-ln-sG6">
+                                        <rect key="frame" x="0.0" y="28.5" width="15" height="15"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An alarm event is in progress." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q99-eH-oUZ" userLabel="alarm sound text" customClass="ArcusLabel">
+                                        <rect key="frame" x="23" y="0.0" width="189.5" height="71"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="8mG-XT-PAG" firstAttribute="top" secondItem="F8R-1z-uCv" secondAttribute="top" id="BoO-CN-rvL"/>
+                                    <constraint firstAttribute="height" constant="71" id="C51-si-UeS"/>
+                                    <constraint firstItem="8mG-XT-PAG" firstAttribute="centerX" secondItem="F8R-1z-uCv" secondAttribute="centerX" id="DCD-Ak-bfs"/>
+                                    <constraint firstItem="Q99-eH-oUZ" firstAttribute="height" secondItem="F8R-1z-uCv" secondAttribute="height" id="ZpG-Bl-F5C"/>
+                                    <constraint firstItem="S0q-ln-sG6" firstAttribute="top" secondItem="8mG-XT-PAG" secondAttribute="bottom" constant="27.5" id="aTK-pZ-aqi"/>
+                                    <constraint firstAttribute="width" constant="300" id="c0h-mc-gYM"/>
+                                    <constraint firstItem="Q99-eH-oUZ" firstAttribute="centerY" secondItem="F8R-1z-uCv" secondAttribute="centerY" id="dEn-77-98p"/>
+                                    <constraint firstAttribute="bottom" secondItem="S0q-ln-sG6" secondAttribute="bottom" constant="27.5" id="iCi-6s-MWv"/>
+                                    <constraint firstItem="S0q-ln-sG6" firstAttribute="leading" secondItem="F8R-1z-uCv" secondAttribute="leading" id="wmj-GB-O67"/>
+                                    <constraint firstItem="Q99-eH-oUZ" firstAttribute="leading" secondItem="S0q-ln-sG6" secondAttribute="trailing" constant="8" id="xCj-2v-QpO"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxy-s5-OKk" customClass="ArcusButton" customModule="i2app" customModuleProvider="target">
+                                <rect key="frame" x="150" y="485" width="300" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="0TT-rt-9cq"/>
+                                    <constraint firstAttribute="width" constant="300" id="9i8-h9-WFR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                <state key="normal" title="GET SUPPORT">
+                                    <color key="titleColor" red="0.016480175778269768" green="0.011604461818933487" blue="0.01168562937527895" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getSupportPressed:" destination="8bc-Np-GN5" eventType="touchUpInside" id="yx9-hR-bNN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3Z-oE-jtz" customClass="ArcusButton" customModule="i2app" customModuleProvider="target">
+                                <rect key="frame" x="150" y="540" width="300" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="CSU-7o-bjS"/>
+                                    <constraint firstAttribute="height" constant="45" id="TM9-7Z-R0F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                <state key="normal" title="RETURN TO DASHBOARD">
+                                    <color key="titleColor" red="0.016480175778269768" green="0.011604461818933487" blue="0.01168562937527895" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="returnToDashboardPressed:" destination="8bc-Np-GN5" eventType="touchUpInside" id="91G-p7-rCu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82745098039215681" green="0.0" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hxy-s5-OKk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="F8R-1z-uCv" secondAttribute="bottom" id="5dn-11-G0R"/>
+                            <constraint firstItem="oq6-ee-Ae8" firstAttribute="centerX" secondItem="zHp-85-0Rl" secondAttribute="centerX" id="923-91-E5l"/>
+                            <constraint firstItem="hxy-s5-OKk" firstAttribute="centerX" secondItem="zHp-85-0Rl" secondAttribute="centerX" id="AA2-pz-C3b"/>
+                            <constraint firstItem="8Kl-F6-Val" firstAttribute="centerX" secondItem="zHp-85-0Rl" secondAttribute="centerX" id="Ay4-jM-GCs"/>
+                            <constraint firstItem="F8R-1z-uCv" firstAttribute="centerX" secondItem="zHp-85-0Rl" secondAttribute="centerX" id="Chq-G4-gPj"/>
+                            <constraint firstItem="oq6-ee-Ae8" firstAttribute="top" secondItem="8Kl-F6-Val" secondAttribute="bottom" constant="21" id="Ejq-rB-d3S"/>
+                            <constraint firstItem="rB2-eE-R9F" firstAttribute="top" secondItem="oq6-ee-Ae8" secondAttribute="bottom" constant="6" id="Kg9-Lc-S4F"/>
+                            <constraint firstItem="U3Z-oE-jtz" firstAttribute="centerX" secondItem="zHp-85-0Rl" secondAttribute="centerX" id="Szd-TY-bwc"/>
+                            <constraint firstItem="rB2-eE-R9F" firstAttribute="centerX" secondItem="zHp-85-0Rl" secondAttribute="centerX" id="VGT-mO-44T"/>
+                            <constraint firstItem="U3Z-oE-jtz" firstAttribute="top" secondItem="hxy-s5-OKk" secondAttribute="bottom" constant="10" id="XNu-zS-1PR"/>
+                            <constraint firstItem="l8c-Yi-Kbw" firstAttribute="top" secondItem="U3Z-oE-jtz" secondAttribute="bottom" constant="15" id="fn6-pU-M35"/>
+                            <constraint firstItem="xLs-6c-mwT" firstAttribute="top" secondItem="wgQ-jU-gqr" secondAttribute="bottom" constant="25" id="oYT-6B-pWL"/>
+                            <constraint firstItem="8Kl-F6-Val" firstAttribute="top" secondItem="xLs-6c-mwT" secondAttribute="bottom" constant="20" id="vI0-XB-d04"/>
+                            <constraint firstItem="F8R-1z-uCv" firstAttribute="top" secondItem="rB2-eE-R9F" secondAttribute="bottom" constant="4" id="yRQ-aD-uxD"/>
+                            <constraint firstItem="xLs-6c-mwT" firstAttribute="centerX" secondItem="zHp-85-0Rl" secondAttribute="centerX" id="zP7-HU-0e7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alarmInfoContainer" destination="F8R-1z-uCv" id="9B8-eD-Ccz"/>
+                        <outlet property="alarmMode" destination="iGt-0e-k2k" id="PUg-eI-Z5k"/>
+                        <outlet property="alarmModeContainer" destination="PYT-zx-yEN" id="A59-vX-5Zv"/>
+                        <outlet property="callAuthoritiesTextContainer" destination="P6U-TM-yte" id="LSL-xU-uLL"/>
+                        <outlet property="offlineDate" destination="WUG-go-gG8" id="d92-ix-PCs"/>
+                        <outlet property="offlineSinceContainer" destination="lYh-jQ-gW9" id="fvh-ox-mmu"/>
+                        <outlet property="supportButton" destination="hxy-s5-OKk" id="C6c-U2-Dw4"/>
+                        <outlet property="topContainerDivider" destination="b8H-Xx-85Z" id="tNM-9V-xHF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boy-r9-Qaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="223.53823088455775"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dashboard_alarm" width="15" height="15"/>
+        <image name="huboffline_cloud_icon-small-ios" width="109" height="109"/>
+    </resources>
+</document>

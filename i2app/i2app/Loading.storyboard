@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dG7-6a-xzg">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Logo Loading View Controller-->
+        <scene sceneID="JZs-Wd-tlf">
+            <objects>
+                <viewController storyboardIdentifier="LogoLoading" id="dG7-6a-xzg" customClass="LogoLoadingViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PbT-xn-lbc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="BAE-IN-wkn">
+                                <rect key="frame" x="0.0" y="-68" width="600" height="736"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="DH3-8B-cu3">
+                                <rect key="frame" x="281.5" y="461.5" width="37" height="37"/>
+                                <color key="color" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mD4-m6-eKB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warning_icon_lined_black" translatesAutoresizingMaskIntoConstraints="NO" id="ulO-eH-jeP">
+                                        <rect key="frame" x="16" y="40" width="21" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="A8o-5T-TeR"/>
+                                            <constraint firstAttribute="width" constant="21" id="gla-jo-3ms"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading delayed, please check your Internet connection." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRA-rj-pT4" customClass="ArcusLabel">
+                                        <rect key="frame" x="45" y="26" width="547" height="46"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99883228540420532" green="0.71002525091171265" blue="0.002043174346908927" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="NRA-rj-pT4" firstAttribute="leading" secondItem="ulO-eH-jeP" secondAttribute="trailing" constant="8" id="K9k-H9-8cX"/>
+                                    <constraint firstAttribute="trailing" secondItem="NRA-rj-pT4" secondAttribute="trailing" constant="8" id="MQM-vt-0zd"/>
+                                    <constraint firstAttribute="bottom" secondItem="ulO-eH-jeP" secondAttribute="bottom" constant="20" id="NAZ-pY-Hql"/>
+                                    <constraint firstAttribute="bottom" secondItem="NRA-rj-pT4" secondAttribute="bottom" constant="8" id="XSt-em-eOL"/>
+                                    <constraint firstItem="ulO-eH-jeP" firstAttribute="leading" secondItem="mD4-m6-eKB" secondAttribute="leading" constant="16" id="x6G-hK-SdY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mD4-m6-eKB" firstAttribute="leading" secondItem="BAE-IN-wkn" secondAttribute="leading" id="27r-AI-9sO"/>
+                            <constraint firstItem="mD4-m6-eKB" firstAttribute="trailing" secondItem="BAE-IN-wkn" secondAttribute="trailing" id="4Xl-p4-WJ3"/>
+                            <constraint firstItem="BAE-IN-wkn" firstAttribute="centerX" secondItem="PbT-xn-lbc" secondAttribute="centerX" id="EZO-1O-rhw"/>
+                            <constraint firstItem="BAE-IN-wkn" firstAttribute="leading" secondItem="Qm7-Bl-FTl" secondAttribute="leading" id="Pct-TQ-Yt2"/>
+                            <constraint firstItem="Qm7-Bl-FTl" firstAttribute="top" secondItem="NRA-rj-pT4" secondAttribute="firstBaseline" constant="-20" id="WGP-PV-spx"/>
+                            <constraint firstItem="BAE-IN-wkn" firstAttribute="centerY" secondItem="PbT-xn-lbc" secondAttribute="centerY" id="XeU-Nv-I3g"/>
+                            <constraint firstItem="Qm7-Bl-FTl" firstAttribute="top" secondItem="ulO-eH-jeP" secondAttribute="bottom" constant="-40" id="g83-FQ-5Mj"/>
+                            <constraint firstItem="mD4-m6-eKB" firstAttribute="top" secondItem="PbT-xn-lbc" secondAttribute="top" id="jSs-0W-4nl"/>
+                            <constraint firstItem="DH3-8B-cu3" firstAttribute="centerX" secondItem="BAE-IN-wkn" secondAttribute="centerX" id="jlz-ec-Hi9"/>
+                            <constraint firstItem="DH3-8B-cu3" firstAttribute="centerY" secondItem="BAE-IN-wkn" secondAttribute="centerY" constant="180" id="vyq-fe-iSE"/>
+                            <constraint firstItem="BAE-IN-wkn" firstAttribute="trailing" secondItem="Qm7-Bl-FTl" secondAttribute="trailing" id="xWV-5z-Mt8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qm7-Bl-FTl"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="troubleLoadingView" destination="mD4-m6-eKB" id="9HX-XB-2ZB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="umI-pK-NVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-455.19999999999999" y="164.03940886699507"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash" width="414" height="736"/>
+        <image name="warning_icon_lined_black" width="16" height="15"/>
+    </resources>
+</document>

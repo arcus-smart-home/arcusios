@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ml9-2O-9EM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AlarmStatusViewController-->
+        <scene sceneID="3MT-Sd-Mcw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AlarmStatus" referencedIdentifier="AlarmStatusViewController" id="MD3-bc-R81" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="IFd-la-mmd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rel-uu-XKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="403"/>
+        </scene>
+        <!--Alarms-->
+        <scene sceneID="iGf-rJ-lbI">
+            <objects>
+                <tabBarController storyboardIdentifier="AlarmTabs" title="Alarms" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ml9-2O-9EM" customClass="AlarmsTabBarViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Alarms" id="hEO-zM-DeV"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="rcs-sJ-um4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fZ-Ho-zOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="334" y="673"/>
+        </scene>
+        <!--AlarmActivityViewController-->
+        <scene sceneID="xkx-VZ-PHr">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AlarmActivity" storyboardName="AlarmActivity" referencedIdentifier="AlarmActivityViewController" id="Yai-sG-1v3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="2FP-gc-LQ5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rXM-zi-Gvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="672"/>
+        </scene>
+        <!--AlarmMoreViewController-->
+        <scene sceneID="lH1-LI-T8L">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AlarmMore" storyboardName="AlarmMore" referencedIdentifier="AlarmMoreViewController" id="fSs-dv-nKb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="otb-la-DMX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7lS-TF-0RT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911.5" y="959"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,95 @@
+//
+//  PrefixHeader.pch
+//  i2app
+//
+//  Created by Arcus Team on 4/6/15.
+/*
+ * Copyright 2019 Arcus Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+//
+
+#ifndef i2app_PrefixHeader_pch
+#define i2app_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([UIScreen mainScreen].scale >= 2.0)
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+//The bottom inset to be used for table views in VCs controlled by an RDVTabBarController
+//This appears to be necessary because of a bug with RDVTabBarController that I can't identify
+//TODO: Get to the bottom of this one
+#define RDV_TABLE_VIEW_BOTTOM_INSET 16
+
+#define RunOnMain(block) {if ([NSThread isMainThread]) { block(); } else { dispatch_sync(dispatch_get_main_queue(), block); }}
+
+#import "UIViewController+DisplayError.h"
+#import "UIViewController+Navigation.h"
+#import "UIViewController+Gif.h"
+#import "UIView+Blur.h"
+#import "UIViewController+BackgroundColor.h"
+#import "UITableViewCell+Initialize.h"
+
+#import "GlobalEnumeration.h"
+#import "DeviceModel+Extension.h"
+#import "SceneModel+Extension.h"
+
+#import "FontData.h"
+#import "FontColors.h"
+#import "ContolsStyleSheet.h"
+
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import <PromiseKit/PromiseKit.h>
+@import Cornea;
+
+#pragma mark - Colors
+#define pinkAlertColor [UIColor colorWithRed:255.0f/255.0f green:26.0f/255.0f blue:85.0f/255.0f alpha:1.0f]
+#define purpleAlertColor [UIColor colorWithRed:77.0f/255.0f green:70.0f/255.0f blue:143.0f/255.0f alpha:1.0f]
+#define grayAlertColor [UIColor colorWithRed:100.0/255.0f green:118.0/255.0f blue:131.0/255.0f alpha:1.0f]
+
+#pragma mark - URLs
+#define privacyStatementUrl @""
+#define termsOfServiceUrl @""
+
+#ifdef DEBUG
+    #define APP_LOG_LEVEL DDLogLevelAll
+    #define CORNEA_LOG_LEVEL DDLogLevelAll
+#else
+    #define APP_LOG_LEVEL DDLogLevelError
+    #define CORNEA_LOG_LEVEL DDLogLevelOff
+#endif
+
+static DDLogLevel ddLogLevel = APP_LOG_LEVEL;
+
+#define appUrlInAppStore @""

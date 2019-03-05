@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6Bm-m5-jBf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Care-->
+        <scene sceneID="YmH-9G-iNE">
+            <objects>
+                <viewController storyboardIdentifier="CareMoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Bm-m5-jBf" customClass="CareMoreViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="82j-lF-qP7"/>
+                        <viewControllerLayoutGuide type="bottom" id="8H6-i7-Zm3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fnL-8K-V4R">
+                        <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dx2-zc-cPU" userLabel="SegmentContainer">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" restorationIdentifier="ArcusSegmentedControl" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AkG-gE-qSb" customClass="ArcusSegmentedControl" customModule="i2app" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="0.0" width="315" height="46"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <segments>
+                                            <segment title="ACTIVITY"/>
+                                            <segment title="STATUS"/>
+                                            <segment title="MORE"/>
+                                        </segments>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="boldFont" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="careSegementedControlValueChanged:" destination="6Bm-m5-jBf" eventType="valueChanged" id="Pt8-FO-YVV"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="AkG-gE-qSb" firstAttribute="top" secondItem="dx2-zc-cPU" secondAttribute="top" id="0Yp-S5-Gf2"/>
+                                    <constraint firstAttribute="bottom" secondItem="AkG-gE-qSb" secondAttribute="bottom" id="W7h-Sk-HRf"/>
+                                    <constraint firstItem="AkG-gE-qSb" firstAttribute="centerX" secondItem="dx2-zc-cPU" secondAttribute="centerX" id="fEf-o4-3f6"/>
+                                    <constraint firstItem="AkG-gE-qSb" firstAttribute="leading" secondItem="dx2-zc-cPU" secondAttribute="leading" constant="30" id="qtM-kZ-8wA"/>
+                                </constraints>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gnf-LH-Ebe">
+                                <rect key="frame" x="310" y="116" width="51" height="31"/>
+                                <color key="tintColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changeSilentAlarmState:" destination="6Bm-m5-jBf" eventType="valueChanged" id="Dn7-m7-Ef1"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYp-TM-Wba">
+                                <rect key="frame" x="16" y="71" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ha5-Po-1AH"/>
+                                    <constraint firstAttribute="width" constant="250" id="PoU-kF-7lY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sx-kC-n6q">
+                                <rect key="frame" x="11" y="86" width="265" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="Jni-Wo-Omh"/>
+                                    <constraint firstAttribute="height" constant="128" id="Ri3-gR-zt8"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dx2-zc-cPU" firstAttribute="leading" secondItem="fnL-8K-V4R" secondAttribute="leading" id="BOQ-9A-8p0"/>
+                            <constraint firstItem="1sx-kC-n6q" firstAttribute="top" secondItem="82j-lF-qP7" secondAttribute="bottom" constant="86" id="HiF-QM-0y5"/>
+                            <constraint firstItem="lYp-TM-Wba" firstAttribute="top" secondItem="dx2-zc-cPU" secondAttribute="bottom" constant="26" id="XQI-en-oZd"/>
+                            <constraint firstItem="1sx-kC-n6q" firstAttribute="leading" secondItem="fnL-8K-V4R" secondAttribute="leadingMargin" constant="-5" id="aUp-R0-0xS"/>
+                            <constraint firstItem="lYp-TM-Wba" firstAttribute="top" secondItem="82j-lF-qP7" secondAttribute="bottom" constant="71" id="bGc-m2-P8c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gnf-LH-Ebe" secondAttribute="trailing" id="bys-vf-fyi"/>
+                            <constraint firstItem="gnf-LH-Ebe" firstAttribute="top" secondItem="82j-lF-qP7" secondAttribute="bottom" constant="116" id="gcB-JH-PEf"/>
+                            <constraint firstAttribute="trailing" secondItem="dx2-zc-cPU" secondAttribute="trailing" id="iQ7-W4-xqr"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="lYp-TM-Wba" secondAttribute="leading" id="lNs-xB-VqS"/>
+                            <constraint firstItem="dx2-zc-cPU" firstAttribute="top" secondItem="82j-lF-qP7" secondAttribute="bottom" id="nwY-z4-swI"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Care" id="jAA-Ol-NLc"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="careMessageTextView" destination="1sx-kC-n6q" id="sBw-Ul-LOt"/>
+                        <outlet property="careSegementedControl" destination="AkG-gE-qSb" id="PsD-MB-Xcs"/>
+                        <outlet property="careSilentAlarmLabel" destination="lYp-TM-Wba" id="8uR-h4-PCN"/>
+                        <outlet property="careSilentAlarmSwitch" destination="gnf-LH-Ebe" id="1pN-1B-YOo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLH-fV-UNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1289" y="1122"/>
+        </scene>
+    </scenes>
+</document>

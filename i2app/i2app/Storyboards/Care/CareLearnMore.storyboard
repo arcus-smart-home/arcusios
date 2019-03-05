@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Care-->
+        <scene sceneID="v1r-CT-pgk">
+            <objects>
+                <viewController storyboardIdentifier="CareLearnMoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WPi-ZS-4Pd" customClass="CareLearnMoreViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ysq-Vm-KRp"/>
+                        <viewControllerLayoutGuide type="bottom" id="M3C-i1-bFu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tzt-OC-ESa">
+                        <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3B-i0-4Zx" userLabel="SegmentContainer">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" restorationIdentifier="ArcusSegmentedControl" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="Dym-iE-RT4" customClass="ArcusSegmentedControl" customModule="i2app" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="0.0" width="315" height="46"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="1IY-Nl-f5y"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="ACTIVITY"/>
+                                            <segment title="STATUS"/>
+                                            <segment title="MORE"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="careSegementedControlValueChanged:" destination="WPi-ZS-4Pd" eventType="valueChanged" id="25R-cw-3PH"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Dym-iE-RT4" secondAttribute="trailing" constant="30" id="25v-Nx-Tys"/>
+                                    <constraint firstItem="Dym-iE-RT4" firstAttribute="leading" secondItem="g3B-i0-4Zx" secondAttribute="leading" constant="30" id="8Lb-ML-9ss"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Fxq-ab-maM"/>
+                                    <constraint firstAttribute="height" constant="45" id="LGt-Bf-7qu"/>
+                                    <constraint firstItem="Dym-iE-RT4" firstAttribute="top" secondItem="g3B-i0-4Zx" secondAttribute="top" id="LKE-vm-zYv"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dym-iE-RT4" secondAttribute="bottom" id="jXK-fi-B9u"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_care" translatesAutoresizingMaskIntoConstraints="NO" id="NsC-4R-MgS" userLabel="Care Alarm Icon">
+                                <rect key="frame" x="165" y="99" width="45" height="45"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Care" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vu-bp-POc">
+                                <rect key="frame" x="169.5" y="177" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="joa-hp-cDl">
+                                <rect key="frame" x="17.5" y="220" width="340" height="105"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="2vZ-Q1-Od0"/>
+                                    <constraint firstAttribute="width" constant="340" id="dIp-HH-afi"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g7a-Jf-9XG">
+                                <rect key="frame" x="17.5" y="346" width="340" height="73"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="1D4-gl-lIg"/>
+                                    <constraint firstAttribute="height" constant="73" id="bdy-Yl-WZd"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="joa-hp-cDl" firstAttribute="top" secondItem="8vu-bp-POc" secondAttribute="bottom" constant="22" id="5by-FR-9H8"/>
+                            <constraint firstItem="8vu-bp-POc" firstAttribute="centerX" secondItem="tzt-OC-ESa" secondAttribute="centerX" id="CxL-BU-qzN"/>
+                            <constraint firstItem="joa-hp-cDl" firstAttribute="centerX" secondItem="tzt-OC-ESa" secondAttribute="centerX" id="DPt-BE-v5f"/>
+                            <constraint firstItem="g7a-Jf-9XG" firstAttribute="top" secondItem="joa-hp-cDl" secondAttribute="bottom" constant="21" id="UVE-ix-koc"/>
+                            <constraint firstItem="8vu-bp-POc" firstAttribute="top" secondItem="NsC-4R-MgS" secondAttribute="bottom" constant="33" id="Wwo-Qn-5BG"/>
+                            <constraint firstItem="g7a-Jf-9XG" firstAttribute="centerX" secondItem="tzt-OC-ESa" secondAttribute="centerX" id="ZW9-dG-VHx"/>
+                            <constraint firstItem="NsC-4R-MgS" firstAttribute="top" secondItem="g3B-i0-4Zx" secondAttribute="bottom" constant="54" id="nVK-o3-ie6"/>
+                            <constraint firstAttribute="trailing" secondItem="g3B-i0-4Zx" secondAttribute="trailing" id="oq8-TA-eOd"/>
+                            <constraint firstItem="NsC-4R-MgS" firstAttribute="centerX" secondItem="tzt-OC-ESa" secondAttribute="centerX" id="sCH-7j-R72"/>
+                            <constraint firstItem="g3B-i0-4Zx" firstAttribute="top" secondItem="ysq-Vm-KRp" secondAttribute="bottom" id="sqZ-Ze-dKw"/>
+                            <constraint firstItem="g3B-i0-4Zx" firstAttribute="leading" secondItem="tzt-OC-ESa" secondAttribute="leading" id="yDW-Yh-Oay"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Care" id="lcH-gg-YJv"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="careMessageTextView" destination="joa-hp-cDl" id="jRA-QS-bGY"/>
+                        <outlet property="carePremiumTextView" destination="g7a-Jf-9XG" id="QU3-9z-38N"/>
+                        <outlet property="careSegementedControl" destination="Dym-iE-RT4" id="qeq-Wm-xqd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="naT-VX-yhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1465" y="802"/>
+        </scene>
+        <!--Care-->
+        <scene sceneID="5iw-2W-3zR">
+            <objects>
+                <viewController storyboardIdentifier="CareNoDeviceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wJs-Wd-qdd" customClass="CareNoDeviceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fAb-Hh-TxG"/>
+                        <viewControllerLayoutGuide type="bottom" id="DCI-xc-ZBx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0fg-Va-CXm">
+                        <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="l6q-UM-Kez">
+                                <rect key="frame" x="28" y="67" width="319" height="131"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="4Re-Lg-aGb"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6u-5z-VL1">
+                                <rect key="frame" x="87.5" y="220" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="JbN-BZ-ALG"/>
+                                    <constraint firstAttribute="width" constant="200" id="zSc-UB-Jfw"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l6q-UM-Kez" firstAttribute="top" secondItem="fAb-Hh-TxG" secondAttribute="bottom" constant="67" id="9Mn-iV-2wM"/>
+                            <constraint firstItem="l6q-UM-Kez" firstAttribute="centerX" secondItem="0fg-Va-CXm" secondAttribute="centerX" id="Iaf-eF-OwH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l6q-UM-Kez" secondAttribute="trailing" constant="12" id="J5Q-3G-fyA"/>
+                            <constraint firstItem="l6q-UM-Kez" firstAttribute="leading" secondItem="0fg-Va-CXm" secondAttribute="leadingMargin" constant="12" id="Myb-j3-8Ch"/>
+                            <constraint firstItem="b6u-5z-VL1" firstAttribute="centerX" secondItem="l6q-UM-Kez" secondAttribute="centerX" id="Vyu-om-z4K"/>
+                            <constraint firstItem="b6u-5z-VL1" firstAttribute="top" secondItem="l6q-UM-Kez" secondAttribute="bottom" constant="22" id="kSj-PO-YfQ"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Care" id="QDU-JD-kmi"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="careMessageTextView" destination="l6q-UM-Kez" id="8Fa-eF-QZ1"/>
+                        <outlet property="contactButton" destination="b6u-5z-VL1" id="1MM-t2-Yc0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vkm-yt-wi0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2103" y="802"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_care" width="45" height="45"/>
+    </resources>
+</document>

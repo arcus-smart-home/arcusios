@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lutron BridgeC2C View Controller-->
+        <scene sceneID="ELk-qg-3zi">
+            <objects>
+                <viewController storyboardIdentifier="LutronBridgeC2CViewController" id="PKD-DS-udv" customClass="LutronBridgeC2CViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L10-ik-fG0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nl1-e5-epx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="73m-qV-T1o">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9Y-PE-WMF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PKD-DS-udv" id="VDq-rY-Xlz"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50999393780000002" green="0.99403884249999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="C9Y-PE-WMF" firstAttribute="top" secondItem="73m-qV-T1o" secondAttribute="top" id="EdZ-eN-kgT"/>
+                            <constraint firstAttribute="trailing" secondItem="C9Y-PE-WMF" secondAttribute="trailing" id="fdb-0i-bjr"/>
+                            <constraint firstItem="C9Y-PE-WMF" firstAttribute="leading" secondItem="73m-qV-T1o" secondAttribute="leading" id="opI-lb-eTp"/>
+                            <constraint firstItem="Nl1-e5-epx" firstAttribute="top" secondItem="C9Y-PE-WMF" secondAttribute="bottom" id="pBL-VS-uyN"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="webView" destination="C9Y-PE-WMF" id="EqL-aR-IST"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BBy-h1-lfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-479.19999999999999" y="166.8665667166417"/>
+        </scene>
+    </scenes>
+</document>

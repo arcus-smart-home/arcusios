@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Simple Title Header-->
+        <scene sceneID="JNH-lE-KTx">
+            <objects>
+                <viewController storyboardIdentifier="SimpleTitleHeader" id="vYR-0R-Ye5" customClass="SimpleTitleHeader" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ue0-HT-Dty"/>
+                        <viewControllerLayoutGuide type="bottom" id="XZD-xS-zne"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KDD-6y-kmn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="132"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3b-FY-Faz">
+                                <rect key="frame" x="45" y="50" width="510" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8I-Ng-uNA">
+                                <rect key="frame" x="2" y="81" width="578" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I8I-Ng-uNA" firstAttribute="top" secondItem="F3b-FY-Faz" secondAttribute="bottom" constant="10" id="UCG-8a-WFA"/>
+                            <constraint firstItem="F3b-FY-Faz" firstAttribute="top" secondItem="ue0-HT-Dty" secondAttribute="bottom" constant="50" id="ePP-W1-owY"/>
+                            <constraint firstItem="XZD-xS-zne" firstAttribute="top" secondItem="I8I-Ng-uNA" secondAttribute="bottom" priority="250" constant="30" id="irH-nN-T6d"/>
+                            <constraint firstItem="F3b-FY-Faz" firstAttribute="leading" secondItem="KDD-6y-kmn" secondAttribute="leading" constant="45" id="kfk-1T-mCp"/>
+                            <constraint firstAttribute="trailing" secondItem="F3b-FY-Faz" secondAttribute="trailing" constant="45" id="odk-By-9aL"/>
+                            <constraint firstAttribute="trailing" secondItem="I8I-Ng-uNA" secondAttribute="trailing" constant="20" id="qGE-6j-aRd"/>
+                            <constraint firstItem="I8I-Ng-uNA" firstAttribute="leading" secondItem="KDD-6y-kmn" secondAttribute="leading" constant="2" id="skf-i8-l56"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="132"/>
+                    <connections>
+                        <outlet property="headerLabel" destination="F3b-FY-Faz" id="Cvm-NL-vNl"/>
+                        <outlet property="headerLabelTopConstraint" destination="ePP-W1-owY" id="mbj-Rr-icZ"/>
+                        <outlet property="subheaderLabel" destination="I8I-Ng-uNA" id="3Nb-ji-8uA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMn-Md-Po5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="153"/>
+        </scene>
+    </scenes>
+</document>

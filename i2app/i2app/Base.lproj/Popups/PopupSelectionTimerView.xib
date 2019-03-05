@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupSelectionTimerView">
+            <connections>
+                <outlet property="titleLabel" destination="hyi-lx-CuZ" id="Gq9-N9-AtH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nl7-xX-Du8">
+                    <rect key="frame" x="0.0" y="65" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="JU4-Mf-nkf"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyi-lx-CuZ">
+                    <rect key="frame" x="0.0" y="8" width="375" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hyi-lx-CuZ" secondAttribute="trailing" id="6Zn-w8-P4b"/>
+                <constraint firstItem="hyi-lx-CuZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FRP-tS-vPb"/>
+                <constraint firstAttribute="trailing" secondItem="nl7-xX-Du8" secondAttribute="trailing" id="Lif-Ku-S0d"/>
+                <constraint firstItem="nl7-xX-Du8" firstAttribute="top" secondItem="hyi-lx-CuZ" secondAttribute="bottom" constant="40" id="Ty4-kV-aDl"/>
+                <constraint firstItem="nl7-xX-Du8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wwg-kz-SEc"/>
+                <constraint firstItem="hyi-lx-CuZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="geW-mS-Tw8"/>
+                <constraint firstItem="nl7-xX-Du8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="x9a-Ur-5MR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Ty4-kV-aDl"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="198.5" y="166"/>
+        </view>
+    </objects>
+</document>

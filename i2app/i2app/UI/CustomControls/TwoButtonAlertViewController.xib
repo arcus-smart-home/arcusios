@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwoButtonAlertViewController">
+            <connections>
+                <outlet property="hubActionSheetView" destination="MAC-4d-opI" id="JFA-Tb-sZe"/>
+                <outlet property="mainText" destination="obc-Pv-bio" id="11G-jx-wDY"/>
+                <outlet property="noButton" destination="PKC-eq-fSz" id="c71-Th-THp"/>
+                <outlet property="subText" destination="hQR-ix-cKR" id="UQ2-if-O8Z"/>
+                <outlet property="view" destination="iN0-l3-epB" id="nhK-QV-WaS"/>
+                <outlet property="yesButton" destination="0P6-66-hEG" id="zVX-6u-sKR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="16" y="177.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="MAC-4d-opI">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="296"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P6-66-hEG">
+                    <rect key="frame" x="8" y="190" width="304" height="45"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="ao2-F5-Les"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKC-eq-fSz">
+                    <rect key="frame" x="8" y="243" width="304" height="45"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="D1W-RO-vOU"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obc-Pv-bio">
+                    <rect key="frame" x="8" y="34" width="304" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="fiV-11-dEP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQR-ix-cKR">
+                    <rect key="frame" x="8" y="88" width="304" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="5dl-TH-bCZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="obc-Pv-bio" firstAttribute="leading" secondItem="MAC-4d-opI" secondAttribute="leading" constant="8" id="1zZ-W1-gLS"/>
+                <constraint firstAttribute="trailing" secondItem="obc-Pv-bio" secondAttribute="trailing" constant="8" id="6Kr-0U-nQM"/>
+                <constraint firstItem="0P6-66-hEG" firstAttribute="leading" secondItem="MAC-4d-opI" secondAttribute="leading" constant="8" id="6MP-Sj-bNZ"/>
+                <constraint firstAttribute="trailing" secondItem="PKC-eq-fSz" secondAttribute="trailing" constant="8" id="ILv-Xf-Jpj"/>
+                <constraint firstAttribute="trailing" secondItem="0P6-66-hEG" secondAttribute="trailing" constant="8" id="QHR-Uv-S7s"/>
+                <constraint firstItem="hQR-ix-cKR" firstAttribute="top" secondItem="obc-Pv-bio" secondAttribute="bottom" constant="8" id="VGa-uj-6rK"/>
+                <constraint firstAttribute="bottom" secondItem="PKC-eq-fSz" secondAttribute="bottom" constant="8" id="WPV-Vw-q5S"/>
+                <constraint firstItem="PKC-eq-fSz" firstAttribute="top" secondItem="0P6-66-hEG" secondAttribute="bottom" constant="8" id="c02-jG-OQW"/>
+                <constraint firstItem="obc-Pv-bio" firstAttribute="top" secondItem="MAC-4d-opI" secondAttribute="top" constant="34" id="ce8-9U-sQK"/>
+                <constraint firstItem="hQR-ix-cKR" firstAttribute="leading" secondItem="MAC-4d-opI" secondAttribute="leading" constant="8" id="gGY-mA-wEG"/>
+                <constraint firstItem="PKC-eq-fSz" firstAttribute="leading" secondItem="MAC-4d-opI" secondAttribute="leading" constant="8" id="gy8-zj-oKR"/>
+                <constraint firstAttribute="trailing" secondItem="hQR-ix-cKR" secondAttribute="trailing" constant="8" id="pH8-Bm-Ch0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="522" y="206"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HaloAttributeGroupView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5O-oo-htM">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haloHumidity" translatesAutoresizingMaskIntoConstraints="NO" id="kIs-jD-hMh">
+                            <rect key="frame" x="20" y="8" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="22" id="ii6-sh-c3f"/>
+                                <constraint firstAttribute="height" constant="22" id="vMA-Au-sC1"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haloPressure" translatesAutoresizingMaskIntoConstraints="NO" id="2dC-Yg-2eD">
+                            <rect key="frame" x="115" y="9" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="22" id="Efx-c5-zd1"/>
+                                <constraint firstAttribute="height" constant="22" id="zZL-pd-Q6X"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haloTemperature" translatesAutoresizingMaskIntoConstraints="NO" id="O5h-bs-zN9">
+                            <rect key="frame" x="229" y="10" width="22" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="22" id="8M8-1X-uyY"/>
+                                <constraint firstAttribute="height" constant="21" id="JhM-bt-TiW"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfc-hn-lzb">
+                            <rect key="frame" x="143" y="11" width="70" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="M6u-Qb-PWr"/>
+                                <constraint firstAttribute="width" constant="70" id="d6U-Ss-Jaf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQq-Tj-xOo">
+                            <rect key="frame" x="253" y="11" width="70" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="SgD-Il-k5t"/>
+                                <constraint firstAttribute="width" constant="70" id="yFN-ap-SH0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5P-7B-rcU">
+                            <rect key="frame" x="45" y="11" width="65" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="65" id="9SN-zy-juL"/>
+                                <constraint firstAttribute="height" constant="21" id="sgb-rT-bIt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="e5P-7B-rcU" firstAttribute="leading" secondItem="kIs-jD-hMh" secondAttribute="trailing" constant="3" id="2SV-xv-eeE"/>
+                        <constraint firstItem="2dC-Yg-2eD" firstAttribute="leading" secondItem="e5P-7B-rcU" secondAttribute="trailing" constant="5" id="CO3-tq-wJm"/>
+                        <constraint firstItem="kIs-jD-hMh" firstAttribute="leading" secondItem="N5O-oo-htM" secondAttribute="leading" constant="20" id="Dvh-jW-9cj"/>
+                        <constraint firstItem="GQq-Tj-xOo" firstAttribute="leading" secondItem="Kfc-hn-lzb" secondAttribute="trailing" constant="47" id="Mc7-zs-MwD"/>
+                        <constraint firstItem="Kfc-hn-lzb" firstAttribute="top" secondItem="N5O-oo-htM" secondAttribute="top" constant="11" id="PDp-Yg-hsb"/>
+                        <constraint firstItem="GQq-Tj-xOo" firstAttribute="leading" secondItem="O5h-bs-zN9" secondAttribute="trailing" constant="2" id="Stw-bo-It7"/>
+                        <constraint firstItem="e5P-7B-rcU" firstAttribute="top" secondItem="N5O-oo-htM" secondAttribute="top" constant="11" id="T28-7R-6N7"/>
+                        <constraint firstItem="GQq-Tj-xOo" firstAttribute="top" secondItem="N5O-oo-htM" secondAttribute="top" constant="11" id="Wfr-Qy-0fB"/>
+                        <constraint firstItem="2dC-Yg-2eD" firstAttribute="top" secondItem="N5O-oo-htM" secondAttribute="top" constant="9" id="YKl-RP-GPT"/>
+                        <constraint firstItem="O5h-bs-zN9" firstAttribute="leading" secondItem="Kfc-hn-lzb" secondAttribute="trailing" constant="16" id="dWl-A4-Sdb"/>
+                        <constraint firstItem="O5h-bs-zN9" firstAttribute="top" secondItem="N5O-oo-htM" secondAttribute="top" constant="10" id="jhJ-L0-UU6"/>
+                        <constraint firstItem="Kfc-hn-lzb" firstAttribute="leading" secondItem="2dC-Yg-2eD" secondAttribute="trailing" constant="6" id="sIc-vU-5QX"/>
+                        <constraint firstItem="kIs-jD-hMh" firstAttribute="top" secondItem="N5O-oo-htM" secondAttribute="top" constant="8" id="wBx-Nh-3r1"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Mc7-zs-MwD"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.13432000320000001" blue="0.23678143970000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="N5O-oo-htM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="48U-St-Oyb"/>
+                <constraint firstItem="N5O-oo-htM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iWQ-Xt-gOR"/>
+                <constraint firstAttribute="bottom" secondItem="N5O-oo-htM" secondAttribute="bottom" id="ueq-bU-Dsy"/>
+                <constraint firstAttribute="trailing" secondItem="N5O-oo-htM" secondAttribute="trailing" constant="20" id="uvS-GY-b4Y"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="humidityLabel" destination="e5P-7B-rcU" id="D5L-fy-rnE"/>
+                <outlet property="pressureLabel" destination="Kfc-hn-lzb" id="luw-cW-JUi"/>
+                <outlet property="temperatureLabel" destination="GQq-Tj-xOo" id="dpw-Oo-zMx"/>
+            </connections>
+            <point key="canvasLocation" x="225" y="189"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="haloHumidity" width="22" height="22"/>
+        <image name="haloPressure" width="22" height="22"/>
+        <image name="haloTemperature" width="22" height="22"/>
+    </resources>
+</document>

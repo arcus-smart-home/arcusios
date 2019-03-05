@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="552" height="457"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PREMIUM REQUIRED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZJ-GI-CbF" customClass="ArcusLabel">
+                    <rect key="frame" x="45" y="0.0" width="507" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="wxq-qE-PMH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These features require a premium subscription." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cf-IK-1dj">
+                    <rect key="frame" x="45" y="61" width="507" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="cHM-v0-9Ha"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camerassensors" translatesAutoresizingMaskIntoConstraints="NO" id="3eM-QQ-Ehw">
+                    <rect key="frame" x="45" y="131" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="HIT-1r-bWF"/>
+                        <constraint firstAttribute="width" constant="45" id="RzZ-rt-vRJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Up to 3GB of online video storage" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gss-wg-bgY">
+                    <rect key="frame" x="100" y="144" width="452" height="19.5"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                    <color key="textColor" red="0.019331216812133789" green="0.014449126087129116" blue="0.01451131422072649" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="securityalarm" translatesAutoresizingMaskIntoConstraints="NO" id="hPM-ny-mto">
+                    <rect key="frame" x="45" y="196" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="5HY-J0-90N"/>
+                        <constraint firstAttribute="width" constant="45" id="hSS-V8-f2A"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm Tracker™ (real time updates of alarm events)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgS-gD-FIP">
+                    <rect key="frame" x="100" y="209" width="452" height="19.5"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CareIconBlack" translatesAutoresizingMaskIntoConstraints="NO" id="b6y-XX-UMi">
+                    <rect key="frame" x="45" y="261" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="EfR-nw-SWP"/>
+                        <constraint firstAttribute="height" constant="45" id="S6e-Pr-lEH"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Care helps you monitor your loved ones' daily routines" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNB-P0-Cky">
+                    <rect key="frame" x="100" y="274" width="452" height="19.5"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2Cf-IK-1dj" firstAttribute="top" secondItem="kZJ-GI-CbF" secondAttribute="bottom" constant="40" id="0Tx-iI-81i"/>
+                <constraint firstItem="Gss-wg-bgY" firstAttribute="leading" secondItem="3eM-QQ-Ehw" secondAttribute="trailing" constant="10" id="1Pw-Jh-teo"/>
+                <constraint firstItem="b6y-XX-UMi" firstAttribute="leading" secondItem="hPM-ny-mto" secondAttribute="leading" id="32a-ip-KJN"/>
+                <constraint firstItem="3eM-QQ-Ehw" firstAttribute="top" secondItem="2Cf-IK-1dj" secondAttribute="bottom" constant="20" id="48i-pC-Ptq"/>
+                <constraint firstItem="hPM-ny-mto" firstAttribute="top" secondItem="3eM-QQ-Ehw" secondAttribute="bottom" constant="20" id="5Hc-xE-y9i"/>
+                <constraint firstItem="YNB-P0-Cky" firstAttribute="centerY" secondItem="b6y-XX-UMi" secondAttribute="centerY" id="9aD-MO-Dix"/>
+                <constraint firstItem="LgS-gD-FIP" firstAttribute="leading" secondItem="Gss-wg-bgY" secondAttribute="leading" id="BDa-zi-meF"/>
+                <constraint firstItem="YNB-P0-Cky" firstAttribute="leading" secondItem="b6y-XX-UMi" secondAttribute="trailing" constant="34" id="BXT-yC-joF"/>
+                <constraint firstItem="kZJ-GI-CbF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="C0c-8M-mJe"/>
+                <constraint firstItem="b6y-XX-UMi" firstAttribute="top" secondItem="hPM-ny-mto" secondAttribute="bottom" constant="20" id="FI1-FB-GL5"/>
+                <constraint firstItem="LgS-gD-FIP" firstAttribute="leading" secondItem="hPM-ny-mto" secondAttribute="trailing" constant="34" id="HSh-a7-AeU"/>
+                <constraint firstItem="Gss-wg-bgY" firstAttribute="centerY" secondItem="3eM-QQ-Ehw" secondAttribute="centerY" id="HuL-yR-UvZ"/>
+                <constraint firstItem="LgS-gD-FIP" firstAttribute="centerY" secondItem="hPM-ny-mto" secondAttribute="centerY" id="II5-kC-bE8"/>
+                <constraint firstItem="hPM-ny-mto" firstAttribute="leading" secondItem="3eM-QQ-Ehw" secondAttribute="leading" id="JhD-92-qAc"/>
+                <constraint firstItem="2Cf-IK-1dj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="Lad-el-WJA"/>
+                <constraint firstItem="3eM-QQ-Ehw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="200" id="Nls-UU-tl1"/>
+                <constraint firstItem="3eM-QQ-Ehw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="PbX-nZ-8kT"/>
+                <constraint firstItem="YNB-P0-Cky" firstAttribute="leading" secondItem="LgS-gD-FIP" secondAttribute="leading" id="Pv3-Nq-Qyn"/>
+                <constraint firstAttribute="trailing" secondItem="kZJ-GI-CbF" secondAttribute="trailing" id="akK-YE-7iq"/>
+                <constraint firstAttribute="trailing" secondItem="2Cf-IK-1dj" secondAttribute="trailing" id="dY5-3c-PPT"/>
+                <constraint firstAttribute="trailing" secondItem="Gss-wg-bgY" secondAttribute="trailing" id="jRA-Ho-LqH"/>
+                <constraint firstItem="YNB-P0-Cky" firstAttribute="centerY" secondItem="b6y-XX-UMi" secondAttribute="centerY" id="lDJ-b5-IUt"/>
+                <constraint firstItem="LgS-gD-FIP" firstAttribute="trailing" secondItem="Gss-wg-bgY" secondAttribute="trailing" id="mr7-k9-kCp"/>
+                <constraint firstItem="LgS-gD-FIP" firstAttribute="centerY" secondItem="hPM-ny-mto" secondAttribute="centerY" id="rv1-g0-pVE"/>
+                <constraint firstItem="kZJ-GI-CbF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="yD1-vW-o13"/>
+                <constraint firstItem="YNB-P0-Cky" firstAttribute="trailing" secondItem="LgS-gD-FIP" secondAttribute="trailing" id="z4C-ho-psD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Nls-UU-tl1"/>
+                    <exclude reference="HSh-a7-AeU"/>
+                    <exclude reference="rv1-g0-pVE"/>
+                    <exclude reference="9aD-MO-Dix"/>
+                    <exclude reference="BXT-yC-joF"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="493" y="207.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CareIconBlack" width="30" height="30"/>
+        <image name="camerassensors" width="45" height="45"/>
+        <image name="securityalarm" width="45" height="45"/>
+    </resources>
+</document>

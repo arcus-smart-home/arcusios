@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TTm-Yd-rLL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Slide Menu View Controller-->
+        <scene sceneID="HT3-Js-CZZ">
+            <objects>
+                <viewController storyboardIdentifier="SlideMenuVC" id="TTm-Yd-rLL" customClass="SlideMenuViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eaZ-Ja-daQ">
+                        <rect key="frame" x="0.0" y="0.0" width="315" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="119" sectionFooterHeight="175" translatesAutoresizingMaskIntoConstraints="NO" id="mPZ-em-lPm">
+                                <rect key="frame" x="0.0" y="0.0" width="315" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="Tek-rc-rX4"/>
+                                </constraints>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="PVM-1T-aeU" customClass="SlideMenuTableViewHeaderView" customModule="i2app" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="315" height="119"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="prototypeName" value="SlideMenuTableViewHeaderView"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="SAW-je-xK6" customClass="SlideMenuTableViewFooterView" customModule="i2app" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="282" width="315" height="175"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="prototypeName" value="SlideMenuTableViewFooterView"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="FUz-fc-fJk">
+                                        <rect key="frame" x="0.0" y="238" width="315" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FUz-fc-fJk" id="3ce-k9-61s">
+                                            <rect key="frame" x="0.0" y="0.0" width="315" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mPZ-em-lPm" firstAttribute="leading" secondItem="eaZ-Ja-daQ" secondAttribute="leading" id="ZJL-yM-tqS"/>
+                            <constraint firstAttribute="trailing" secondItem="mPZ-em-lPm" secondAttribute="trailing" id="tuI-OY-uR3"/>
+                            <constraint firstItem="mPZ-em-lPm" firstAttribute="bottom" secondItem="onD-re-WBA" secondAttribute="bottom" id="yV9-9p-pWr"/>
+                            <constraint firstItem="mPZ-em-lPm" firstAttribute="top" secondItem="eaZ-Ja-daQ" secondAttribute="top" id="ziV-k7-TXx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="onD-re-WBA"/>
+                    </view>
+                    <size key="freeformSize" width="315" height="667"/>
+                    <connections>
+                        <outlet property="slideTableView" destination="mPZ-em-lPm" id="wag-yS-YTk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9O-h2-UQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>

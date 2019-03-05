@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Temp Pairing Cart View Controller-->
+        <scene sceneID="cYR-kf-3Wl">
+            <objects>
+                <viewController storyboardIdentifier="TempPairingCartViewController" id="BHR-Ev-aAa" customClass="TempPairingCartViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="36e-Oo-DIk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gkD-hW-zpa">
+                                <rect key="frame" x="0.0" y="66" width="375" height="601"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PairingCartItemCell" id="32k-Hf-zGW" customClass="PairingCartItemCell" customModule="i2app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="32k-Hf-zGW" id="ieq-au-vsQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbM-iz-5pR">
+                                                    <rect key="frame" x="15" y="21" width="50.5" height="27.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnA-6l-OAw">
+                                                    <rect key="frame" x="318.5" y="24" width="41" height="22"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="MbM-iz-5pR" firstAttribute="leading" secondItem="ieq-au-vsQ" secondAttribute="leading" constant="15" id="UJb-SX-vI4"/>
+                                                <constraint firstAttribute="trailing" secondItem="tnA-6l-OAw" secondAttribute="trailing" constant="15" id="X9e-F7-qfe"/>
+                                                <constraint firstItem="MbM-iz-5pR" firstAttribute="centerY" secondItem="ieq-au-vsQ" secondAttribute="centerY" id="a3U-Fk-SNK"/>
+                                                <constraint firstItem="tnA-6l-OAw" firstAttribute="centerY" secondItem="ieq-au-vsQ" secondAttribute="centerY" id="aSu-r8-GZR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="state" destination="tnA-6l-OAw" id="cpe-Sr-ecG"/>
+                                            <outlet property="title" destination="MbM-iz-5pR" id="ubJ-qy-e3m"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BHR-Ev-aAa" id="NYU-aB-9K6"/>
+                                    <outlet property="delegate" destination="BHR-Ev-aAa" id="Od6-oh-XsY"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbl-r7-xUa">
+                                <rect key="frame" x="342" y="20" width="17" height="22"/>
+                                <state key="normal" image="button_close"/>
+                                <connections>
+                                    <action selector="closeButtonPressed" destination="BHR-Ev-aAa" eventType="touchUpInside" id="C5N-DB-j0R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qbl-r7-xUa" firstAttribute="top" secondItem="Bga-Zs-NXr" secondAttribute="top" id="ATL-ho-iiG"/>
+                            <constraint firstItem="gkD-hW-zpa" firstAttribute="leading" secondItem="Bga-Zs-NXr" secondAttribute="leading" id="P5z-d3-mqA"/>
+                            <constraint firstItem="Bga-Zs-NXr" firstAttribute="trailing" secondItem="qbl-r7-xUa" secondAttribute="trailing" constant="16" id="b7o-ma-SZb"/>
+                            <constraint firstItem="gkD-hW-zpa" firstAttribute="trailing" secondItem="Bga-Zs-NXr" secondAttribute="trailing" id="bcz-Z0-QS1"/>
+                            <constraint firstItem="gkD-hW-zpa" firstAttribute="top" secondItem="qbl-r7-xUa" secondAttribute="bottom" constant="24" id="ljI-cf-alG"/>
+                            <constraint firstItem="gkD-hW-zpa" firstAttribute="bottom" secondItem="Bga-Zs-NXr" secondAttribute="bottom" id="shc-wf-VWp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bga-Zs-NXr"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="gkD-hW-zpa" id="pQ3-g9-idN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAb-LP-FEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="192.95352323838082"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_close" width="17" height="17"/>
+    </resources>
+</document>

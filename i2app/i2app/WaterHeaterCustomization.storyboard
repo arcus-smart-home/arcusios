@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Customize Device-->
+        <scene sceneID="2Kf-TM-HJR">
+            <objects>
+                <viewController storyboardIdentifier="WaterHeaterCustomizationViewController" title="Customize Device" id="pxz-yI-D6U" customClass="WaterHeaterCustomizationViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cCq-r8-PCP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqM-9l-DEu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQh-M0-88x" userLabel="scrollViewContent">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Heater Assistance" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXO-6W-MqJ">
+                                                <rect key="frame" x="86" y="35" width="202.5" height="25"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vU4-wm-gid" userLabel="Description">
+                                                <rect key="frame" x="34" y="80" width="307" height="131.5"/>
+                                                <string key="text">Should your water heater ever have a problem, this information will be passed along to the Contact Center.
+
+This information is typically found on the water heater's data plate.</string>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZV-BQ-PqN" userLabel="separator">
+                                                <rect key="frame" x="0.0" y="241.5" width="375" height="1"/>
+                                                <color key="backgroundColor" red="0.76463800670000004" green="0.76474922899999997" blue="0.7646137476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="wjT-lk-ea5" customClass="HairlineConstraint" customModule="i2app" customModuleProvider="target"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n34-Sb-nKS" customClass="ScleraTextField" customModule="i2app" customModuleProvider="target">
+                                                <rect key="frame" x="31" y="267.5" width="313" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="Jek-1D-tvn"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Model Number (Optional)"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Model Number"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="pxz-yI-D6U" id="4qd-Jz-JUU"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDV-Ge-uSq" customClass="ScleraButton" customModule="i2app" customModuleProvider="target">
+                                                <rect key="frame" x="31" y="523" width="313" height="54"/>
+                                                <color key="backgroundColor" red="0.23331674929999999" green="0.062228277329999998" blue="0.3225048184" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="jOh-GY-frU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                <state key="normal" title="NEXT">
+                                                    <color key="titleColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="actionButtonPressed:" destination="pxz-yI-D6U" eventType="touchUpInside" id="g2L-uu-6Ep"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zke-cX-VwQ" customClass="ScleraTextField" customModule="i2app" customModuleProvider="target">
+                                                <rect key="frame" x="31" y="338" width="313" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="rUG-Ep-JcS"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Serial Number (Optional)"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Serial Number"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="pxz-yI-D6U" id="N0s-s1-a3c"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="vU4-wm-gid" secondAttribute="trailing" constant="34" id="0w4-2B-jOt"/>
+                                            <constraint firstItem="zDV-Ge-uSq" firstAttribute="leading" secondItem="CQh-M0-88x" secondAttribute="leading" constant="31" id="1jc-qh-vZ6"/>
+                                            <constraint firstItem="dXO-6W-MqJ" firstAttribute="centerX" secondItem="CQh-M0-88x" secondAttribute="centerX" id="4sO-XC-wAy"/>
+                                            <constraint firstItem="n34-Sb-nKS" firstAttribute="leading" secondItem="CQh-M0-88x" secondAttribute="leading" constant="31" id="6dR-w5-qE4"/>
+                                            <constraint firstAttribute="trailing" secondItem="n34-Sb-nKS" secondAttribute="trailing" constant="31" id="AB7-2n-sPL"/>
+                                            <constraint firstItem="n34-Sb-nKS" firstAttribute="top" secondItem="YZV-BQ-PqN" secondAttribute="bottom" constant="25" id="AdV-hr-Xh6"/>
+                                            <constraint firstItem="zke-cX-VwQ" firstAttribute="top" secondItem="n34-Sb-nKS" secondAttribute="bottom" constant="25.5" id="IlI-Oh-cCz"/>
+                                            <constraint firstItem="YZV-BQ-PqN" firstAttribute="top" secondItem="vU4-wm-gid" secondAttribute="bottom" constant="30" id="Jtl-iy-LUn"/>
+                                            <constraint firstItem="zke-cX-VwQ" firstAttribute="leading" secondItem="CQh-M0-88x" secondAttribute="leading" constant="31" id="NVW-2f-vth"/>
+                                            <constraint firstAttribute="trailing" secondItem="YZV-BQ-PqN" secondAttribute="trailing" id="R6t-qP-5GC"/>
+                                            <constraint firstAttribute="bottom" secondItem="zDV-Ge-uSq" secondAttribute="bottom" constant="26" id="abx-1S-0W9"/>
+                                            <constraint firstItem="vU4-wm-gid" firstAttribute="leading" secondItem="CQh-M0-88x" secondAttribute="leading" constant="34" id="bkQ-IL-k0U"/>
+                                            <constraint firstItem="vU4-wm-gid" firstAttribute="top" secondItem="dXO-6W-MqJ" secondAttribute="bottom" constant="20" id="g0J-jG-WxG"/>
+                                            <constraint firstAttribute="trailing" secondItem="zke-cX-VwQ" secondAttribute="trailing" constant="31" id="pBv-wj-eIt"/>
+                                            <constraint firstItem="YZV-BQ-PqN" firstAttribute="leading" secondItem="CQh-M0-88x" secondAttribute="leading" id="qeA-bH-zof"/>
+                                            <constraint firstItem="dXO-6W-MqJ" firstAttribute="top" secondItem="CQh-M0-88x" secondAttribute="top" constant="35" id="sof-E5-Mkc"/>
+                                            <constraint firstAttribute="trailing" secondItem="zDV-Ge-uSq" secondAttribute="trailing" constant="31" id="url-gh-Vvv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="CQh-M0-88x" secondAttribute="trailing" id="0zh-bZ-IpI"/>
+                                    <constraint firstItem="CQh-M0-88x" firstAttribute="top" secondItem="EqM-9l-DEu" secondAttribute="top" id="3ja-nw-kU5"/>
+                                    <constraint firstAttribute="bottom" secondItem="CQh-M0-88x" secondAttribute="bottom" id="C6v-qd-7lN"/>
+                                    <constraint firstItem="CQh-M0-88x" firstAttribute="leading" secondItem="EqM-9l-DEu" secondAttribute="leading" id="Lla-RJ-VdI"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CQh-M0-88x" firstAttribute="height" secondItem="cCq-r8-PCP" secondAttribute="height" priority="751" id="7IG-7E-dm1"/>
+                            <constraint firstItem="EqM-9l-DEu" firstAttribute="trailing" secondItem="fCR-bG-t8m" secondAttribute="trailing" id="8G3-mX-g2o"/>
+                            <constraint firstItem="EqM-9l-DEu" firstAttribute="top" secondItem="cCq-r8-PCP" secondAttribute="top" id="Gpm-M3-Ygk"/>
+                            <constraint firstItem="EqM-9l-DEu" firstAttribute="leading" secondItem="fCR-bG-t8m" secondAttribute="leading" id="cb7-97-uy3"/>
+                            <constraint firstItem="EqM-9l-DEu" firstAttribute="bottom" secondItem="cCq-r8-PCP" secondAttribute="bottom" id="d0y-BL-tjF"/>
+                            <constraint firstItem="CQh-M0-88x" firstAttribute="width" secondItem="cCq-r8-PCP" secondAttribute="width" id="gkV-cw-a5O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fCR-bG-t8m"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="actionButton" destination="zDV-Ge-uSq" id="yyw-Lo-iaU"/>
+                        <outlet property="descriptionLabel" destination="vU4-wm-gid" id="hjF-hS-9Xv"/>
+                        <outlet property="keyboardAnimationView" destination="EqM-9l-DEu" id="meP-0v-AaX"/>
+                        <outlet property="modelNumberField" destination="n34-Sb-nKS" id="PYk-dM-MXx"/>
+                        <outlet property="serialNumberField" destination="zke-cX-VwQ" id="uQF-yu-7Az"/>
+                        <outlet property="titleLabel" destination="dXO-6W-MqJ" id="33F-Uy-Ede"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMI-EN-VKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="169.56521739130437"/>
+        </scene>
+    </scenes>
+</document>

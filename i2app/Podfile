@@ -1,0 +1,49 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+use_frameworks!
+
+def shared_pods
+  pod 'PureLayout', '~>3.0'
+  pod 'SWRevealViewController', '~>2.3'
+  pod 'SocketRocket', '0.4.2'
+  pod 'Reachability', '~> 3.2'
+  pod 'SSKeychain', '1.4.1'
+  pod 'PromiseKit/Promise', '1.5.3'
+  pod 'SDWebImage', '3.7.5'
+  pod 'CocoaLumberjack/Swift', '~>3.4.1'
+  pod 'Proposer', '1.1.0' # MIT
+  pod 'MZDownloadManager', '3.0' # BSD
+  pod 'SwiftLint', '0.18.1' #MIT
+  pod 'Locksmith', '3.0'
+  pod 'CryptoSwift', '0.10.0'
+
+  # Pods for RxArcusClient
+  pod 'RxSwift' # Mit
+  pod 'RxCocoa' # Mit
+  pod 'RxSwiftExt', '2.5.1'
+  pod 'RxDataSources', '2.0.2'
+
+  pod 'Cornea', :path => './CorneaPod'
+end
+
+post_install do |installer|
+
+  installer.pods_project.targets.each do |target|
+    puts "#{target.name}"
+
+    target.build_configurations.each do |config|
+      config.build_settings['EXPANDED_CODE_SIGN_IDENTITY'] = ""
+      config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
+      config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
+    end
+  end
+
+end
+
+target 'i2app' do
+  shared_pods
+end

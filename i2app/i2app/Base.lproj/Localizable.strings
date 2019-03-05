@@ -1,0 +1,1180 @@
+/* 
+  Localizable.strings
+  i2app
+
+  Created by Arcus Team on 4/6/15.
+*/
+
+//Initial launch
+"Life, made easier" = "Life, made easier";
+"Help protect\nwhat matters most." = "Help protect\nwhat matters most.";
+"Know when the kids\nget home from school." = "Know when the kids\nget home from school.";
+"Peace of mind\nwherever you go."= "Peace of mind\nwherever you go.";
+
+"Next Generation Hub \n Owners Tap Here" = "Next Generation Hub \n Owners Tap Here";
+"First Generation Hub \n Owners Tap Here" = "First Generation Hub \n Owners Tap Here";
+
+"submit" = "submit";
+"forgot password" = "forgot password";
+
+// Account related strings
+"Password" = "Password";
+"Confirm Password" = "Confirm Password";
+"New Password" = "New Password";
+"Confirm New Password" = "Confirm New Password";
+"next" = "next";
+"success" = "success";
+
+"First Name" = "First Name";
+"Last Name" = "Last Name";
+"Home Nickname" = "Home Nickname";
+
+"Email Address" = "Email Address";
+"Email Sent" = "Email Sent";
+"An email has been sent to you." = "An email has been sent to you. \r Check your inbox.";
+"use invitation code" = "use invitation code";
+"invitation code" = "invitation code";
+"Notifications" = "Notifications";
+"Check your inbox." = "Check your inbox.";
+"An email has been sent to you" = "An email has been sent to you\n with a code that will allow you\n to reset your password.";
+"Continue to your dashboard\n or create an account" = "Continue to your dashboard\n or create an account";
+"ACCOUNT OWNER" = "ACCOUNT OWNER";
+"Email" = "Email";
+"Answer" = "Answer";
+"Mobile" = "Mobile";
+"Street Address 1" = "Street Address 1";
+"Street Address 2" = "Street Address 2";
+"Address Line 1" = "Address Line 1";
+"Address Line 2" = "Address Line 2";
+"Card Number" = "Card Number";
+"Exp Mth" = "Exp Mth";
+"Exp Year" = "Exp Year";
+"CVC" = "CVC";
+"CVV" = "CVV";
+"City" = "City";
+"State" = "State";
+"Zip Code" = "Zip Code";
+"expiration" = "expiration";
+"forgot password" = "forgot password";
+
+"Send me newsletters and updates" = "Send me newsletters and updates";
+"  (min 8 characters)" = "  (min 8 characters)";
+"Account created!\nYou're one step closer\nto a smarter home." = "Account created!\nYou're one step closer\nto a smarter home.";
+"Arcus will help you\ndo awesome things like:" = "Arcus will help you\ndo awesome things like:";
+"Arm your alarm" ="Arm your alarm";
+"Control your thermostat" ="Control your thermostat";
+"Turn on your lights" = "Turn on your lights";
+"Forgot your password?\nNo big deal." = "Forgot your password?\nNo big deal.";
+"Enter your email address and\n we'll send instructions on how to reset it.\nBut hurry - the link will expire in 30 minutes." = "Enter your email address and\n we'll send instructions on how to reset it.\nBut hurry - the link will expire in 30 minutes.";
+"Need to call support for help?\nThis will confirm your identity.\n(Also helps with forgotten passwords)"= "Need to call support for help?\nThis will confirm your identity.\n(Also helps with forgotten passwords)";
+"Enter the invitation code you\nwere emailed in the space below." = "Enter the invitation code you\nwere emailed in the space below.";
+"Tell us about yourself and add a photo if you like." = "Tell us about yourself and add a photo if you like.";
+"Your phone number will only be used to call you when an alarm is triggered." = "Your phone number will only be used to call you when an alarm is triggered.";
+"We think you'll love the Premium Plan.\nTry it free for two months!*" = "We think you'll love the Premium Plan.\nTry it free for two months!*";
+"* A credit card is required.\n\nWe'll send you a reminder before the trial\nexpires so you can choose to continue\nor cancel the Premium Plan." = "* A credit card is required.\n\nWe'll send you a reminder before the trial\nexpires so you can choose to continue\nor cancel the Premium Plan.";
+
+// Account Validation Error Messages
+"Missing Information" = "Missing Information";
+"Invalid Email" = "Invalid Email";
+"Hub ID invalid" = "Hub ID invalid";
+"Device Name invalid" = "Device Name invalid";
+"Entry required" = " could not be empty";
+"Email invalid" = "Please, enter a valid email address";
+"Phone invalid" = "Please, enter a valid phone number";
+"Password invalid" = "Please, enter a valid Password";
+"Zip code invalid" = "Please, enter a valid zip code";
+"Credit card invalid" = "Please, enter a valid credit card number";
+"CVC invalid" = "Please, enter a valid CVC";
+"Validation failed" = "Validation failed";
+"Passwords do not match" = "Passwords do not match";
+"Password cannot be the same as the email address" = "Password cannot be the same as the email address";
+"This email is associated with an existing Arcus account. Please choose another one." = "This email is associated with an existing Arcus account. Please choose another one.";
+"Email Already Registered" = "Email Already Registered";
+"Email Address or Password is invalid" = "Email Address or Password is invalid";
+// Alert action button titles
+"OK" = "OK";
+"Poor Signal" = "Poor Signal";
+
+// Nav bar titles
+"Settings" = "Settings";
+"ONE TIME OFFER" = "ONE TIME OFFER";
+"A credit card is required for the FREE trial" = "A credit card is required for the FREE trial. Are you sure you want to bypass the 2 month Free Premium trial and be placed on the Basic plan?";
+"YES, SKIP THE PREMIUM TRIAL" = "YES, SKIP THE PREMIUM TRIAL";
+"Credit Card Information" = "Credit Card Information";
+"SKIP" = "SKIP";
+"Sign Up" = "Sign Up";
+"About You" = "About You";
+"About Your Home" = "About Your Home";
+"Premium Plan" = "Premium Plan";
+"Promo Title Goes Here" = "Promo Title Goes Here";
+"Create an Account" = "Create an Account";
+"Security Questions" = "Security Questions";
+"Log In" = "Log In";
+"Forgot Password" = "Forgot Password";
+"Password Reset" = "Password Reset";
+"add" = "add";
+"Favorites" = "Favorites";
+"Add a Hub" = "Add a Hub";
+"Arcus Motion Sensor" = "Arcus Motion Sensor";
+"History" = "History";
+"Device" = "Device";
+"More" = "More";
+"Rules" = "Rules";
+"Schedule" = "Schedule";
+"Product Information" ="Product Information";
+"Connectivity & Power" = "Connectivity & Power";
+"Advanced" = "Advanced";
+"Add a Device" = "Add a Device";
+"Search for a Device" = "Search for a Device";
+"Congrats" = "Congrats";
+"Status" = "Status";
+"Clips" = "Clips";
+"Temp" = "Temp";
+"Access" = "Access";
+"Scenes" = "Scenes";
+"my rules" = "my rules";
+"Smart fob" = "Smart fob";
+"key fob" = "key fob";
+
+// Sliding Menu strings
+"Dashboard" = "Dashboard";
+"Status of Your Home" = "Status of Your Home";
+"Devices" = "Devices";
+"Manage & Control Devices" = "Manage & Control Devices";
+"Connect & Automate Devices" = "Connect & Automate Devices";
+"Calendar" = "Calendar";
+"Daily Schedule & Reminders" = "Daily Schedule & Reminders";
+"History" = "History";
+"Detailed Activity Log & Notifications" = "Detailed Activity Log & Notifications";
+"Account Settings" = "Account Settings";
+"Profile, People & Places" = "Profile, People & Places";
+"Support" = "Support";
+"FAQs & Customer Support" = "FAQs & Customer Support";
+"Shop" = "Shop";
+"Return to Dashboard" = "Return to Dashboard";
+"Browse Arcus-Compatible Products" = "Browse Arcus-Compatible Products";
+"Log out" = "Log out";
+
+//Add screen
+"Hub" = "Hub";
+"The Heart of the System" = "The Heart of the System";
+"Place" = "Place";
+"Add Additional Places (e.g. Vacation Home)" = "Add Additional Places\n(e.g. Vacation Home)";
+"Person" = "Person";
+"Invite Someone" = "Invite Someone";
+"Device" = "Device";
+"Pair a Device to Arcus" = "Pair a Device to Arcus";
+"Care Behavior" = "Care Behavior";
+"Trigger a Care Alarm when a loved one's routine is out of the ordinary." = "Trigger a Care Alarm when a loved one's routine is out of the ordinary.";
+"Rule" = "Rule";
+"Connect & Automate Devices" = "Connect & Automate Devices";
+"Scene" = "Scene";
+"Control Several Devices at Once" = "Control Several Devices at Once";
+"Add Arcus to Your Home" = "Add Arcus to Your Home";
+"Turn your home into a smart home." = "Turn your home into a smart home.";
+
+
+//Device Pairing
+"The hub is the heart of the Arcus Smart Home System, so we'll start there." = "The hub is the heart of the Arcus Smart Home System, so we'll start there.";
+"Paired to the Hub\nand ready for action" = "Paired to the Hub\nand ready for action";
+"Add to Favorites" = "Add to Favorites";
+"Add to a Room" = "Add to a Room";
+"Add Brilliance" = "Add Brilliance";
+"Searching for Hub with\nID " = "Searching for Hub with\nID ";
+"Device" = "Device";
+"Devices" = "Devices";
+"Looking..." = "Looking...";
+"The hub is the heart of the\nArcus Smart Home System,\nso let's set that up first." = "The hub is the heart of the\nArcus Smart Home System,\nso let's set that up first.";
+"Using Arcus without a hub?\nSkip this Step." = "Using Arcus without a hub?\nSkip this Step.";
+"Is this contact sensor being\nused on a door or a window?" = "Is this contact sensor being\nused on a door or a window?";
+"Do you want to add this\ndevice to Favorites?" = "Do you want to add this\ndevice to Favorites?";
+"Gain fast access to your Favorite\ndevices at the top of your Dashboard" = "Gain fast access to your Favorite\ndevices at the top of your Dashboard";
+"Add this device to Favorites" = "Add this device to Favorites";
+"Attention" = "Attention";
+"Please consult an HVAC professional\n or the device manufacturer for\nbest practices on maintaining\nyour HVAC system." = "Please consult an HVAC professional\n or the device manufacturer for\nbest practices on maintaining\nyour HVAC system.";
+"Found devices" = "Found devices";
+"Done" = "Done";
+"Name your devices\nand add a photo if you like." = "Name your devices\nand add a photo if you like.";
+"Arcus is more powerful when you customize your devices." = "Arcus is more powerful when you customize your devices.";
+"Are you sure?" =  "Are you sure?";
+"Person Name" = "Person Name";
+"Horizontal (EX:Garage Door)" = "Horizontal (EX:Garage Door)";
+"Vertical (EX:Jewelry box)" = "Vertical (EX:Jewelry box)";
+"Pairing Hub" = "Pairing Hub";
+
+"FORGET THE FLASHLIGHT" = "FORGET THE FLASHLIGHT";
+"SOMEONE WALKED IN THE DOOR" = "SOMEONE WALKED IN THE DOOR";
+"Notify me when a door opens." = "Notify me when a door opens.";
+"WHAT'S TRIGGERING THE ALARM?" = "WHAT'S TRIGGERING THE ALARM?";
+"Set camera to record when alarm is triggered." = "Set camera to record when alarm is triggered.";
+"Turn on a light when something moves." = "Turn on a light when something moves.";
+"Premium required to record subtitle" = "Record, store, download and play back clips with Premium.";
+// Somfy Post Pair Set Favorite Position
+"Somfy Roller Blinds" = "Somfy Roller Blinds";
+"Create a Favorite Position" = "Create a Favorite Position";
+"Somfy Blinds Instructions" = "Move the blind to the desired height, then \npress and hold the \"MY\" button on the \nremote until the blind moves slightly.\nOn the Blinds detail page, tap \"FAV\" to \nmove the blind to the favorite position.\nWhen the blind is moving, tapping \"FAV\"";
+
+// Device Operations
+"arrived at" = "arrived at";
+"left at" = "left at";
+"battery" = "battery";
+"temp" = "temp";
+"motion" = "motion";
+"closed" = "closed";
+"opened" = "opened";
+"bright" = "bright";
+"connect" = "connect";
+"last leak " = "last leak ";
+"last alarm " = "last alarm ";
+"next event " = "next event ";
+"power" = "power";
+"test" = "test";
+"off" = "off";
+"low" = "low";
+"med" = "med";
+"hi" = "hi";
+"currently" = "currently";
+"hold at" = "hold at";
+"Keyfob setting" = "Keyfob setting";
+"heat" = "heat";
+"cool" = "cool";
+"auto" = "auto";
+"ENERGY" = "ENERGY";
+"1080 P" = "1080 P";
+"30 PFS" = "30 PFS";
+"live" = "live";
+"record" = "record";
+"Brightness" = "Brightness";
+"WATERING" = "WATERING";
+"Watering time" ="Watering time";
+"12 hours" = "12 hours";
+"24 hours" = "24 hours";
+"48 hours" = "48 hours";
+"72 hours" = "72 hours";
+"Delay Schedule For"= "Delay Schedule For";
+"NEXT EVENT" = "NEXT EVENT";
+"Battery" = "Battery";
+"Start" = "Start";
+"Delay" = "Delay";
+"Desired" = "Desired";
+"currently" = "currently";
+"CANCEL" = "CANCEL";
+"START" = "START";
+"STOP" = "STOP";
+"RETRY" = "RETRY";
+
+// Schedule
+"Tap Add Event below to create a schedule for this day." = "Tap Add Event below to create\na schedule for this day.";
+"Set It and Forget It" = "Set It and Forget It";
+"Unchecking a device will put the device" = "Unchecking a device will put the device\nin Hold. Checking a device means\nit will follow its schedule.";
+"Doors & Locks schedule subheader text" = "Turn on the schedule by selecting the checkmark.\nUncheck to deactivate the schedule.";
+"Turn on the schedule by selecting the checkmark." = "Turn on the schedule by selecting the checkmark.\nUncheck to deactivate the schedule.";
+"Unchecking a rule will put the device" = "Unchecking a Rule will put the Rule\nin Hold. Checking a Rule means\nit will follow its schedule.";
+"Tap on the device below to manage its schedule." = "Tap on the device below to manage its schedule.";
+"Tap on the Rule below to manage its schedule." = "Tap on the Rule below to manage its schedule.";
+"emptyScheduleSubtitleText Lights & Switches" = "Tap Add Event below to create a\nschedule for this day.\n\nTIP: By setting your lights to\nautomatically turn off on a schedule,\nyou could lower energy usage;\nthus saving money on your monthly\nelectric bills.";
+"Create a Schedule" = "Create a Schedule";
+"NO EVENTS ON SCHEDULE" = "NO EVENTS ON SCHEDULE";
+"mins before" ="mins before";
+"mins after" ="mins after";
+"Update your address text" = "Sunrise/Sunset times are unavailable\nbased on your address. Go to\nSettings > Place to update your home address.";
+"Update Your Address" = "Update Your Address";
+"Before" = "Before";
+"After" = "After";
+
+"on" = "on";
+"off" = "off";
+"open" = "open";
+"close" = "close";
+"time" = "time";
+"position" = "position";
+"Closed" = "Closed";
+"Open" = "Open";
+
+"mon"="mon";
+"tue"="tue";
+"wed"="wed";
+"thu"="thu";
+"fri"="fri";
+"sat"="sat";
+"sun"="sun";
+
+// Rules
+"rules" = "rules";
+"Add a rule"="Add a rule";
+"hrs" = "hrs";
+"mins" = "mins";
+"choose a device" = "choose a device";
+"browse" = "browse";
+"my rules" = "my rules";
+"edit rule name" = "edit rule name";
+"occurs" = "occurs";
+"last tested" = "last tested";
+"Choose a Category" = "Choose a Category";
+
+"All Day" = "All Day";
+"MONDAY" = "MONDAY";
+"TUESDAY" = "TUESDAY";
+"WEDNESDAY" = "WEDNESDAY";
+"THURSDAY" = "THURSDAY";
+"FRIDAY" = "FRIDAY";
+"SATURDAY" = "SATURDAY";
+"SUNDAY" = "SUNDAY";
+
+"Rule Scheduling" = "Rule Scheduling";
+"Choose the time window this rule is active" = "Choose the time window this rule is active";
+"Would you like to set up a schedule for this rule?" = "Would you like to set up a schedule for this rule?";
+"Schedule a Rule" = "Schedule a Rule";
+
+"This rule will be active for a full\n24 hour period, starting at 12 AM." = "This rule will be active for a full\n24 hour period, starting at 12 AM.";
+"This device will not change its state until it is modified manually or by a schedule or rule." = "This device will not change its state until it is modified manually or by a schedule or rule.";
+"Oops! Looks like you need to pair an additional device for this rule to work." = "Oops! Looks like you need to pair an additional device for this rule to work.";
+"\r\n\r\n\r\nTap on the underlined items to edit" ="\r\n\r\n\r\nTap on the underlined items to edit";
+ "\r\n\r\n\r\nOops! Looks like you need to pair an additional device for this rule to work"= "\r\n\r\n\r\nOops! Looks like you need to pair an additional device for this rule to work";
+
+"Rule Scheduling" = "Rule Scheduling";
+"Tap add event to choose the time window this rule will run.\n\nWithout any events, this rule will be active until you manually deactivate it on the My Rules page in the left hand navigation." = "Tap add event to choose the time window this rule will run.\n\nWithout any events, this rule will be active until you manually deactivate it on the My Rules page in the left hand navigation.";
+
+//Setting buttons 
+"Edit" = "Edit";
+"Done" = "Done";
+
+//Billing error
+
+"Please update your card number and try again" = "Please update your card number and try again";
+"Please update the CVV and try again" = "Please update the CVV and try again";
+"Expired Credit Card" = "Expired Credit Card";
+"Please update the expiration date and try again" = "Please update the expiration date and try again";
+"This card is not allowed to complete this transaction. Please try another card" = "This card is not allowed to complete this transaction. Please try another card";
+"Please use a different credit card" = "Please use a different credit card";
+"Please contact your issuing bank for details, or try another card" = "Please contact your issuing bank for details, or try another card";
+"Please call your bank to activate your card and try again" = "Please call your bank to activate your card and try again";
+"Billing address doesn't match address on your account. Please fix your address or contact your bank" = "Billing address doesn't match address on your account. Please fix your address or contact your bank";
+"Please use a different card or contact your bank" = "Please use a different card or contact your bank";
+"Your card was not charged. Please contact support at 1-0" =  "Your card was not charged. Please contact support at 1-0";
+"Generic errors" = "Please try again or contact support at 1-0";
+"Invalid/Declined Credit Card Number" = "Invalid/Declined Credit Card Number";
+"Security Code Doesn't Match" = "Security Code Doesn't Match";
+"Please update your card and try again" = "Please update your card and try again";
+"Invalid/Incorrect Expiration Date" = "Invalid/Incorrect Expiration Date";
+"Invalid Credit Card" = "Invalid Credit Card";
+"Card Type Not Accepted" = "Card Type Not Accepted";
+"Restricted Credit Card" = "Restricted Credit Card";
+"Card Not Activated" = "Card Not Activated";
+"Incorrect Billing Address" = "Incorrect Billing Address";
+"Declined" = "Declined";
+"Transaction Unsuccessful" = "Transaction Unsuccessful";
+"Oops, That's not Right" = "Oops, That's not Right";
+"Declined" = "Declined";
+"Please update your card number and try again." = "Please update your card number and try again.";
+"Transaction Unsuccessful" = "Transaction Unsuccessful";
+"Your card was not charged. Please wait 10 seconds before trying again." = "Your card was not charged. Please wait 10 seconds before trying again.";
+
+// Product information
+"Brand" = "Brand";
+"Lowe's item no" = "Lowe's item no";
+"Model no" = "Model no";
+"Serial no" = "Serial no";
+"Hub id" = "Hub id";
+"certification" = "certification";
+"Works with Arcus" = "Works with Arcus";
+"last contact" = "last contact";
+"space" = "space";
+"Ip address" = "Ip address";
+"wireless" = "wireless";
+"firmware" = "firmware";
+"days" = "days";
+"Mac Address" = "Mac Address";
+
+"Tilt battery" = "Tilt battery";
+
+//Devices
+"Home" = "Home";
+"Away" = "Away";
+"Delay Time" = "Delay Time";
+"Last Test" = "Last Test";
+"OBSTRUCTION" = "OBSTRUCTION";
+"Hot Water Available" = "Hot Water Available";
+"Limited Hot Water" = "Limited Hot Water";
+"No Hot Water Available" = "No Hot Water Available";
+"NOT SUPPORTED" = "NOT SUPPORTED";
+"READY" = "READY";
+"RECHARGING" = "RECHARGING";
+"RECHARGE TIME" = "RECHARGE TIME";
+"DELAY" = "DELAY";
+"Motion" = "Motion";
+"Video Storage" = "Video Storage";
+"No Connection" = "No Connection";
+"Get Support" = "Get Support";
+
+//Errors
+"Generic Error Message" = "Please try again. If this issue persists, please call 1-0";
+
+"Water heater pairing error" = "Check your 12-digit ID and try again. \nIf the issue persists, contact the \nArcus Support Team";
+"Low water level error" = "E01: There is an insufficient amount of water in the tank. Please see water heater user manual for details. Call Lowe's Service Advantage for assistance.";
+"OOPS!" = "OOPS!";
+"Temperature over limit error" = "As a safety precaution, Arcus will not increase the target temperature of the hot water heater higher than the local maximum temperature set on the hot water heater.";
+"Temperature minimum limit error" = "The minimum temperature of the water heater is 60° F, which is often used when on vacation.";
+"Customer support phone" = "1-0";
+"The Hub has timed out" = "The Hub has timed out";
+"What now?" = "What now?";
+"try again" = "try again";
+"contact support" = "contact support";
+"Invalid Hub ID" = "Invalid Hub ID";
+"Ensure your hub ID is correct and try again." = "Ensure your hub ID is correct and try again.";
+"Hub already paired" = "Hub already paired";
+"Only 1 hub can be paired to each place." = "Only 1 hub can be paired to each place.";
+"This hub is already registered." = "This hub is already registered.";
+"START TIME" = "START TIME";
+"Arcus will inform the water heater to start heating" = "Arcus will inform the water heater to start heating 90 minutes prior to the start time, so you'll have hot water at the start time.";
+
+// More
+"Device Name" = "Device Name";
+"ABC-1234" = "ABC-1234";
+"Tap the Climate card on the Dashboard to manage your thermostat schedule." = "Tap the Climate card on the Dashboard to manage your thermostat schedule.";
+"No Humidity Sensors Paired" = "No Humidity Sensors Paired";
+"You don't have a device that can report humidity paired." = "You don't have a device that can report humidity paired.";
+
+// setting
+"Camera Setup" = "Camera Setup";
+"Image Quality" = "Image Quality";
+"Battery Camera Image Quality" = "Live Stream Image Quality";
+"Select Resolution" = "Select Resolution";
+"Resolution explanation" = "Choosing a higher quality will capture a better picture, but will use more storage when saved.";
+"Battery Camera Resolution Explanation" = "Choosing a higher quality will capture a better picture, but will use more internet bandwidth. Recording Image Quality is defaulted to 1080P.";
+"Motion Sensitivity" = "True Detect Motion Sensitivity";
+"Sensitivity Explanation" = "A high motion setting will detect movement further away from the camera but may reduce battery life. Use the low setting for optimized battery performance.";
+"Frame Rate" = "Frame Rate";
+"Frame Rate explanation" = "Frame rate defines how frequently the video picture refreshes, selectable in frames per second (FPS).";
+"Cameras" = "Cameras";
+"Infrared light" = "Infrared light";
+"Turning the infrared light on improves night vision." = "Turning the infrared light on improves night vision.";
+"Rotate camera 180º" = "Rotate camera 180º";
+"If your picture is upside down, then tap the switch to rotate the orientation of the camera 180º. Typically used if the camera is mounted upside down." = "If your picture is upside down, then tap the switch to rotate the orientation of the camera 180º. Typically used if the camera is mounted upside down.";
+"What would you like each button to do?" = "What would you like each button to do?";
+"Test Your Coverage" = "Test Your Coverage";
+"test yout covreage text" = "test yout covreage text";
+
+// settings main
+"Account" = "Account";
+"Edit & Update Your Information" = "Edit & Update Your Information";
+"People" = "People";
+"People & Permissions" = "People & Permissions";
+"Place" = "Place";
+"Edit Your Home Information" = "Edit Your Home Information";
+
+// account settings main
+"Contact Information" = "Contact Information";
+"Security Questions" = "Security Questions";
+"Pin Code & Touch ID" = "Pin Code & Touch ID";
+"Push Notifications" = "Push Notifications";
+"Billing" = "Billing";
+"Marketing" = "Marketing";
+"Linked Accounts" = "Linked Accounts";
+"Legal" = "Legal";
+"Remove Account" = "Remove Account";
+"Notification" = "Notification";
+
+// account settings - contact information
+"DONE" = "DONE";
+"EDIT" = "EDIT";
+
+// account settings - change password
+"Save" = "Save";
+
+// account settings
+"Billing" = "Billing";
+"ARE YOU SURE" = "ARE YOU SURE";
+"You will need no longer be " = "You will need no longer be ";
+"YES, REMOVE ACCOUNT" = "YES, REMOVE ACCOUNT";
+"NO" = "NO";
+"Head of Household" = "Head of Household";
+"Removing this account means this person will no longer have access to '%@'" ="Removing this account means this person will no longer have access to '%@'";
+
+// account settings - PIN options view
+"Pin Code" = "Pin Code";
+"Use your PIN code to open the app without remembering your username & password." = "Use your PIN code to open the app without remembering your username & password.";
+"Touch ID" = "Touch ID";
+"Face ID" = "Face ID";
+"Use Touch ID to open the app without remembering your username & password.  In order to use Touch ID, you will need your Arcus PIN.  Be sure to setup Touch ID" = "Use Touch ID to open the app without remembering your username & password.  In order to use Touch ID, you will need your Arcus PIN.  Be sure to setup Touch ID";
+
+// account settings - set PIN view
+"Enter your PIN code by \nentering a new 4-digit number." = "Enter your PIN code by \nentering a new 4-digit number.";
+"Verify your new PIN by \nentering the 4-digit number again." = "Verify your new PIN by \nentering the 4-digit number again.";
+
+// account settings - legal
+"Terms of Service" = "Terms of Service";
+"Terms & Conditions" = "Terms & Conditions";
+"Privacy" = "Privacy";
+"Privacy Statement" = "Privacy Statement";
+
+// place settings
+"Edit Address" = "Edit Address";
+"Time Zone" = "Time Zone";
+"Utilities & Energy Use" = "Utilities & Energy Use";
+"Remove Place" = "Remove Place";
+"Enter Name" = "Enter Name";
+"Renters and homeowners may be\neligible to receive discounts from\ntheir insurance provider by sharing\nlimited information and data." = "Renters and homeowners may be\neligible to receive discounts from\ntheir insurance provider by sharing\nlimited information and data.";
+"By opting in, I agree to share Arcus information\n with the insurance provider selected below.\nExamples of such information may include\nsystem events such as: Device on/off status,\nalerts & notifications, temperature readings\n and open/close statuses of door & window\n sensors. Arcus will never share live camera\n feeds, recordings or snapshots." = "By opting in, I agree to share Arcus information\n with the insurance provider selected below.\nExamples of such information may include\nsystem events such as: Device on/off status,\nalerts & notifications, temperature readings\n and open/close statuses of door & window\n sensors. Arcus will never share live camera\n feeds, recordings or snapshots.";
+"Select a time zone" ="Select a time zone";
+
+
+// Time zone
+"Time Zone" =  "Time Zone";
+"Choose Your Time Zone" = "Choose Your Time Zone";
+"This information will improve accuracy across your Arcus system." = "This information will improve accuracy across your Arcus system.";
+
+// Security Alarm
+"Security Alarm" = "Security Alarm";
+"Alarm Disarmed" = "Alarm Disarmed";
+"Alarm Armed" = "Alarm Armed";
+"Alarm Arming" = "Alarm Arming";
+"On Devices" = "On Devices";
+"Partial Devices" = "Partial Devices";
+"Partial Only Devices" = "Partial Only Devices";
+"Alarm History" = "Alarm History";
+"Alarm notification list" = "Alarm notification list";
+"Unsecure device message" = "A device is open. You may arm anyway, but this device wont participant in monitoring. View Security Alarm Devices to see which device is opened";
+
+"One or More Devices Triggered" = "One or More Devices Triggered";
+"Unsecure devices message" = "At least one device is open. You may arm anyway, but these devices won't participate in monitoring. View Security Alarm Devices for more details.";
+"A Door Or Window Is Open" = "A Door Or Window Is Open";
+
+
+// Safety Alarm
+"Safety Alarm" = "Safety Alarm";
+"Safety Alarm Devices" = "Safety Alarm Devices";
+"SMOKE" = "SMOKE";
+"WATER LEAK" = "WATER LEAK";
+"CO" = "CO";
+"OFFLINE" = "OFFLINE";
+"NO" = "NO";
+"Learn How to Alert Others" = "Learn How to Alert Others";
+"Please verbally inform all parties to add 1-0 to their phone's contact list so they know Arcus is calling." = "Please verbally inform all parties to add 1-0 to their phone's contact list so they know Arcus is calling.";
+"Please add 1-0 to your phone's contact list" = "Please add 1-0 to your phone's contact list";
+"If a security alarm is triggered, you will be notified via push notification and phone call Add up to 6 people to this list with Premium. Login to your account at to upgrade." = "If a security alarm is triggered, you will be notified via push notification and phone call Add up to 6 people to this list with Premium. Login to your account at to upgrade.";
+"Owner" = "Owner";
+"Cleared CO Safety Alarm String" = "The Arcus Safety Alarm and notifications \nthey have been cancelled; however, for your \nsafety, the device will continue to sound \nuntil CO is no longer detected.";
+"Cleared Smoke Safety Alarm String" = "The Arcus Safety Alarm and notifications \nthey have been cancelled; however, for your \nsafety, the device will continue to sound \nuntil Smoke is no longer detected.";
+
+// Add A Person
+"Perfect for your children who don\'t have smart phones, or for anyone you want to let in your home without being able to view your Arcus system\n\nBy default, this PIN Code will control the alarm, but you must choose what locks this PIN Code will unlock. (Door lock access is granted on the Doors &; Locks page under Access." = "Perfect for your children who don\'t have smart phones, or for anyone you want to let in your home without being able to view your Arcus system\n\nBy default, this PIN Code will control the alarm, but you must choose what locks this PIN Code will unlock. (Door lock access is granted on the Doors &; Locks page under Access.";
+
+"Digital access is commonly assigned to a spouse/partner or roommate. In the following steps, you will choose whether this person can only view, or be able to control different functions of Arcus." = "Digital access is commonly assigned to a spouse/partner or roommate. In the following steps, you will choose whether this person can only view, or be able to control different functions of Arcus.";
+
+"This person will be able to view your \nDashboard, Scenes, Rules, Devices, \nSchedules, People, History, and they have \nlimited access to your settings. They \nwill never see your billing information. \n\nIdeal for anyone living at this place." = "This person will be able to view your \nDashboard, Scenes, Rules, Devices, \nSchedules, People, History, and they have \nlimited access to your settings. They \nwill never see your billing information. \n\nIdeal for anyone living at this place.";
+
+"This person will receive a unique PIN code that will control alarms and locks you choose. This person will not have digital access to your place. \n\nIdeal for family, close friends, children, and service professionals." = "This person will receive a unique PIN code that will control alarms and locks you choose. This person will not have digital access to your place. \n\nIdeal for family, close friends, children, and service professionals.";
+
+
+"This person will only appear in your Alarm Notification List. They will not have digital access to your place, or have access to any functions within Arcus.\n\nIdeal for distant friends/relatives and neighbors." = "This person will only appear in your Alarm Notification List. They will not have digital access to your place, or have access to any functions within Arcus.\n\nIdeal for distant friends/relatives and neighbors.";
+
+
+// Dashboard Cards
+
+"disable security" = "Help protect what matters most with Arcus Security";
+"disable lightsSwitches" = "See what lights and outlet are in use, and turn them on/off from anywhere.";
+
+"disable climate" = "Control your thermostat, ceiling fans, vents and more to create a comfortable and energy efficient home.";
+"disable doorsLocks" = "Was a door left open, the back door unlocked or the garage door not closed? Arcus let's you lock up with the tap of a button.";
+"disable safety" = "Help protect what matters most. Receive alerts for water leaks or when a smoke/CO alarm triggers.";
+"disable camera" = "Keep an eye on things by live streaming, recording on demand or viewing previously recorded footage.";
+"View the most recent activity of your loved one's home for added piece of mind." = "View the most recent activity of your loved one's home for added piece of mind.";
+"disable homeFamily" = "Are the kids back from school? Know who's home at a glance with Home & Family.";
+"Favorites" = "Favorites";
+"Cards" = "Cards";
+"Background Photo" = "Background Photo";
+ "Reorder/hide Devices & Scenes" ="Reorder/hide Devices & Scenes";
+"Reorder/hide Cards" = "Reorder/hide Cards";
+"Edit Photo" = "Edit Photo";
+"How Water Limited" = "How Water Limited";
+"How Water Available" = "How Water Available";
+
+// Coming soon
+"This service is coming soon.\nManage your Lights & Switches under\nDevices in the left-hand navigation." = "This service is coming soon.\nManage your Lights & Switches under Devices in the left-hand navigation.";
+"This service is coming soon.\nManage your Fobs & Pendants under\nDevices in the left-hand navigation." = "This service is coming soon.\nManage your Fobs & Pendants under Devices in the left-hand navigation.";
+"coming soon windowsBlinds" = "This service is coming soon.\nManage your window contact sensors under Devices in the left-hand navigation.";
+"disabled lawnGarden" = "Remotely monitor and control\nyour irrigation system.";
+"disable care" = "View the most recent activity of your\nloved one's home for added piece of mind.";
+"coming soon care" = "This service is coming soon.\nManage your Care Products under\nDevices in the left-hand navigation.";
+"disable water" = "Take control of your hot water heater, water softener, and main shut off valve with Arcus.";
+"This service is coming soon." = "This service is coming soon.";
+
+
+// Key Fob/Pendant/Button Rules
+"Alarm On" = "Alarm On";
+"Alarm Off" = "Alarm Off";
+"Alarm Partial" = "Alarm Partial";
+"Play Chime" = "Play Chime";
+"Activate a Rule" = "Activate a Rule";
+
+"Security Alarm On" = "Set Security Alarm to On";
+"Security Alarm Off" = "Set Security Alarm to Off";
+"Security Alarm Partial" = "Set Security Alarm to Partial";
+
+"Activate a rule Premium" = "Activate a Rule (PREMIUM)";
+"Trigger Panic Alarm" = "Trigger Panic Alarm";
+"Who is going to use this Key Fob?" = "Who is going to use this\nKey Fob?";
+"Key fob assignement text" = "Don't see the Person you would like to\nassign it to? Tap Next and you can\n assign this device to them after you\ninvite that Person to Arcus";
+"Upgrade by logging in" = "Upgrade by logging in to your\naccoun";
+"Premium required" = "PREMIUM REQUIRED";
+"Select an action" = "Select an action";
+"Use this button to trigger a rule" = "Use this button to trigger a rule. \nE.g., press this button to return a light on.";
+
+// Water Heater
+"STANDARD" = "STANDARD";
+"VACATION" = "VACATION";
+"ENERGY_SMART" = "ENERGY SMART ®";
+"Hold at" = "Hold at";
+"Testing" = "Testing";
+"The LCD screen on your water heater" = "The LCD screen on your water heater will\ndisplay the maximum water\ntemperature set point. \n\nFor safety reasons, Arcus cannot increase\nthe temperature beyond the\nmaximum set point on the device";
+"Reminder" = "\n\n\nReminder";
+"How hot do you want your water?" = "How hot do you want your water?";
+"The recommended temperature is" = "The recommended temperature is 120°F.\nA lower temperature means more energy savings,\nbut less hot water.";
+"Energy Smart mode is provided by your water heater manufacturer and it saves energy by monitoring usage and adjusting the set point to match water draw usage." = "Energy Smart mode is provided by your water heater manufacturer and it saves energy by monitoring usage and adjusting the set point to match water draw usage.";
+"Water Heater Pairing text" = "Tap the Water card on the Dashboard\nto control your water heater";
+"N&G Pairing text" = "Tap the Lawn & Garden card on the \n Dashboard to manage your \n irrigation timer.";
+"The People listed below have access to this door via their PIN Code." = "The People listed below have access to this door via their PIN Code.";
+"AUTHORIZE" = "AUTHORIZE";
+"DEAUTHORIZE" = "DEAUTHORIZE";
+"Disabled" = "Disabled";
+"Manage the People who can lock and unlock your doors using PIN codes." = "Manage the People who can lock and unlock your doors using PIN codes.";
+"Temperature" = "Temperature";
+"Would you like to edit this event for this day only, or for all days where it occurs?" = "Would you like to edit this event for this day only, or for all days where it occurs?";
+"THIS DAY ONLY" = "THIS DAY ONLY";
+"ALL DAYS" = "ALL DAYS";
+"Repeat" = "Repeat";
+"Repeat On" = "Repeat On";
+"Heat" = "Heat";
+"Cool" = "Cool";
+"Off" = "Off";
+"Auto" = "Auto";
+"Remove" = "Remove";
+"Run Time" = "Run Time";
+"The thermostat is off." = "The thermostat is off.";
+"Choose A Mode" = "Choose A Mode";
+"Door lock information" = "Door lock information";
+"Information detail.." = "Information detail..";
+"Dashboard humidity is based off of this device." = "Dashboard humidity is based off of this device.";
+"Dashboard temperature is based off of this device." = "Dashboard temperature is based off of this device.";
+"Control Your Climate" = "Control Your Climate";
+"ON" = "ON";
+"OFF" = "OFF";
+"HIGH" = "HIGH";
+"LOW" = "LOW";
+"Offline" = "Offline";
+"Total Devices" = "Total Devices";
+"Firmware Updating..." = "Firmware Updating...";
+"Show All" = "Show All";
+"Hub is Offline" = "Hub is Offline";
+"Background Photo" = "Background Photo";
+"Loading items" = "Loading items";
+"Item not found" = "Item not found";
+"Choose a device" = "Choose a device";
+"Choose a day" = "Choose a day";
+"Hide" = "Hide";
+"Last Recording" = "Last Recording";
+"None" = "None";
+"OBSTRUCTION" = "OBSTRUCTION";
+"Arming " = "Arming ";
+"Set at" = "Set at";
+"Security Alarm" = "Security Alarm";
+"Triggered by " = "Triggered by ";
+"water leaks" = "water leaks";
+"No irrigation events are scheduled." = "No irrigation events are scheduled.";
+"No smoke, CO or water leaks detected." = "No smoke, CO or water leaks detected.";
+"All blinds opened and windows closed." = "All blinds opened and windows closed.";
+"All doors locked and closed." = "All doors locked and closed.";
+"No climate activity to show." = "No climate activity to show.";
+"No lights or switches are in use." = "No lights or switches are in use.";
+"Learn More" = "Learn More";
+"Login Error" = "Login Error";
+"Enter Code" = "Enter Code";
+"Login" = "Login";
+"Cannot be empty" = "Cannot be empty";
+"To continue, please restart the app" = "To continue, please restart the app";
+"Keep the app open during this update." = "Keep the app open during this update.";
+"Update Now" = "Update Now";
+"Device Firmware Update Required" = "Device Firmware Update Required";
+"Downloading" = "Downloading";
+"Your device was successfully update." = "Your device was successfully update.";
+"Update Complete" = "Update Complete";
+"Water flow" = "Water flow";
+"Time" = "Time";
+"Recharge Time" = "Recharge Time";
+"Salt level" = "Salt level";
+"Check your water softener detail page to see how much time is left remaining until the recharge is complete." = "Check your water softener detail page to see how much time is left remaining until the recharge is complete.";
+"Already Recharging" = "Already Recharging";
+"While your water softener is recharging you will still have water in your home, but it may be hard water unit has finished regenerating. The recharge will take approximately two hours." = "While your water softener is recharging you will still have water in your home, but it may be hard water unit has finished regenerating. The recharge will take approximately two hours.";
+"water softener sure text" = "While your water softener is recharging you will still have water in your home, but it may be hard water until the recharge has finished regenerating. The recharge will take approximately two hours.";
+"Are your sure" = "Are your sure";
+"Recommendations." = "Recommendations.";
+"Water Flow" = "Water Flow";
+"water hardness level" = "water hardness level";
+"Edit Your Water Hardness." = "Edit Your Water Hardness.";
+"Manually Recharge Your Water Softener." = "Manually Recharge Your Water Softener.";
+"Test Your Coverage" = "Test Your Coverage";
+"test your coverage text" = "While the pendant can communicate with the hub from up to 130ft. away, results may vary based on the layout of your home. Press the button at the furthermost areas of the home. \n\n The device is out of range when you do not receive a notification for each button press. Consider adding Smart Plugs, which serve as range extenders, to increase coverage.";
+"Camera Configuration" = "Camera Configuration";
+"Turning the infrared light on improves night vision." = "Turning the infrared light on improves night vision.";
+"Infrared light" = "Infrared light";
+"SECURITY SETTINGS" = "SECURITY SETTINGS";
+"Loading..." = "Loading...";
+"ALARM NOTIFICATION LIST" = "ALARM NOTIFICATION LIST";
+"Learn How to Alert Others" = "Learn How to Alert Others";
+"ALARM HISTORY" = "ALARM HISTORY";
+"SAFETY ALARM DEVICES" = "SAFETY ALARM DEVICES";
+"CLEARING" = "CLEARING";
+"DETECTED" = "DETECTED";
+"Your water hardness level is defaulted to %d gpg (grains per gallon). This should vary by location and water source." = "Your water hardness level is defaulted to %d gpg (grains per gallon). This should vary by location and water source.";
+
+// billing
+"Payment Info" = "Payment Info";
+"Edit & update your credit card information" = "Edit & update your credit card information";
+"Service Plan" = "Service Plan";
+"Current Plan: Premium" = "Current Plan: Premium";
+"Current Plan: Basic" = "Current Plan: Basic";
+"Update your service plan to include Backup Cellular" = "Update your service plan to include Backup\nCellular";
+
+"A triggered Security Alarm will notify the people below." = "A triggered Security Alarm will notify the people below in 90-second intervals, in the order they are listed.";
+"A triggered Safety Alarm will simultaneously notify the people below." = "A triggered Safety Alarm will simultaneously notify the people below.";
+"Please verbally inform all parties to add 1-0 to their phone's contact list so they know Arcus is calling." = "Please verbally inform all parties to add 1-0 to their phone's contact list so they know Arcus is calling.";
+"Please add 1-0 to your phone's contact list" = "Please add 1-0 to your phone's contact list";
+"Time Needed to Disarm After Entering Home" = "Time Needed to Disarm After Entering Home";
+"ON - EXIT DELAY" = "ON - EXIT DELAY";
+"Grace Period" = "Grace Period";
+"Alarm Requirement" = "Alarm Requirement";
+"Number of Devices That Need to be Triggered Before the Alarm Goes Off" = "Number of Devices That Need to be Triggered Before the Alarm Goes Off";
+"Choose number of devices" = "Choose number of devices";
+"Configure Alarm Sounds" = "Configure Alarm Sounds";
+"Silent alarm" = "Silent alarm";
+
+"Water Shut Off Valve" = "Water Shut Off Valve";
+"Turn water off when a leak is detected." = "Turn water off when a leak is detected.";
+"No item found." = "No item found.";
+"Alarm may still be sounding" = "Alarm may still be sounding";
+"The Arcus Safety Alarm and notifications cancelled text" = "The Arcus Safety Alarm and notifications have been cancelled; however, for your safety, the device will continue to sound until CO is no longer detected.";
+"Remember to tell %@ the\n PIN code that you've created." = "Remember to tell %@ the\n PIN code that you've created.";
+
+"Spouse/Partner" = "Spouse/Partner";
+"Parent" = "Parent";
+"Child" = "Child";
+"Friend" = "Friend";
+"Neighbor" = "Neighbor";
+"Guest" = "Guest";
+"Roommate" = "Roommate";
+"Other" = "Other";
+"People without an email address can receive \na unique PIN code for locks and keypads." = "People without an email address can receive \na unique PIN code for locks and keypads.";
+"This person will not have access \nto view your home from the Arcus App." = "This person will not have access \nto view your home from the Arcus App.";
+"How do you know this person?" = "How do you know this person?";
+"Accept Terms" = "Accept Terms";
+"Primary residence" = "Primary residence";
+"Address Line 1" = "Address Line 1";
+"Address Line 2" = "Address Line 2";
+"City" = "City";
+"Zip" = "Zip";
+"Enter Name" = "Enter Name";
+
+"Account created!\nYou're one step closer\nto a smarter home." = "Account created!\nYou're one step closer\nto a smarter home.";
+"Arcus will help you\ndo awesome things like:" = "Arcus will help you\ndo awesome things like:";
+"Arm your alarm" = "Arm your alarm";
+"Control your thermostat" = "Control your thermostat";
+"Turn on your lights" = "Turn on your lights";
+
+
+//Doors & locks
+"Access" = "Access";
+"Know who has access to your home." = "Know who has access to your home.";
+"Manage the People who can lock and unlock your doors using PIN codes." = "Manage the People who can lock and unlock your doors using PIN codes.";
+"The People listed below have access to this door via their PIN Code." ="The People listed below have access to this door via their PIN Code.";
+"Add people by tapping the + sign on the dashboard, then tap People." ="Add people by tapping the + sign on the dashboard, then tap People.";
+"Disabled" = "Disabled";
+ "Don't see the person you're looking for? Go to Settings > Places & People and give a PIN code to the person you want to have access, then return to this page."= "Don't see the person you're looking for? Go to Settings > Places & People and give a PIN code to the person you want to have access, then return to this page.";
+"When the following devices are opened, do you want the Hub and Keypad to chime?" ="When the following devices are opened, do you want the Hub and Keypad to chime?";
+"Automate Your Garage Door" = "Automate Your Garage Door";
+"Manage your garage door schedule with ease using garage doors that \"Work with Arcus\"." = "Manage your garage door schedule with ease using garage doors that \"Work with Arcus\".";
+
+"lock is pending to edit mode" = "It may take a few minutes for the lock to update the PIN(s). This list will be updated when we get confirmation from the lock that the PIN(s) have been added or removed.";
+"lock is pending to done mode" = "The lock is currently updating PIN(s) which may take few minutes. You can edit who has access when we get confirmation from the lock that the PIN(s) have finished updating.";
+
+//climate
+"Schedule On/Off" = "Schedule On/Off";
+"Turn the schedule OFF if you want to manually set a constant temperature" = "Turn the schedule OFF if you want to manually set a constant temperature";
+"Temperature" = "Temperature";
+"Dashboard temperature is based off of this device." = "Dashboard temperature is based off of this device.";
+"Humidity" ="Humidity";
+"Dashboard humidity is based off of this device."= "Dashboard humidity is based off of this device.";
+"Door lock information" ="Door lock information";
+"Control Your Climate" ="Control Your Climate";
+"Manage your thermostats, ceiling fans and vents" ="Manage your thermostats, ceiling fans and\nvents from the comfort of your couch....\nor virtually anywhere.";
+
+//Device Unpairing
+"REMOVE DEVICE" = "REMOVE DEVICE";
+"Unpairing Your Device" = "Unpairing Your Device";
+"The hub will beep when the device is\n successfully removed." = "The hub will beep when the device is\n successfully removed.";
+"Cancel" = "Cancel";
+"Force Remove was Successful" = "Force Remove was Successful";
+"Your device has been successfully removed\n from the hub. To re-pair, reset the device\n itself and then tap + on the dashboard" ="Your device has been successfully removed\n from the hub. To re-pair, reset the device\n itself and then tap + on the dashboard";
+"Unpairing was Successful" = "Unpairing was Successful";
+"Your device has been successfully unpaired.\n To re-pair, tap + on the dashboard." = "Your device has been successfully unpaired.\n To re-pair, tap + on the dashboard.";
+"Unpairing was Unsuccessful"= "Unpairing was Unsuccessful";
+"Force Remove will delete the device from the\n hub. However, in order to re-connect this\n device, you will need to do a manual reset\n of the device itself before re-pairing." = "Force Remove will delete the device from the\n hub. However, in order to re-connect this\n device, you will need to do a manual reset\n of the device itself before re-pairing.";
+"Retry Unpairing" ="Retry Unpairing";
+"Force Remove" ="Force Remove";
+"The Device is Offline" ="The Device is Offline";
+"The device is offline and cannot communicate\n with the hub. Force Remove will delete the\n device from the hub. However, in order to re-connect this device, you will need to do\n a manual reset of the device itself before\n re-pairing." = "The device is offline and cannot communicate\n with the hub. Force Remove will delete the\n device from the hub. However, in order to re-connect this device, you will need to do\n a manual reset of the device itself before\n re-pairing.";
+"1-0" = "1-0";
+"Retry Force Removal" ="Retry Force Removal";
+"Searching" ="Searching";
+"Remove Zwave device message1" = "First of all, do not use other Arcus devices at this time to avoid those devices from being removed. It is best if the device\n is within 10 feet of the hub.";
+"Remove Zwave device message2" = "\n\nThe hub will beep when the device is successfully removed.";
+
+// Scene
+"Actions" = "Actions";
+"No Actions selected" = "No Actions selected";
+"No Actions selected in SettingSceneViewController" = "Scene configuration requires at\nleast one Action.";
+
+"learn more night in SettingSceneViewController" = "This scene is typically used to set the Security Alarm to partial, close the garage door, turn off all lights and lock all doors.";
+"learn more away in SettingSceneViewController" = "This scene is typically used to set the Security Alarm to ON, close the garage door, turn off all lights and lock all doors.";
+"learn more vacation in SettingSceneViewController" = "This scene is typically used to set the Security Alarm to ON, close the water shut-off valve, lower the water heater, teamperature and lock all doors.";
+"learn more home in SettingSceneViewController" = "This scene is typically used to disarm the Security Alarm, turn on the foyer light and unlock the front door.";
+"learn more morning in SettingSceneViewController" = "This scene is typically used to disarm the Security Alarm, adjust the thermostat, turn lights on at 30% brightness and turn off the night lights.";
+"learn more custom in SettingSceneViewController" = "Be creative. Create your own Scene that works for your home.";
+
+"Recommended For You" = "Recommended For You";
+"More Devices Needed" = "More Devices Needed";
+"Choose Devices" = "Choose Devices";
+
+"What should the Security Alarm do when this Scene runs?" = "What should the Security Alarm\ndo when this Scene runs?";
+"NOT PARTICIPATE" = "NOT PARTICIPATE";
+"This Scene will not change the state of the Security Alarm when it runs." = "This Scene will not change the state of the Security Alarm when it runs.";
+"Which lights and switches do you want to turn on when this Scene runs?" = "Which lights and switches\ndo you want to turn on\n when this Scene runs?";
+"Which lights and switches do you want to turn off when this Scene runs?" = "Which lights and switches\ndo you want to turn off\n when this Scene runs?";
+"What will the thermostat(s)\ndo when this Scene runs?" = "What will the thermostat(s)\ndo when this Scene runs?";
+"Which doors do you want to lock?" = "Which doors do you want to lock?";
+"Which doors do you want to unlock?" = "Which doors do you want to unlock?";
+"Which garage doors do you want to open?" = "Which garage doors do you want to open?";
+"Which garage doors do you want to close?" = "Which garage doors do you want to close?";
+"Which vents do you want to open?" = "Which vents do you want to open?";
+"Which vents do you want to close?" = "Which vents do you want to close?";
+"Which fans do you want to turn on?" = "Which fans do you want to turn on?";
+"Which fans do you want to turn off?" = "Which fans do you want to turn off?";
+"What should the water heater do when this Scene runs?" = "What should the water heater do\n when this Scene runs?";
+"Which water shut-off valve do you want to open when this Scene runs?" = "Which water shut-off valve do you\nwant to open when this Scene runs?";
+"Which water shut-off valve do you want to close when this Scene runs?" = "Which water shut-off valve do you want to close when this Scene runs?";
+"Which blinds do you want to open?" = "Which blinds do you want to open?";
+"Which blinds do you want to close?" = "Which blinds do you want to close?";
+
+"Choose the target cooling setpoint" = "Choose the target cooling setpoint";
+"Choose the target heating setpoint" = "Choose the target heating setpoint";
+
+"HEAT TO" = "HEAT TO";
+"COOL TO" = "COOL TO";
+
+"Experience one-touch automation for when arriving home, heading out, going to sleep and more.\n\n" = "Experience one-touch automation for when arriving home, heading out, going to sleep and more.\n\n";
+"Going to work? Adjust the thermostat, lock up, close the garage door, set the alarm and turn off the lights with a single tap.\n" = "Going to work? Adjust the thermostat, lock up, close the garage door, set the alarm and turn off the lights with a single tap.\n";
+
+// Favorites
+"Please subscribe to Arcus Premium Service to see favorites." = "Please subscribe to Arcus Premium Service to see favorites.";
+"Choose your favorite devices and scenes" = "Choose your favorite devices and scenes under \"Device Details\" and \"Scenes\" in the left navigation.";
+"Customize your Dashboard and reorder your cards" = "Customize your Dashboard and\nreorder your cards";
+"EDIT NAME" = "EDIT NAME";
+"Add to Favorites" = "Add to Favorites";
+"Notify me when this Scene is activated" = "Notify me when this Scene is activated";
+"Choose what this Scene does" = "Choose what this Scene does";
+"Set this Scene on a specific day or time" = "Set this Scene on a specific day or time";
+
+// Santa Tracker
+"Prove that Santa Visited Your Home" = "Prove that Santa Visited Your Home";
+"Configured and ready for Santa!" = "Configured and ready for Santa!";
+"Santa sighting confirmed!" = "Santa sighting confirmed!";
+"Please go into the Santa Tracker and save your 2016 Santa photo!" = "Please go into the Santa Tracker and save your 2016 Santa photo!";
+"Get the kids and let's prove Santa will stop by on Christmas morning." = "Get the kids and let's prove Santa will stop by on Christmas morning.";
+"This will be more fun with the entire family" = "This will be more fun with the entire family";
+"Santa tracker uses virtual \"Santa Sensors\" to prove Santa came to your home. Santa Sensors are not sold at Lowe's. " = "Santa tracker uses virtual \"Santa Sensors\" to prove Santa came to your home. Santa Sensors are not sold at Lowe's. ";
+"Let's Get Started" = "Let's Get Started";
+
+"Where do the reindeer normally land?" = "Where do the reindeer normally land?";
+"ROOF" = "ROOF";
+"LAWN" = "LAWN";
+"BACK DECK/PATIO" = "BACK DECK/PATIO";
+"NEARBY PARK" = "NEARBY PARK";
+
+"Contact Sensor" = "Contact Sensor";
+"Chimney" = "Chimney";
+"Santa Sensor" = "Santa Sensor";
+"How does Santa normally enter and exit your home" = "How does Santa normally enter and exit your home";
+"While Santa is inside, what motion sensors will he likely move through" = "While Santa is inside, what motion sensors will he likely move through";
+"Check back on Christmas Day to see if you snapped a photo of Santa!" = "Check back on Christmas Day to see if you snapped a photo of Santa!";
+
+"REINDEER" = "REINDEER";
+"Where do the reindeer land?" = "Where do the reindeer land?";
+"ENTER/EXIT" = "ENTER/EXIT";
+"How does Santa enter & exit?" = "How does Santa enter & exit?";
+"MOTION SENSORS" = "MOTION SENSORS";
+"What sensors will Santa trip?" = "What sensors will Santa trip?";
+"PHOTO" = "PHOTO";
+"Edit your Photo" = "Edit your Photo";
+"You need to pair an additional device in order to choose this Action. " = "You need to pair an additional device in order to choose this Action. ";
+
+"Movement detected" = "Movement detected";
+
+
+// light & switch
+"All lights & switches are currently off." = "All lights & switches are currently off.";
+
+// Pet door
+"AUTO" = "AUTO";
+"LOCKED" = "LOCKED";
+"UNLOCKED" = "UNLOCKED";
+"INSIDE" = "INSIDE";
+"OUTSIDE" = "OUTSIDE";
+"Pet Door" = "Pet Door";
+"Pet Door Pairing text" = "Tap the Doors & Locks card on the\n Dashboard to manage \n your pet door.";
+"Name your pet key" = "Name your device and\n add a photo of your pet if you like.";
+"SMART KEY" = "SMART KEY";
+"Pair Smart Key" = "Press and hold the LEARN button on the\nPet Door until the green light begins to\nflash, then release the button";
+"Pair Smart Key second" = "Hold the SmartKey directly below the\ngreen light until the light stops flashing.";
+"Control Your Pet Door" = "Control Your Pet Door";
+
+// Honeywell Total Connect
+"Oops" = "Oops";
+"Scheduling Unavailable" = "Scheduling Unavailable";
+"The Honeywell Wi-Fi Enabled Thermostat does\nnot allow scheduling from the Arcus app." = "The Honeywell Wi-Fi Enabled Thermostat does\nnot allow scheduling from the Arcus app.";
+"Honeywell login succeeded" = "Your Arcus account has been linked\nwith your Honeywell account. We're\nwaiting on Honeywell to send the\ndevice information over";
+"Honeywell login failed" = "There was an error linking your\nHoneywell account to Arcus. Please try\nagain. If the error persists, please\ncall Honeywell at 1-0";
+"You can now Control these" = "You can now Control these\ndevices in Arcus.";
+"Name your devices and add a photo" = "Name your devices and add\na photo if you like.";
+"Honeywell thermostat pairing text" = "Tap the Climate card on the\nDashboard to manage\nyour thermostat.";
+"Auto Mode" = "Auto Mode";
+"How to use Auto mode" = "To use Auto mode on your thermostat,\nHoneywell requires you to first enable the\nAuto mode setting on the device.\n\nCheck the Honeywell owner's manual for\ndetails.";
+"You can now control this device in Arcus" = "You can now control this device in Arcus";
+"You can now control these devices in Arcus" = "You can now control these devices in Arcus";
+"Searching for Devices" = "Searching for Devices";
+"Devices Found" = "Devices Found";
+"No Devices Found" = "No Devices Found";
+"Make sure that you're the primary account owner" = "Make sure that you're the primary account owner and that you've granted Arcus\naccess to control the thermostat.";
+"Honeywell Credentials" = "Honeywell Credentials";
+"Honeywell Credentials Removed" = "Honeywell Credentials Removed";
+"go to honeywell site" = "You're about to go to the Honeywell site. \nTap Next to Sign in and follow the steps\nto confirm your Honeywell information.";
+"Your login information was not updated." = "Your login information was not updated.\nCall your device manufacturer for support\nand assistance.";
+"Honeywell Credential Revoked" = "Honeywell Credential Revoked";
+"Honeywell Credential Revoked First" = "Access to control Honeywell devices with Arcus has been revoked from within your Honeywell account. Re-pair the device to resume normal use.";
+"Honeywell Credential Revoked Second" = "On the dashboard, tap +, then Device, then browse or search for the device and follow the pairing instructions.";
+"I'm Done" = "I'm Done";
+
+// Water service
+"You need to add at least 1 event to the schedule" = "You'll need to add at least 1 event to the schedule\nbefore you can turn on the schedule.";
+
+
+//Care
+"Add Care Behaviors" = "Add Care Behaviors";
+"%d of %d Active" = "%d of %d Active";
+"NO CARE BEHAVIORS ADDED" = "NO CARE BEHAVIORS ADDED";
+"ACTIVE BEHAVIORS" = "ACTIVE BEHAVIORS";
+"Behavior List Add Behaviors" = "On the dashboard, tap the + sign, then Care Behaviors to get started.";
+"Behavior List Turn On Behaviors" = "Turn on the behavior by selecting the checkmark. Uncheck to deactivate the behavior.";
+"Monitor" = "Monitor";
+"Stop Monitoring" = "Stop Monitoring";
+"Create Your Schedule" = "Create Your Schedule";
+"Tap 'Add Event' to choose the time window this behavior will be active." = "Tap 'Add Event' to choose the time window this behavior will be active.";
+"Behavior Name" = "Behavior Name";
+"EDIT BEHAVIOR NAME" = "EDIT BEHAVIOR NAME";"Behavior List Turn On Behaviors" = "Turn on the behavior by selecting the checkmark. Uncheck to deactivate the behavior.";
+"Care Learn More text" = "Designed primarily for caregivers and family members to encourage independent living, the Care service will trigger an alarm when help is needed or when daily routines change unexpectedly.";
+"Care Learn More Premium text" = "Premium is required to access the Care service.\nUpgrade to Premium by logging into";
+"Name already in use" = "Name already in use";
+"Create a unique name for this behavior" = "Create a unique name for this behavior";
+"Care Learn More Premium text" = "Premium is required to access the Care service.\nUpgrade to Premium by logging into ";
+"Care premium required subtitle" = "Care helps you monitor your loved ones' daily routines.";
+"Upgrade premium required" = "Upgrade";
+"No activity detected" = "No activity detected";
+"No activity detected description" = "Trigger an alarm if no movement occurs at times when you normally expect movement.";
+"Curfew" = "Curfew";
+"Curfew description" = "Trigger a care alarm when a loved one is not home by a certain time.";
+"Care Behaviors" = "Care Behaviors";
+"Care Silent Alarm" = "Silent Alarm";
+"Care More Text" = "Turn on the Silent Alarm to mute the\nsiren when a Care Alarm is triggered.\nArcus will still call and send push\nnotifications based on the Alarm\nNotification List.";"Care Behaviors" = "Care Behaviors";
+"Care Add Presence Subheader" = "Arcus Senior Care Pendant or Smart Fobs required.";
+"Behavior additional devices required" = "Oops! Looks like you need to pair an additional device for this behavior to work.";
+"Min App Version Required" = "Please download the latest version of the Arcus app in order to pair the device.";
+"shop now" = "shop now";
+"UPDATE APP" = "UPDATE APP";
+"Open count picker header text" = "Choose the devices and the maximum number of times they are opened daily before triggering the alarm.";
+"Participating devices" = "Participating devices";
+"Generic care behavior error message" = "There was a problem submitting the behavior.";
+"Curfew" = "Curfew";
+"Daily Open Limit" = "Daily Open Limit";
+"Care behavior info message" = "Tap the Care Alarm card on the Dashboard to manage your Care Behaviors.";
+"Don't show this again" = "Don't show this again";
+"Care Behaviors" = "Care Behaviors";
+"Care Alarm Off" = "Care Alarm Off";
+"Care Alarm On" = "Care Alarm On";
+"Care Alarm History" = "Care Alarm History";
+"Monitoring" = "Monitoring";
+"Panic" = "Panic";
+"by %@" = "by %@";
+"by Panic" = "by Panic";
+"Alarm Triggered" = "Alarm Triggered";
+"Rule Triggered" = "Rule Triggered";
+"Triggered" = "Triggered";
+"Panic Rule" = "Panic Rule";
+
+// Lawn & Garden
+"WEEKLY" = "WEEKLY";
+"INTERVAL" = "INTERVAL";
+"ODD DAYS" = "ODD DAYS";
+"EVEN DAYS" = "EVEN DAYS";
+"MANUAL" = "MANUAL";
+"Weekly subtitle" = "Each day of the week can have a\ndifferent schedule.";
+"Interval subtitle" = "Regularly repeat schedule after\na given period.(e.g. Set this\nvalue to water every 5-th day)";
+"Odd subtitle" = "Water on odd numbered dates.";
+"Even subtitle" = "Water on even numbered dates.";
+"Manual subtitle" = "Choose Manual when you do not want\nto follow a schedule.";
+"Watering in the early morning or early evening" = "Watering in the early morning or early\nevening is recommended.";
+"To water the same zone multiple times a day, you'll need to create additional events." = "To water the same zone multiple times a\nday, you'll need to create additional events.";
+"Tap Edit to select the zones and watering duration for this event" = "Tap Edit to select the zones and\nwatering duration for this event";
+"Duration" = "Duration";
+
+"Behavior Scheduling Empty Title Text" = "Create Your Schedule";
+"Behavior Scheduling Empty Subtitle Text" = "Tap 'Add Event' to choose when this behavior will monitor. Without any events, the behavior will monitor 24/7.";
+"Start Date" = "Start Date";
+"End Date" = "End Date";
+"New event" = "New event";
+"End" = "End";
+"Schedule conflict" = "Schedule conflict";
+"Care schedule conflict message" = "This care behavior already has an event assigned at this time.";
+
+"OPEN" = "OPEN";
+"CLOSE" = "CLOSE";
+"FAV" = "FAV";
+"UP" = "UP";
+"DOWN" = "DOWN";
+"SETTINGS" = "SETTINGS";
+"UPDATE CREDENTIALS" = "UPDATE CREDENTIALS";
+"CHANNEL ON CONTROLLER" = "CHANNEL ON CONTROLLER";
+"BLIND TYPE" = "BLIND TYPE";
+"CUSTOMIZATION" = "CUSTOMIZATION";
+
+// History
+"Device-No-History-Format"="%@ has no history during this timeframe.";
+"All-No-History-Text"="You have no history\nduring this timeframe.";
+
+// Skip premium trial pop-up
+"One Time Offer" = "One Time Offer";
+"A credit card is required for the Free Premium trial. Features included in Premium:" = "A credit card is required for the Free Premium trial. Features included in Premium:";
+"Scenes control multiple devices in your home at one time" = "Scenes control multiple devices in your home at one time";
+"Rules connect & automate your devices" = "Rules connect & automate your devices";
+"Care helps you monitor your loved ones' daily routines" = "Care helps you monitor your loved ones' daily routines";
+"Access your Favorite devices fast" = "Access your Favorite devices fast";
+"Expanded History" = "Expanded History";
+"Add up to 6 people to alarm notification lists" = "Add up to 6 people to alarm notification lists";
+"Start Free Premium Trial" = "Start Free Premium Trial";
+"Skip Free Premium Trial" = "Skip Free Premium Trial";
+
+// Tutorials
+"Introduction To Arcus" = "Introduction To Arcus";
+"Climate" = "Climate";
+"Security" = "Security";
+"Tutorials" = "Tutorials";
+"Tutorials-subtitle" = "Browse Support for FAQs, how-to articles,\nvideos and helpful tutorials like this one.";
+
+"More Resources" = "More Resources";
+"Intro-title1" = "Welcome to Arcus";
+"Intro-title2" = "Favorites";
+"Intro-title3" = "Cards";
+"Intro-title4" = "Customize the Dashboard";
+"Intro-title5" = "Expand Your Smart Home";
+"Intro-title6" = "Manage Your Smart Home";
+"Intro-subtitle1" = "The Dashboard is a summary of what's\ngoing on in your home right now.";
+"Intro-subtitle2" = "Save your most used Devices and Scenes\nin Favorites for quick access.";
+"Intro-subtitle3" = "Cards help organized your devices.\nTap each Card and explore the\nspecific features of each one.";
+"Intro-subtitle4" = "Tap on the settings icon to hide and\nre-order the cards, edit your Favorites bar,\nand personalize your experience.";
+"Intro-subtitle5" = "Tap the '+' to add Devices, Scenes, Rules and\nmore to your smart home.";
+"Intro-subtitle6" = "Tap here to explore and edit everything\nyou've created in Arcus.";
+
+"Climate-title2" = "Scheduling";
+"Climate-title3" = "Temperature";
+"Climate-title4" = "More";
+"Climate-subtitle2" = "Schedules are managed under the Schedule\ntab. For thermostats, Arcus has created an\nenergy efficient schedule. You can choose to\nactivate or customize the schedule.";
+"Climate-subtitle3" = "Any device that can report temperature\nand humidity to Arcus will appear under\nthe Temperature tab.";
+"Climate-subtitle4" = "Tap the MORE tab to select the\ntemperature and humidity that you'd\nlike to see on your Dashboard.";
+
+"Rules-title1" = "Connect & Automate Devices";
+"Rules-title2" = "Rules are Easy to Create";
+"Rules-title3" = "Rules are Easy to Customize";
+"Rules-title4" = "Rules Work When You\nWant Them To";
+"Rules-title5" = "All Your Rules in One Place";
+"Rules-subtitle1" = "Rules tell devices what to do\nwhen something happens.";
+"Rules-subtitle2" = "Add a Rule by tapping the '+'\n sign on the dashboard.";
+"Rules-subtitle3" = "Tap the underlined word\nto build the Rule.";
+"Rules-subtitle4" = "You can schedule Rules to be active\nat certain times of the day.";
+"Rules-subtitle5" = "Manage and edit existing Rules in the\nleft hand navigation.";
+
+"Scenes-title3" = "Scenes are Easy to Create";
+"Scenes-title4" = "All Your Scenes in One Place";
+"Scenes-subtitle3" = "Add a Scene by tapping the '+' on\nthe dashboard.";
+"Scenes-subtitle4" = "Manage and edit existing Scenes in the left\nhand navigation.";
+
+"Security-title2" = "Customize Your Alarm Settings";
+"Security-title3" = "Alarm Notification List";
+"Security-title4" = "Triggered Alarm";
+"Security-subtitle2" = "Tap the More tab to customize your\nAlarm Sounds, Notification List,\nGrace Periods and more.";
+"Security-subtitle3" = "To add a Person to your notification list,\nthey must have a PIN code and a phone\nnumber. It is recommended to have\ntwo or more people on your list.";
+"Security-subtitle4" = "A triggered alarm will tell you what\ndevice(s) triggered the alarm. Cancel\nthe alarm in the app or on the keypad\nusing your 4 digit PIN code.";
+
+"Tutorials-chooseplace-title1" = "Switch Places";
+"Tutorials-chooseplace-subtitle1" = "Switch places by tapping the Place on the Dashboard.";
+
+"Tutorials-history-title" = "Activity Graph";
+"Tutorials-history-subtitle1" = "The solid white bar highlights\nmovement in your home from\nContact, Motion, & Tilt sensors.";
+
+//Add a place
+"By default, this place will have the same service plan as %@." = "By default, this place will have the same service plan as %@.";
+"Update your service plan";
+"You've successfully added %@ to your account." = "You've successfully added %@ to your account.";
+"Continue to your Dashboard to set up this place." = "Continue to your Dashboard to set up this place.";
+"Add Devices" = "Add Devices";
+"Add People" = "Add People";
+"Set Up Rules & Scenes" = "Set Up Rules & Scenes";
+"(Premium Required)" = "(Premium Required)";
+"please confirm your address" = "please confirm your address";
+"use this" = "use this";
+"use what I typed" = "use what I typed";
+"edit what I typed" = "edit what I typed";
+"Add a Place" = "Add a Place";
+"Add screen must switch to add place" = "To add another Place to your account, you must first switch to a Place you own. Do this from the sidemenu, then return here to add a new Place.";
+
+//Place details
+"Remove Place" = "Remove Place";
+"Remove Access" = "Remove Access";
+
+"To remove access to %@, type REMOVE below and tap on submit." = "To remove access to %@, type REMOVE below and tap on submit.";
+
+"Cannot Remove Place" = "Cannot Remove Place";
+"%@ cannot be removed. To ensure you are not being billed for this place, downgrade to the Basic pla\nTo delete your entire Arcus account, go to Settings > Profile > Delete My Arcus Account." = "%@ cannot be removed. To ensure you are not being billed for this place, downgrade to the Basic plan by logging in t delete your entire Arcus account, go to Settings > Profile > Delete My Arcus Account.";
+
+"Cannot Remove Access" = "Cannot Remove Access";
+"Access to your last place cannot be removed. To delete your Arcus account, go to\n\nSettings > Profile > Delete My Arcus Account." = "Access to your last place cannot be removed. To delete your Arcus account, go to\n\nSettings > Profile > Delete My Arcus Account.";
+
+"Switch Places" = "Switch Places";
+"You are currently viewing this place. To remove, first switch to a different place, then return here to remove." = "You are currently viewing this place. To remove, first switch to a different place, then return here to remove.";
+
+"Removing this person means they will no longer have access to %@." = "Removing this person means they will no longer have access to %@.";
+
+//Remove places
+"To remove %@, type \nREMOVE below and tap on submit." = "To remove %@, type \nREMOVE below and tap on submit.";
+
+// Halo
+"Halo" = "Halo";
+"Manage Your Halo Device" = "Manage Your Halo Device";
+"Halo Pairing text" = "Manage your Halo device under the\nAlarms Card on the Dashboard";
+"A test signal sent to the device." = "A test signal has been sent to the device.\nAn email will be sent to the account\nowner when the test is completed.";
+"Battery powered" = "Battery powered";
+"Battery powered message" = "To conserve battery life for emergency situations,\nlighting controls are disabled when the\n device is battery powered.";
+
+
+"FAIL_SMOKE_SENSOR" = "Halo has an issue with its Smoke sensor.";
+"FAIL_CO_SENSOR" = "Halo has an issue with its CO sensor.";
+"FAIL_TEMP_SENSOR" = "Halo has an issue with its temperature sensor.";
+"FAIL_WEATHER_RADIO" = "Halo has an issue with its weather radio.";
+"FAIL_OTHER" = "Halo has failed for an unknown reason.";

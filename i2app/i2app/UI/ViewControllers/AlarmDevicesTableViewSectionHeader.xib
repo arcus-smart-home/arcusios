@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlarmDevicesTableViewSectionHeader" customModule="i2app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="580" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FpI-dZ-bPA">
+                    <rect key="frame" x="0.0" y="0.0" width="580" height="44"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ARc-bX-qgg">
+                        <rect key="frame" x="0.0" y="0.0" width="580" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TG2-yX-OJ9">
+                    <rect key="frame" x="15" y="12" width="36" height="20"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="FpI-dZ-bPA" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="9t1-7i-lOO"/>
+                <constraint firstItem="FpI-dZ-bPA" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="JDO-6I-kFf"/>
+                <constraint firstItem="TG2-yX-OJ9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Y2o-NE-7mL"/>
+                <constraint firstItem="FpI-dZ-bPA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YUJ-V8-lDF"/>
+                <constraint firstItem="TG2-yX-OJ9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nFV-8T-7CD"/>
+                <constraint firstItem="FpI-dZ-bPA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vyb-AH-Ruf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backingView" destination="FpI-dZ-bPA" id="reN-Bk-LqJ"/>
+                <outlet property="blurVisualEffectView" destination="FpI-dZ-bPA" id="IBg-Vr-le5"/>
+                <outlet property="mainTextLabel" destination="TG2-yX-OJ9" id="iVl-8R-BGE"/>
+            </connections>
+            <point key="canvasLocation" x="93" y="-128"/>
+        </view>
+    </objects>
+</document>

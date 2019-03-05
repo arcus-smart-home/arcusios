@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GeneralDeviceOperationController">
+            <connections>
+                <outlet property="attributeViewConstraint" destination="u3o-6u-GWN" id="DDC-7R-PCC"/>
+                <outlet property="attributesView" destination="iPz-6i-V8b" id="yCG-1Q-KJX"/>
+                <outlet property="buttonViewConstraint" destination="VdK-Zk-0jV" id="qJQ-gC-K7L"/>
+                <outlet property="buttonsView" destination="DfW-Xa-ZuA" id="Z7K-48-QNE"/>
+                <outlet property="centerLogoLocation" destination="Irb-oi-1IN" id="60I-nr-fGH"/>
+                <outlet property="deviceLogo" destination="tMl-0j-tfR" id="nqe-Xf-du2"/>
+                <outlet property="eventLabel" destination="khI-3g-WMs" id="agy-xR-qIu"/>
+                <outlet property="eventToTopConstraint" destination="xxN-DE-3aS" id="l1Y-5S-E1G"/>
+                <outlet property="securityIcon" destination="OFG-ap-To9" id="N0h-ds-coh"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Gyz-rX-rVr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="security_icon" translatesAutoresizingMaskIntoConstraints="NO" id="OFG-ap-To9">
+                    <rect key="frame" x="285" y="110" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Skf-UK-and"/>
+                        <constraint firstAttribute="width" constant="30" id="zQc-OJ-H8X"/>
+                    </constraints>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="tMl-0j-tfR">
+                    <rect key="frame" x="205" y="175" width="190" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="0dO-cW-HAq"/>
+                        <constraint firstAttribute="height" constant="190" id="Qvg-kf-fmd"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPz-6i-V8b" customClass="DeviceAttributeGroupView">
+                    <rect key="frame" x="150" y="480" width="300" height="70"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="Fzx-rV-6pJ"/>
+                        <constraint firstAttribute="height" constant="70" id="srB-Et-On4"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DfW-Xa-ZuA" customClass="DeviceButtonGroupView">
+                    <rect key="frame" x="150" y="391" width="300" height="64"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="5UV-HN-4pz"/>
+                        <constraint firstAttribute="width" constant="300" id="anB-q9-zGM"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khI-3g-WMs" customClass="DeviceNotificationLabel">
+                    <rect key="frame" x="293" y="40" width="14" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="OFG-ap-To9" secondAttribute="centerX" id="5gz-aZ-equ"/>
+                <constraint firstAttribute="centerY" secondItem="tMl-0j-tfR" secondAttribute="centerY" constant="30" id="Irb-oi-1IN"/>
+                <constraint firstItem="khI-3g-WMs" firstAttribute="centerX" secondItem="OFG-ap-To9" secondAttribute="centerX" id="QYl-Ed-vAj"/>
+                <constraint firstItem="DfW-Xa-ZuA" firstAttribute="top" secondItem="tMl-0j-tfR" secondAttribute="bottom" constant="26" id="VdK-Zk-0jV"/>
+                <constraint firstAttribute="centerX" secondItem="tMl-0j-tfR" secondAttribute="centerX" id="XqY-lk-77Z"/>
+                <constraint firstAttribute="centerX" secondItem="DfW-Xa-ZuA" secondAttribute="centerX" id="Ybq-dz-7mm"/>
+                <constraint firstItem="tMl-0j-tfR" firstAttribute="top" secondItem="OFG-ap-To9" secondAttribute="bottom" constant="35" id="jE1-Hk-c4c"/>
+                <constraint firstAttribute="centerX" secondItem="iPz-6i-V8b" secondAttribute="centerX" id="mST-fc-R17"/>
+                <constraint firstItem="iPz-6i-V8b" firstAttribute="top" secondItem="tMl-0j-tfR" secondAttribute="bottom" constant="115" id="u3o-6u-GWN"/>
+                <constraint firstItem="khI-3g-WMs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="xxN-DE-3aS"/>
+            </constraints>
+            <point key="canvasLocation" x="297" y="193"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="security_icon" width="45" height="45"/>
+    </resources>
+</document>

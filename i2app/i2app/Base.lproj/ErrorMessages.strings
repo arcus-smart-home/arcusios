@@ -1,0 +1,27 @@
+/* 
+  ErrorMessages.strings
+  i2app
+
+  Created by Arcus Team on 7/18/15.
+*/
+
+"Oops!" ="Oops!";
+"Device could not be removed" = "Device could not be removed";
+"Error renaming the hub" = "Error renaming the hub";
+"Internet connection status" = "Internet connection status";
+"Internet is not available" = "Internet is not available";
+"Password could not be changed" = "Password could not be changed";
+"Invalid password, please try again" = "Invalid password, please try again";
+"Please re-enter your pin code." = "Please re-enter your pin code.";
+"Pin Codes Do No Match" = "Pin Codes Do No Match";
+
+"Hmmm, Something’s Wrong";
+"Please try again. If this issue persists, please call 1-0";
+
+
+"You need to restart the app to change the platform URL" = "You need to restart the app to change the platform URL";
+"Login Error" = "Login Error";
+"Email Address or Password is invalid" = "Email Address or Password is invalid";
+"To continue, please restart the app" = "To continue, please restart the app";
+
+"To continue, please restart the app" = "To continue, please restart the app";

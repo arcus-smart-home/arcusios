@@ -1,0 +1,53 @@
+disabled_rules: # rule identifiers to exclude from running
+  - type_name
+  - variable_name
+  - empty_count
+  - cyclomatic_complexity
+  - large_tuple
+  - closure_parameter_position
+  - trailing_whitespace
+  - nesting
+opt_in_rules: # some rules are only opt-in
+  - empty_count
+  - missing_docs
+  # Find all the available rules by running:
+  # swiftlint rules
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+  - Generated
+  - CorneaPod/Cornea/Classes/Capabilities
+  - CorneaPod/Cornea/Classes/Services
+  - CorneaPod/Cornea/Classes/Models
+  - Source/ExcludedFile.swift
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+line_length: 110
+# they can set both implicitly with an array
+type_body_length:
+  - 500 # warning
+  - 1000 # error
+# or they can set both explicitly
+file_length:
+  warning: 1000
+  error: 2000
+variable_name:
+  min_length: # only min_length
+    error: 3 # only error
+  excluded: # excluded via string array
+    - id
+    - URL
+    - GlobalAPIKey
+function_parameter_count:
+  - 15
+  - 20
+function_body_length:
+  warning: 100
+  error: 250
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle)

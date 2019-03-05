@@ -1,0 +1,40 @@
+//
+//  KitSetupActivationPopup.swift
+//  i2app
+//
+//  Created by Arcus Team on 7/18/18.
+/*
+ * Copyright 2019 Arcus Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+//
+
+protocol KitSetupActivationPopupDelegate: class {
+  func activationPopupDashboardButtonPressed()
+}
+
+class KitSetupActivationPopup: ArcusPopupViewController {
+  weak var delegate: KitSetupActivationPopupDelegate?
+  
+  @IBAction func activateButtonPressed(_ sender: Any) {
+    dismiss(animated: true, completion: nil)
+  }
+  
+  @IBAction func dashboardButtonPressed(_ sender: Any) {
+    dismiss(animated: true) { [weak self] in
+      self?.delegate?.activationPopupDashboardButtonPressed()
+    }
+  }
+  
+}

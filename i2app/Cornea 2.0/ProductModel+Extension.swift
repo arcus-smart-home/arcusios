@@ -1,0 +1,76 @@
+//
+//  ProductModel+Extension.swift
+//  i2app
+//
+//  Created by Arcus Team on 9/29/17.
+/*
+ * Copyright 2019 Arcus Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+//
+
+import Foundation
+import Cornea
+
+extension ProductModel {
+  func productName() -> String? {
+    return ProductCapability.getNameFrom(self)
+  }
+
+  func productShortName() -> String? {
+    return ProductCapability.getShortName(from: self)
+  }
+
+  func productId() -> String? {
+    return ProductCapability.getIdFrom(self)
+  }
+  
+  func vendorName() -> String? {
+    return ProductCapability.getVendorFrom(self)
+  }
+  
+  func screenName() -> String? {
+    return ProductCapability.getScreenFrom(self)
+  }
+
+  func hubRequired() -> Bool {
+    return ProductCapability.getHubRequired(from: self)
+  }
+
+  func categories() -> [Any]? {
+    return ProductCapability.getCategoriesFrom(self)
+  }
+
+  func devRequired() -> String? {
+    return ProductCapability.getDevRequired(from: self)
+  }
+
+  func minAppVersion() -> String? {
+    return ProductCapability.getMinAppVersion(from: self)
+  }
+
+  func canBrowse() -> Bool {
+    return ProductCapability.getCanBrowse(from: self)
+  }
+}
+
+extension ProductModel: CustomDebugStringConvertible {
+
+  override public var debugDescription: String {
+    return "ProductModel: \r\n"
+      + "\t modelId: \(modelId), \r\n"
+      + "\t address: \(address), \r\n"
+      + "\t attributes: \(self.get())"
+  }
+}

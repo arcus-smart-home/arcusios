@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IeV-Jf-Mb7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="fS8-yc-mjI">
+            <objects>
+                <navigationController id="IeV-Jf-Mb7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kK6-MA-Gca">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PSE-f6-Wua" kind="relationship" relationship="rootViewController" id="ac6-B7-Q0b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XB8-qp-uBF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-473" y="-80"/>
+        </scene>
+        <!--BiometricAuthGatekeeperViewController-->
+        <scene sceneID="dv7-RI-lmk">
+            <objects>
+                <viewController storyboardIdentifier="BiometricAuthGatekeeperViewController" title="BiometricAuthGatekeeperViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bnV-kK-kH0" customClass="BiometricAuthGatekeeperViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fgX-wY-Lr9"/>
+                        <viewControllerLayoutGuide type="bottom" id="ipt-U1-GXx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="frB-i1-hcI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hI-mb-uqj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bDG-af-2Sy">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6hI-mb-uqj" secondAttribute="bottom" id="ASa-fg-hxs"/>
+                            <constraint firstItem="6hI-mb-uqj" firstAttribute="top" secondItem="frB-i1-hcI" secondAttribute="top" id="BTz-26-JeT"/>
+                            <constraint firstAttribute="trailing" secondItem="6hI-mb-uqj" secondAttribute="trailing" id="IUi-jz-uE9"/>
+                            <constraint firstItem="6hI-mb-uqj" firstAttribute="leading" secondItem="frB-i1-hcI" secondAttribute="leading" id="x94-Qy-g4z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blurView" destination="6hI-mb-uqj" id="c9A-da-VJP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JgJ-Xp-cwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474" y="623"/>
+        </scene>
+        <!--Prompt To Enable Biometric Authentication View Controller-->
+        <scene sceneID="LfT-OS-IJf">
+            <objects>
+                <viewController id="PSE-f6-Wua" customClass="PromptToEnableBiometricAuthenticationViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Ga-TM-q9i"/>
+                        <viewControllerLayoutGuide type="bottom" id="AiN-mo-eC5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tK9-tv-DlU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touchid_icon" translatesAutoresizingMaskIntoConstraints="NO" id="DCv-QO-2xR">
+                                <rect key="frame" x="257.5" y="104" width="85" height="85"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in with &lt;AUTH&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIn-GC-JpE">
+                                <rect key="frame" x="206" y="234" width="188" height="28"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.13331639766693115" green="0.13334554433822632" blue="0.13331016898155212" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use your &lt;AUTH&gt; for faster, easier access to your Arcus account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbu-ou-vh4">
+                                <rect key="frame" x="36" y="262" width="528" height="49.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gY9-HM-KOV" customClass="ScleraButton" customModule="i2app" customModuleProvider="target">
+                                <rect key="frame" x="31" y="364.5" width="538" height="54"/>
+                                <color key="backgroundColor" red="0.23529411759999999" green="0.062745098040000002" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="hh9-ZF-oa9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <state key="normal" title="USE &lt;AUTH&gt;">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasCaps" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didPressUse:" destination="PSE-f6-Wua" eventType="touchUpInside" id="6D1-lX-Cdy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kse-AR-Oai" customClass="ScleraButton" customModule="i2app" customModuleProvider="target">
+                                <rect key="frame" x="31" y="437.5" width="538" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="NVP-rF-JSR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <state key="normal" title="Not Now">
+                                    <color key="titleColor" red="0.2358438373" green="0.061432339250000002" blue="0.32496014239999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasCaps" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.23584383726119995" green="0.061432339251041412" blue="0.3249601423740387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didPressNotNow:" destination="PSE-f6-Wua" eventType="touchUpInside" id="YUQ-wC-5I9"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success_check" translatesAutoresizingMaskIntoConstraints="NO" id="0hA-ss-Ocp">
+                                <rect key="frame" x="307.5" y="155" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Gua-hk-scG"/>
+                                    <constraint firstAttribute="width" constant="48" id="guO-4p-1bN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0u-Cf-6y4">
+                                <rect key="frame" x="189.5" y="519.5" width="221.5" height="38.5"/>
+                                <string key="text">You can turn this feature On or Off 
+anytime in your Arcus Settings.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wIn-GC-JpE" firstAttribute="top" secondItem="DCv-QO-2xR" secondAttribute="bottom" constant="45" id="4lz-RN-hqc"/>
+                            <constraint firstItem="gY9-HM-KOV" firstAttribute="top" secondItem="Lbu-ou-vh4" secondAttribute="bottom" constant="53" id="AMx-pC-Pqf"/>
+                            <constraint firstItem="wIn-GC-JpE" firstAttribute="centerX" secondItem="tK9-tv-DlU" secondAttribute="centerX" id="DOG-Nb-LGb"/>
+                            <constraint firstItem="DCv-QO-2xR" firstAttribute="top" secondItem="4Ga-TM-q9i" secondAttribute="bottom" priority="250" constant="40" id="Es7-Eg-equ"/>
+                            <constraint firstItem="DCv-QO-2xR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4Ga-TM-q9i" secondAttribute="bottom" constant="10" id="FWR-ui-xuU"/>
+                            <constraint firstAttribute="trailing" secondItem="Lbu-ou-vh4" secondAttribute="trailing" constant="36" id="SJB-x4-ShO"/>
+                            <constraint firstItem="kse-AR-Oai" firstAttribute="leading" secondItem="tK9-tv-DlU" secondAttribute="leading" constant="31" id="T7J-ml-Li7"/>
+                            <constraint firstItem="0hA-ss-Ocp" firstAttribute="bottom" secondItem="DCv-QO-2xR" secondAttribute="bottom" constant="14" id="UbO-Gb-6lD"/>
+                            <constraint firstItem="kse-AR-Oai" firstAttribute="top" secondItem="gY9-HM-KOV" secondAttribute="bottom" constant="19" id="YFV-oM-IzX"/>
+                            <constraint firstItem="Lbu-ou-vh4" firstAttribute="leading" secondItem="tK9-tv-DlU" secondAttribute="leading" constant="36" id="bio-6Y-7Bq"/>
+                            <constraint firstItem="A0u-Cf-6y4" firstAttribute="top" secondItem="kse-AR-Oai" secondAttribute="bottom" constant="28" id="cu0-cG-4MF"/>
+                            <constraint firstItem="Lbu-ou-vh4" firstAttribute="top" secondItem="wIn-GC-JpE" secondAttribute="bottom" id="cy3-1Z-3HE"/>
+                            <constraint firstItem="kse-AR-Oai" firstAttribute="centerX" secondItem="tK9-tv-DlU" secondAttribute="centerX" id="etF-Gx-sUy"/>
+                            <constraint firstItem="DCv-QO-2xR" firstAttribute="centerX" secondItem="tK9-tv-DlU" secondAttribute="centerX" id="iIu-62-mL0"/>
+                            <constraint firstAttribute="trailing" secondItem="gY9-HM-KOV" secondAttribute="trailing" constant="31" id="ieU-dY-Sus"/>
+                            <constraint firstItem="Lbu-ou-vh4" firstAttribute="centerX" secondItem="tK9-tv-DlU" secondAttribute="centerX" id="ofP-Mf-Y6Q"/>
+                            <constraint firstItem="0hA-ss-Ocp" firstAttribute="trailing" secondItem="DCv-QO-2xR" secondAttribute="trailing" constant="13" id="shA-hb-1Kv"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="A0u-Cf-6y4" secondAttribute="bottom" id="tG0-r7-w5T"/>
+                            <constraint firstItem="A0u-Cf-6y4" firstAttribute="centerX" secondItem="tK9-tv-DlU" secondAttribute="centerX" id="uAF-b0-OoC"/>
+                            <constraint firstAttribute="trailing" secondItem="kse-AR-Oai" secondAttribute="trailing" constant="31" id="wYc-0L-g9H"/>
+                            <constraint firstItem="gY9-HM-KOV" firstAttribute="leading" secondItem="tK9-tv-DlU" secondAttribute="leading" constant="31" id="xqS-nb-7jX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rlO-j3-poR"/>
+                    <connections>
+                        <outlet property="authIcon" destination="DCv-QO-2xR" id="qXV-qx-SZH"/>
+                        <outlet property="subtitleLabel" destination="Lbu-ou-vh4" id="4sJ-LN-niT"/>
+                        <outlet property="successCheck" destination="0hA-ss-Ocp" id="yc0-Qx-jdg"/>
+                        <outlet property="titleLabel" destination="wIn-GC-JpE" id="i1P-gH-ysk"/>
+                        <outlet property="useButton" destination="gY9-HM-KOV" id="UhN-TL-OCc"/>
+                        <outletCollection property="successDisplayViews" destination="DCv-QO-2xR" collectionClass="NSMutableArray" id="LCs-k3-qn3"/>
+                        <outletCollection property="successDisplayViews" destination="0hA-ss-Ocp" collectionClass="NSMutableArray" id="GWv-Cd-Q9V"/>
+                        <outletCollection property="successDisplayViews" destination="wIn-GC-JpE" collectionClass="NSMutableArray" id="Lei-Rs-f3E"/>
+                        <outletCollection property="promptDisplayViews" destination="DCv-QO-2xR" collectionClass="NSMutableArray" id="J64-AW-o6V"/>
+                        <outletCollection property="promptDisplayViews" destination="wIn-GC-JpE" collectionClass="NSMutableArray" id="bHj-qM-HtD"/>
+                        <outletCollection property="promptDisplayViews" destination="Lbu-ou-vh4" collectionClass="NSMutableArray" id="Y72-zG-O8a"/>
+                        <outletCollection property="promptDisplayViews" destination="kse-AR-Oai" collectionClass="NSMutableArray" id="eNO-Kn-GVp"/>
+                        <outletCollection property="promptDisplayViews" destination="A0u-Cf-6y4" collectionClass="NSMutableArray" id="WHh-Z7-g1A"/>
+                        <outletCollection property="allDisplayViews" destination="DCv-QO-2xR" collectionClass="NSMutableArray" id="CPC-Lp-WIM"/>
+                        <outletCollection property="allDisplayViews" destination="0hA-ss-Ocp" collectionClass="NSMutableArray" id="C22-sK-x5R"/>
+                        <outletCollection property="allDisplayViews" destination="wIn-GC-JpE" collectionClass="NSMutableArray" id="ybj-LT-qqc"/>
+                        <outletCollection property="allDisplayViews" destination="Lbu-ou-vh4" collectionClass="NSMutableArray" id="f4C-ft-nF3"/>
+                        <outletCollection property="allDisplayViews" destination="kse-AR-Oai" collectionClass="NSMutableArray" id="30p-Q3-ceR"/>
+                        <outletCollection property="allDisplayViews" destination="A0u-Cf-6y4" collectionClass="NSMutableArray" id="r3P-oQ-sYS"/>
+                        <outletCollection property="promptDisplayViews" destination="gY9-HM-KOV" collectionClass="NSMutableArray" id="q3u-g5-INj"/>
+                        <outletCollection property="allDisplayViews" destination="gY9-HM-KOV" collectionClass="NSMutableArray" id="IAl-f1-z1h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OW6-Ka-Bhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="-81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="success_check" width="49" height="49"/>
+        <image name="touchid_icon" width="85" height="85"/>
+    </resources>
+</document>

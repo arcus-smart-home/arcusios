@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Lights Switches Devices Controller-->
+        <scene sceneID="PJd-8z-coA">
+            <objects>
+                <viewController storyboardIdentifier="LightsSwitchesDevicesController" id="RgD-uo-b9k" customClass="LightsSwitchesDevicesController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fGG-ZV-sho"/>
+                        <viewControllerLayoutGuide type="bottom" id="wzI-cN-6bR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q14-Fg-ZVC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhj-H7-sa0">
+                                <rect key="frame" x="0.0" y="20" width="600" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="nfV-1E-md9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="p5c-mV-RWL"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="146" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="KnK-GR-C3L">
+                                <rect key="frame" x="0.0" y="21" width="600" height="579"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="RgD-uo-b9k" id="BCR-2m-qmQ"/>
+                                    <outlet property="delegate" destination="RgD-uo-b9k" id="hDN-A2-N9f"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wzI-cN-6bR" firstAttribute="top" secondItem="KnK-GR-C3L" secondAttribute="bottom" id="ErM-rX-1X0"/>
+                            <constraint firstItem="xhj-H7-sa0" firstAttribute="top" secondItem="fGG-ZV-sho" secondAttribute="bottom" id="Lwb-dS-dKr"/>
+                            <constraint firstItem="KnK-GR-C3L" firstAttribute="top" secondItem="xhj-H7-sa0" secondAttribute="bottom" id="TQG-c5-XiJ"/>
+                            <constraint firstItem="xhj-H7-sa0" firstAttribute="leading" secondItem="q14-Fg-ZVC" secondAttribute="leading" id="ZUG-db-cLK"/>
+                            <constraint firstItem="KnK-GR-C3L" firstAttribute="leading" secondItem="q14-Fg-ZVC" secondAttribute="leading" id="b7V-yU-RL1"/>
+                            <constraint firstAttribute="trailing" secondItem="KnK-GR-C3L" secondAttribute="trailing" id="iUi-4f-WHZ"/>
+                            <constraint firstAttribute="trailing" secondItem="xhj-H7-sa0" secondAttribute="trailing" id="neq-81-plT"/>
+                            <constraint firstItem="KnK-GR-C3L" firstAttribute="top" secondItem="xhj-H7-sa0" secondAttribute="bottom" id="oVS-Vj-HMu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="KnK-GR-C3L" id="Xki-5x-1O0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSz-rZ-AMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547" y="200"/>
+        </scene>
+    </scenes>
+</document>

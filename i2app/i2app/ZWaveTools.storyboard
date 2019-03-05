@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5yW-DZ-AwL">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--ZWaveToolsViewController-->
+        <scene sceneID="mej-2I-vaf">
+            <objects>
+                <viewController storyboardIdentifier="ZWaveToolsViewController" title="ZWaveToolsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5yW-DZ-AwL" customClass="ZWaveToolsViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SQu-hL-zJG"/>
+                        <viewControllerLayoutGuide type="bottom" id="IXS-N3-hHx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Qg-67-f8I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gih-wc-bhC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fWd-ll-lvv">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="152" id="R3d-bA-8Lo"/>
+                                        </constraints>
+                                        <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="subtitleCell" textLabel="xFt-Cl-2go" detailTextLabel="LMI-SW-Wg4" style="IBUITableViewCellStyleSubtitle" id="vAe-RE-pj0">
+                                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vAe-RE-pj0" id="eNa-6O-O12">
+                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xFt-Cl-2go">
+                                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LMI-SW-Wg4">
+                                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                            <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </tableViewCell>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="basicCell" textLabel="p4D-30-F7F" style="IBUITableViewCellStyleDefault" id="pmQ-Am-foq">
+                                                <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pmQ-Am-foq" id="z8E-et-XQr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p4D-30-F7F">
+                                                            <rect key="frame" x="15" y="0.0" width="270" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <sections/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="R3d-bA-8Lo"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="dataSource" destination="5yW-DZ-AwL" id="usn-iD-n8E"/>
+                                            <outlet property="delegate" destination="5yW-DZ-AwL" id="Wt9-2N-Y0z"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fWd-ll-lvv" secondAttribute="trailing" id="9j8-DQ-kC2"/>
+                                    <constraint firstItem="fWd-ll-lvv" firstAttribute="top" secondItem="gih-wc-bhC" secondAttribute="top" id="DEe-kd-adN"/>
+                                    <constraint firstItem="fWd-ll-lvv" firstAttribute="leading" secondItem="gih-wc-bhC" secondAttribute="leading" id="H3h-rI-Vrx"/>
+                                    <constraint firstAttribute="bottom" secondItem="fWd-ll-lvv" secondAttribute="bottom" id="uiY-om-G2e"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gih-wc-bhC" secondAttribute="bottom" id="6Sg-dT-Ybw"/>
+                            <constraint firstAttribute="trailing" secondItem="gih-wc-bhC" secondAttribute="trailing" id="WcW-fh-Om9"/>
+                            <constraint firstItem="gih-wc-bhC" firstAttribute="top" secondItem="0Qg-67-f8I" secondAttribute="top" id="pLs-oQ-SJr"/>
+                            <constraint firstItem="gih-wc-bhC" firstAttribute="leading" secondItem="0Qg-67-f8I" secondAttribute="leading" id="xQG-ox-xcN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="fWd-ll-lvv" id="ihk-aV-ug5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RQt-Md-4Rs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="207" y="-291"/>
+        </scene>
+        <!--REMOVE Z-WAVE DEVICES-->
+        <scene sceneID="fAE-b6-Xhj">
+            <objects>
+                <viewController storyboardIdentifier="ZWaveRemovalStartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ImL-8c-5oN" customClass="ZWaveRemovalStartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l1J-WR-o24"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z2L-Gk-hf7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0VW-4V-fRk">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Z-Wave Device" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VL4-sq-sTQ">
+                                <rect key="frame" x="16" y="38" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ckC-LN-Giy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKV-CJ-alP">
+                                <rect key="frame" x="16" y="351" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Zc5-mR-Iuy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="startRemoveButtonPressed:" destination="ImL-8c-5oN" eventType="touchUpInside" id="9o6-tX-pFR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kA6-OW-Weh">
+                                <rect key="frame" x="16" y="79" width="288" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="gCK-CX-QMM"/>
+                                </constraints>
+                                <string key="text">Perhaps you’re having trouble adding a 
+Z-Wave device that was previously paired 
+or maybe your new device won’t connect 
+after several attempts.
+
+Tap ‘Remove Z-Wave Devices’ below to 
+remove orphaned Z-Wave devices that 
+no longer appear on your device list 
+page. These devices believe they are 
+paired to the hub, but the hub does 
+not know about them.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VL4-sq-sTQ" firstAttribute="top" secondItem="l1J-WR-o24" secondAttribute="bottom" constant="38" id="3Og-oX-Xmh"/>
+                            <constraint firstItem="kA6-OW-Weh" firstAttribute="trailing" secondItem="0VW-4V-fRk" secondAttribute="trailingMargin" id="3ZI-SM-0sO"/>
+                            <constraint firstItem="SKV-CJ-alP" firstAttribute="trailing" secondItem="0VW-4V-fRk" secondAttribute="trailingMargin" id="DQL-Et-Kz8"/>
+                            <constraint firstItem="SKV-CJ-alP" firstAttribute="leading" secondItem="0VW-4V-fRk" secondAttribute="leadingMargin" id="KQ9-Wf-b30"/>
+                            <constraint firstItem="kA6-OW-Weh" firstAttribute="top" secondItem="VL4-sq-sTQ" secondAttribute="bottom" constant="20" id="RMh-uo-I7N"/>
+                            <constraint firstItem="kA6-OW-Weh" firstAttribute="leading" secondItem="0VW-4V-fRk" secondAttribute="leadingMargin" id="Ung-Se-La3"/>
+                            <constraint firstItem="VL4-sq-sTQ" firstAttribute="trailing" secondItem="0VW-4V-fRk" secondAttribute="trailingMargin" id="eLM-CK-tJc"/>
+                            <constraint firstItem="VL4-sq-sTQ" firstAttribute="leading" secondItem="0VW-4V-fRk" secondAttribute="leadingMargin" id="o1B-BW-P0q"/>
+                            <constraint firstItem="Z2L-Gk-hf7" firstAttribute="top" secondItem="SKV-CJ-alP" secondAttribute="bottom" constant="20" id="tTY-71-hu9"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="REMOVE Z-WAVE DEVICES" id="lHj-wb-zQR"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="removeZWaveDetail" destination="kA6-OW-Weh" id="V4c-n7-gfp"/>
+                        <outlet property="removeZWaveTitle" destination="VL4-sq-sTQ" id="gZ6-6A-ZdO"/>
+                        <outlet property="startRemoveButton" destination="SKV-CJ-alP" id="yLO-xe-7vN"/>
+                        <segue destination="3YC-qz-hXE" kind="show" identifier="StartZWaveRemoveSegue" id="TeX-aU-krI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7v-cC-6I2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="207" y="402"/>
+        </scene>
+        <!--SEARCHING-->
+        <scene sceneID="kF4-if-fBB">
+            <objects>
+                <viewController storyboardIdentifier="ZWaveRemovalSearchingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3YC-qz-hXE" customClass="ZWaveRemovalSearchingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7ut-55-4BT"/>
+                        <viewControllerLayoutGuide type="bottom" id="a9I-Gt-Cyf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7sO-Wh-Krv">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="56r-Mg-EHd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="ZLx-II-gXd">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I11-JB-j2r">
+                                            <rect key="frame" x="35" y="46" width="252" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="6tL-wN-lfl"/>
+                                                <constraint firstAttribute="width" constant="252" id="v4J-p3-ojT"/>
+                                            </constraints>
+                                            <string key="text">The 0 Z-Wave device(s) below 
+have been reset.</string>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="0wB-Ad-NiR">
+                                            <rect key="frame" x="291" y="26" width="20" height="20"/>
+                                        </activityIndicatorView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="0wB-Ad-NiR" firstAttribute="centerX" secondItem="I11-JB-j2r" secondAttribute="centerX" id="47W-im-wlH"/>
+                                        <constraint firstItem="I11-JB-j2r" firstAttribute="centerY" secondItem="ZLx-II-gXd" secondAttribute="centerY" constant="-9.5" id="9xx-0n-W8Z"/>
+                                        <constraint firstItem="0wB-Ad-NiR" firstAttribute="top" secondItem="ZLx-II-gXd" secondAttribute="top" constant="18" id="dzQ-vb-z3l"/>
+                                        <constraint firstItem="I11-JB-j2r" firstAttribute="centerX" secondItem="ZLx-II-gXd" secondAttribute="centerX" constant="1" id="pkf-kH-xjZ"/>
+                                    </constraints>
+                                </view>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="HaP-Xc-tY7">
+                                    <rect key="frame" x="0.0" y="218" width="320" height="230"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUp-Sa-T4u">
+                                            <rect key="frame" x="20" y="50" width="280" height="180"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="180" id="8Jq-Xw-MDt"/>
+                                            </constraints>
+                                            <string key="text">To reset the device, put the device in 
+”learn mode” which usually involves 
+pressing the Z-Wave button on the 
+device. Check your manufacturer’s 
+manual for details. 
+
+Note: Do not use any other Z-Wave 
+devices during this process as they may 
+be removed inadvertently.</string>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="IUp-Sa-T4u" secondAttribute="bottom" id="KP1-JF-0UZ"/>
+                                        <constraint firstItem="IUp-Sa-T4u" firstAttribute="leading" secondItem="HaP-Xc-tY7" secondAttribute="leading" constant="20" id="Mqi-zN-bbp"/>
+                                        <constraint firstItem="IUp-Sa-T4u" firstAttribute="centerX" secondItem="HaP-Xc-tY7" secondAttribute="centerX" id="NcP-SE-tdS"/>
+                                        <constraint firstAttribute="trailing" secondItem="IUp-Sa-T4u" secondAttribute="trailing" constant="20" id="oUC-bA-cTP"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="RemovedDeviceCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="RemovedDeviceCell" rowHeight="30" id="c3J-98-9J4" customClass="ZWaveDeviceRemovedCell">
+                                        <rect key="frame" x="0.0" y="188" width="320" height="30"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c3J-98-9J4" id="oEX-M3-vYW">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="29.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTl-bK-BPT">
+                                                    <rect key="frame" x="8" y="5" width="304" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20.5" id="tE9-K7-JjV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FTl-bK-BPT" firstAttribute="top" secondItem="oEX-M3-vYW" secondAttribute="top" constant="5" id="8j7-GC-vS8"/>
+                                                <constraint firstAttribute="bottom" secondItem="FTl-bK-BPT" secondAttribute="bottom" constant="3.5" id="Bbe-tx-DQX"/>
+                                                <constraint firstItem="FTl-bK-BPT" firstAttribute="leading" secondItem="oEX-M3-vYW" secondAttribute="leading" constant="8" id="JvS-UC-zQB"/>
+                                                <constraint firstAttribute="trailing" secondItem="FTl-bK-BPT" secondAttribute="trailing" constant="8" id="LWU-qn-kVs"/>
+                                                <constraint firstItem="FTl-bK-BPT" firstAttribute="top" secondItem="oEX-M3-vYW" secondAttribute="top" constant="15" id="QlR-Vd-ALv"/>
+                                                <constraint firstAttribute="trailing" secondItem="FTl-bK-BPT" secondAttribute="trailing" constant="8" id="aq0-I4-uj7"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="QlR-Vd-ALv"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="separatorInset" minX="65" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="deviceLabel" destination="FTl-bK-BPT" id="rqB-Zc-iE5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3YC-qz-hXE" id="tuQ-8M-xwE"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tL-yM-O6V">
+                                <rect key="frame" x="16" y="351" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="3on-UR-ewK"/>
+                                    <constraint firstAttribute="height" constant="45" id="Hf3-vu-AZC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="3YC-qz-hXE" eventType="touchUpInside" id="N1q-CY-gb3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a9I-Gt-Cyf" firstAttribute="top" secondItem="56r-Mg-EHd" secondAttribute="bottom" id="Ox8-4d-G53"/>
+                            <constraint firstItem="56r-Mg-EHd" firstAttribute="top" secondItem="7ut-55-4BT" secondAttribute="bottom" id="UYC-ds-eCj"/>
+                            <constraint firstItem="8tL-yM-O6V" firstAttribute="leading" secondItem="7sO-Wh-Krv" secondAttribute="leadingMargin" id="Wtw-86-ob8"/>
+                            <constraint firstAttribute="trailing" secondItem="56r-Mg-EHd" secondAttribute="trailing" id="a7z-KX-qjz"/>
+                            <constraint firstItem="8tL-yM-O6V" firstAttribute="trailing" secondItem="7sO-Wh-Krv" secondAttribute="trailingMargin" id="feg-bG-Yap"/>
+                            <constraint firstItem="a9I-Gt-Cyf" firstAttribute="top" secondItem="8tL-yM-O6V" secondAttribute="bottom" constant="20" id="o1H-mb-Coz"/>
+                            <constraint firstItem="56r-Mg-EHd" firstAttribute="leading" secondItem="7sO-Wh-Krv" secondAttribute="leading" id="xJs-Js-LfO"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="SEARCHING" id="46J-1d-SnK"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="doneButton" destination="8tL-yM-O6V" id="iP8-G0-eGk"/>
+                        <outlet property="footerLabel" destination="IUp-Sa-T4u" id="7FR-NB-BDb"/>
+                        <outlet property="headerLabel" destination="I11-JB-j2r" id="pht-LW-D52"/>
+                        <outlet property="removedDevicesTableView" destination="56r-Mg-EHd" id="62K-86-wYu"/>
+                        <outlet property="searchActivityIndicator" destination="0wB-Ad-NiR" id="PWV-Tv-cTo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BAj-hS-j4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="402"/>
+        </scene>
+        <!--REBUILD Z-WAVE NETWORK-->
+        <scene sceneID="Koc-4K-EZm">
+            <objects>
+                <viewController storyboardIdentifier="ZWaveHealStartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c67-Ds-7qf" customClass="ZWaveHealStartViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Doj-Py-7PL"/>
+                        <viewControllerLayoutGuide type="bottom" id="StR-Jz-pJ3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HtK-KV-9yX">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Heu-f7-ZPI">
+                                <rect key="frame" x="16" y="38" width="288" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="2CE-Nv-nPd"/>
+                                </constraints>
+                                <string key="text">Z-Wave devices in your home  link together to form a network.  If devices are added, relocated  or removed, the network may  need to be rebuilt.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krd-cI-mJT">
+                                <rect key="frame" x="16" y="351" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="snG-rI-y4x"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onNextButton:" destination="c67-Ds-7qf" eventType="touchUpInside" id="YpU-zi-xkz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vf-hJ-Eqh">
+                                <rect key="frame" x="16" y="172" width="288" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="kAi-W6-FVE"/>
+                                </constraints>
+                                <string key="text">The rebuild process time varies depending  on the number of Z-Wave devices in your  home. It may take a few minutes or several hours to complete.  Your Z-Wave devices will not work optimally during this process.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Heu-f7-ZPI" firstAttribute="leading" secondItem="HtK-KV-9yX" secondAttribute="leadingMargin" id="2fo-ic-ulQ"/>
+                            <constraint firstItem="krd-cI-mJT" firstAttribute="trailing" secondItem="HtK-KV-9yX" secondAttribute="trailingMargin" id="3np-Ll-wvS"/>
+                            <constraint firstItem="Heu-f7-ZPI" firstAttribute="top" secondItem="Doj-Py-7PL" secondAttribute="bottom" constant="38" id="8cX-59-XYG"/>
+                            <constraint firstItem="0vf-hJ-Eqh" firstAttribute="leading" secondItem="HtK-KV-9yX" secondAttribute="leadingMargin" id="8yX-sd-8uE"/>
+                            <constraint firstItem="krd-cI-mJT" firstAttribute="leading" secondItem="HtK-KV-9yX" secondAttribute="leadingMargin" id="LkY-i7-BLb"/>
+                            <constraint firstItem="0vf-hJ-Eqh" firstAttribute="top" secondItem="Heu-f7-ZPI" secondAttribute="bottom" constant="-2" id="OTg-7v-8lC"/>
+                            <constraint firstItem="0vf-hJ-Eqh" firstAttribute="trailing" secondItem="HtK-KV-9yX" secondAttribute="trailingMargin" id="jmK-lK-bz9"/>
+                            <constraint firstItem="StR-Jz-pJ3" firstAttribute="top" secondItem="krd-cI-mJT" secondAttribute="bottom" constant="20" id="pdx-tw-ZLi"/>
+                            <constraint firstItem="Heu-f7-ZPI" firstAttribute="trailing" secondItem="HtK-KV-9yX" secondAttribute="trailingMargin" id="xF8-dm-GRo"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="REBUILD Z-WAVE NETWORK" id="x8R-JM-azg"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="0vf-hJ-Eqh" id="Q9z-fp-FcB"/>
+                        <outlet property="nextButton" destination="krd-cI-mJT" id="vSV-Xw-coy"/>
+                        <outlet property="titleLabel" destination="Heu-f7-ZPI" id="faj-p9-AGa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1f-yP-fdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="-291"/>
+        </scene>
+        <!--REBUILD Z-WAVE NETWORK-->
+        <scene sceneID="wF5-FI-XXM">
+            <objects>
+                <viewController storyboardIdentifier="ZWaveHealProgressViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HeG-Lt-2jr" customClass="ZWaveHealProgressViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U5U-Df-a2z"/>
+                        <viewControllerLayoutGuide type="bottom" id="4yD-Kh-hHY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CGB-NE-cH9">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fD0-B0-i1D">
+                                <rect key="frame" x="16" y="351" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="67o-hz-6m3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onContinueToDashboard:" destination="HeG-Lt-2jr" eventType="touchUpInside" id="joA-uf-Cpf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heg-5g-Hha">
+                                <rect key="frame" x="16" y="298" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="hZ6-S4-ZaA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onCancel:" destination="HeG-Lt-2jr" eventType="touchUpInside" id="1Ra-SA-SbX"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tPo-6A-YcO">
+                                <rect key="frame" x="10" y="51" width="300" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="1xv-B8-x8N"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="VuD-qi-OQH"/>
+                                    <constraint firstAttribute="width" constant="400" id="YmN-5b-ax0"/>
+                                </constraints>
+                                <color key="progressTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YmN-5b-ax0"/>
+                                    </mask>
+                                </variation>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AS-9Z-t42">
+                                <rect key="frame" x="149" y="61" width="21" height="20"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rebuilding" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae7-cg-81e">
+                                <rect key="frame" x="117" y="87" width="86" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="ZU1-Tm-Q7T"/>
+                                    <constraint firstAttribute="height" constant="47" id="z1W-ph-ITw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjc-2w-cdl">
+                                <rect key="frame" x="151" y="142" width="299" height="193"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="193" id="RHo-ff-peM"/>
+                                </constraints>
+                                <string key="text">The rebuild process time varies depending  on the number of Z-Wave devices in your  home. It may take a few minutes or several hours to complete.  During this process Z-Wave devices will not work optimally. These devices may disconnect and reconnect to the hub until the rebuild process is complete.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ae7-cg-81e" firstAttribute="top" secondItem="1AS-9Z-t42" secondAttribute="bottom" constant="6.5" id="2mQ-o1-Nft"/>
+                            <constraint firstItem="tPo-6A-YcO" firstAttribute="centerX" secondItem="CGB-NE-cH9" secondAttribute="centerX" id="3ro-dZ-A9x"/>
+                            <constraint firstItem="heg-5g-Hha" firstAttribute="width" secondItem="fD0-B0-i1D" secondAttribute="width" id="5gF-h9-aAX"/>
+                            <constraint firstItem="1AS-9Z-t42" firstAttribute="centerX" secondItem="tPo-6A-YcO" secondAttribute="centerX" id="794-OL-kmx"/>
+                            <constraint firstItem="heg-5g-Hha" firstAttribute="centerX" secondItem="fD0-B0-i1D" secondAttribute="centerX" id="8hM-0J-gVQ"/>
+                            <constraint firstItem="fD0-B0-i1D" firstAttribute="trailing" secondItem="CGB-NE-cH9" secondAttribute="trailingMargin" id="OUz-H9-g2S"/>
+                            <constraint firstItem="qjc-2w-cdl" firstAttribute="top" secondItem="Ae7-cg-81e" secondAttribute="bottom" constant="8" id="Qcc-4i-o83"/>
+                            <constraint firstItem="fD0-B0-i1D" firstAttribute="leading" secondItem="CGB-NE-cH9" secondAttribute="leadingMargin" id="Qxo-C0-dvw"/>
+                            <constraint firstItem="tPo-6A-YcO" firstAttribute="top" secondItem="U5U-Df-a2z" secondAttribute="bottom" constant="51" id="RHC-7U-LwE"/>
+                            <constraint firstItem="qjc-2w-cdl" firstAttribute="centerX" secondItem="CGB-NE-cH9" secondAttribute="centerX" id="YOT-xz-5e7"/>
+                            <constraint firstItem="fD0-B0-i1D" firstAttribute="top" secondItem="heg-5g-Hha" secondAttribute="bottom" constant="8" id="e78-GF-h4d"/>
+                            <constraint firstItem="1AS-9Z-t42" firstAttribute="top" secondItem="tPo-6A-YcO" secondAttribute="bottom" constant="8" id="lck-1z-LyL"/>
+                            <constraint firstItem="Ae7-cg-81e" firstAttribute="centerX" secondItem="CGB-NE-cH9" secondAttribute="centerX" id="mCZ-gB-8bG"/>
+                            <constraint firstItem="4yD-Kh-hHY" firstAttribute="top" secondItem="fD0-B0-i1D" secondAttribute="bottom" constant="20" id="sJI-jz-tVp"/>
+                            <constraint firstItem="fD0-B0-i1D" firstAttribute="centerX" secondItem="CGB-NE-cH9" secondAttribute="centerX" id="vBQ-NK-Bbo"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="REBUILD Z-WAVE NETWORK" id="i9a-9V-7cW"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cancelRebuildButton" destination="heg-5g-Hha" id="seH-Tt-VwU"/>
+                        <outlet property="continueToDashboardButton" destination="fD0-B0-i1D" id="980-rK-MpV"/>
+                        <outlet property="descriptionLabel" destination="qjc-2w-cdl" id="Qfh-oZ-AOi"/>
+                        <outlet property="percentLabel" destination="1AS-9Z-t42" id="3iV-5w-OP0"/>
+                        <outlet property="progressMeter" destination="tPo-6A-YcO" id="eKm-eH-MZp"/>
+                        <outlet property="titleLabel" destination="Ae7-cg-81e" id="QjR-nJ-43K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E1T-H9-NsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560" y="-291"/>
+        </scene>
+        <!--REBUILD Z-WAVE NETWORK-->
+        <scene sceneID="KMe-rb-7dJ">
+            <objects>
+                <viewController storyboardIdentifier="ZWaveHealRecommendedViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tx0-iY-Uet" customClass="ZWaveHealRecommendedViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3sJ-Vb-yyC"/>
+                        <viewControllerLayoutGuide type="bottom" id="9PM-Rr-OPj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ylx-Qx-2P8">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z-Wave Network Rebuild Recommended" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcs-Ad-SPC">
+                                <rect key="frame" x="16" y="81" width="288" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="xQu-ZA-pa8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeA-gO-hxa">
+                                <rect key="frame" x="16" y="351" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="27i-B8-Dij"/>
+                                </constraints>
+                                <state key="normal" title="Rebuild Later"/>
+                                <connections>
+                                    <action selector="onRebuildLater:" destination="tx0-iY-Uet" eventType="touchUpInside" id="La6-Uo-1NM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFH-41-zbm">
+                                <rect key="frame" x="16" y="149" width="288" height="227"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="227" id="ZLf-7q-9TX"/>
+                                </constraints>
+                                <string key="text">One or more Z-Wave devices were paired.  Z-Wave devices in your home link together to form a network. If devices are added, relocated or removed, the network will need to be rebuilt.  Ensure your devices are placed in the final installation location.  Choose Rebuild Now when you have finished pairing all of your devices.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DevicesIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4Sj-AL-sDc">
+                                <rect key="frame" x="145" y="26" width="30" height="30"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2D-0M-a2g">
+                                <rect key="frame" x="16" y="298" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="6ML-bJ-EYo"/>
+                                </constraints>
+                                <state key="normal" title="Rebuild Now"/>
+                                <connections>
+                                    <action selector="onRebuildNow:" destination="tx0-iY-Uet" eventType="touchUpInside" id="30w-DA-EBg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Gcs-Ad-SPC" firstAttribute="leading" secondItem="Ylx-Qx-2P8" secondAttribute="leadingMargin" id="5Uc-Mu-RhK"/>
+                            <constraint firstItem="SeA-gO-hxa" firstAttribute="top" secondItem="F2D-0M-a2g" secondAttribute="bottom" constant="8" id="8GD-Z1-SrR"/>
+                            <constraint firstItem="9PM-Rr-OPj" firstAttribute="top" secondItem="SeA-gO-hxa" secondAttribute="bottom" constant="20" id="KpO-V9-kDL"/>
+                            <constraint firstItem="Gcs-Ad-SPC" firstAttribute="trailing" secondItem="Ylx-Qx-2P8" secondAttribute="trailingMargin" id="Q9b-mL-ya6"/>
+                            <constraint firstItem="4Sj-AL-sDc" firstAttribute="top" secondItem="3sJ-Vb-yyC" secondAttribute="bottom" constant="26" id="Tlh-2u-eHf"/>
+                            <constraint firstItem="F2D-0M-a2g" firstAttribute="width" secondItem="SeA-gO-hxa" secondAttribute="width" id="Wnf-Fc-3qo"/>
+                            <constraint firstItem="SeA-gO-hxa" firstAttribute="leading" secondItem="Ylx-Qx-2P8" secondAttribute="leadingMargin" id="bFj-Wp-kNG"/>
+                            <constraint firstItem="Gcs-Ad-SPC" firstAttribute="top" secondItem="3sJ-Vb-yyC" secondAttribute="bottom" constant="81" id="bIc-ik-LVF"/>
+                            <constraint firstItem="SeA-gO-hxa" firstAttribute="trailing" secondItem="Ylx-Qx-2P8" secondAttribute="trailingMargin" id="bTd-kD-adz"/>
+                            <constraint firstItem="F2D-0M-a2g" firstAttribute="centerX" secondItem="SeA-gO-hxa" secondAttribute="centerX" id="pak-B1-yYg"/>
+                            <constraint firstItem="jFH-41-zbm" firstAttribute="leading" secondItem="Ylx-Qx-2P8" secondAttribute="leadingMargin" id="tft-FC-vkT"/>
+                            <constraint firstItem="4Sj-AL-sDc" firstAttribute="centerX" secondItem="Ylx-Qx-2P8" secondAttribute="centerX" id="uGR-JF-ggO"/>
+                            <constraint firstItem="jFH-41-zbm" firstAttribute="top" secondItem="Gcs-Ad-SPC" secondAttribute="bottom" constant="8" id="uXz-Qj-8oZ"/>
+                            <constraint firstItem="jFH-41-zbm" firstAttribute="trailing" secondItem="Ylx-Qx-2P8" secondAttribute="trailingMargin" id="x9q-9B-K8f"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="REBUILD Z-WAVE NETWORK" id="yym-kj-TQQ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="jFH-41-zbm" id="xrc-Ys-gos"/>
+                        <outlet property="rebuildLater" destination="SeA-gO-hxa" id="BdF-3d-LFQ"/>
+                        <outlet property="rebuildNow" destination="F2D-0M-a2g" id="6G0-dZ-zrW"/>
+                        <outlet property="titleLabel" destination="Gcs-Ad-SPC" id="eKp-kR-hcv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cty-7V-itk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="-967"/>
+        </scene>
+        <!--Wave Rebuild Later View Controller-->
+        <scene sceneID="Fqm-mh-s2L">
+            <objects>
+                <viewController storyboardIdentifier="ZWaveRebuildLaterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1nV-ud-0Sk" customClass="ZWaveRebuildLaterViewController" customModule="i2app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sus-k5-Bws"/>
+                        <viewControllerLayoutGuide type="bottom" id="KmI-qo-bfw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pih-C1-mta">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTW-4B-u4p">
+                                <rect key="frame" x="16" y="351" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="TjR-rM-Slk"/>
+                                </constraints>
+                                <state key="normal" title="Continue to Dashboard"/>
+                                <connections>
+                                    <action selector="onContinueToDashboard:" destination="1nV-ud-0Sk" eventType="touchUpInside" id="WAg-Xl-IUs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rebuild your Z-Wave Network by tapping Devices and then Z-Wave Tools in the left hand navigation." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8J-3g-8bC">
+                                <rect key="frame" x="16" y="37" width="288" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="byj-x0-RYj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ZWaveTools" translatesAutoresizingMaskIntoConstraints="NO" id="uxs-0o-dOM">
+                                <rect key="frame" x="35" y="-22" width="250" height="374"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REBUILD LATER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20U-fZ-8Sc">
+                                <rect key="frame" x="108" y="20" width="104" height="20"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f8J-3g-8bC" firstAttribute="leading" secondItem="pih-C1-mta" secondAttribute="leadingMargin" id="0vR-ma-FX7"/>
+                            <constraint firstItem="VTW-4B-u4p" firstAttribute="trailing" secondItem="pih-C1-mta" secondAttribute="trailingMargin" id="F5p-TY-6nc"/>
+                            <constraint firstItem="20U-fZ-8Sc" firstAttribute="top" secondItem="sus-k5-Bws" secondAttribute="bottom" constant="20" id="IJQ-Pr-nrG"/>
+                            <constraint firstItem="f8J-3g-8bC" firstAttribute="trailing" secondItem="pih-C1-mta" secondAttribute="trailingMargin" id="P3a-Ao-HNU"/>
+                            <constraint firstItem="f8J-3g-8bC" firstAttribute="top" secondItem="20U-fZ-8Sc" secondAttribute="bottom" constant="-12" id="T0o-Fv-JdO"/>
+                            <constraint firstItem="VTW-4B-u4p" firstAttribute="leading" secondItem="pih-C1-mta" secondAttribute="leadingMargin" id="b0U-qB-kzL"/>
+                            <constraint firstItem="KmI-qo-bfw" firstAttribute="top" secondItem="VTW-4B-u4p" secondAttribute="bottom" constant="20" id="fwe-pK-trF"/>
+                            <constraint firstItem="VTW-4B-u4p" firstAttribute="top" secondItem="uxs-0o-dOM" secondAttribute="bottom" constant="-1" id="gkZ-5F-f83"/>
+                            <constraint firstItem="20U-fZ-8Sc" firstAttribute="centerX" secondItem="pih-C1-mta" secondAttribute="centerX" id="lnv-a6-0Ke"/>
+                            <constraint firstItem="f8J-3g-8bC" firstAttribute="top" secondItem="20U-fZ-8Sc" secondAttribute="bottom" constant="-3" id="omH-uM-tHt"/>
+                            <constraint firstItem="uxs-0o-dOM" firstAttribute="centerX" secondItem="pih-C1-mta" secondAttribute="centerX" id="qwc-jT-5NZ"/>
+                            <constraint firstItem="f8J-3g-8bC" firstAttribute="top" secondItem="pih-C1-mta" secondAttribute="top" constant="20" symbolic="YES" id="tKC-1E-6dd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="T0o-Fv-JdO"/>
+                                <exclude reference="tKC-1E-6dd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="continueToDashboard" destination="VTW-4B-u4p" id="zFN-hB-7Ig"/>
+                        <outlet property="rebuildLaterLabel" destination="f8J-3g-8bC" id="e7W-lb-5wP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qA3-n3-I34" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560" y="-967"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DevicesIcon" width="30" height="30"/>
+        <image name="ZWaveTools" width="250" height="374"/>
+    </resources>
+</document>

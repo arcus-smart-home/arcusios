@@ -1,0 +1,6 @@
+framework module Cornea {
+  umbrella header "Cornea-umbrella.h"
+
+  export *
+  module * { export * }
+}

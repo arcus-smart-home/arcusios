@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdjusterOperationController">
+            <connections>
+                <outlet property="attributeViewConstraint" destination="vGl-JC-fUj" id="Hzx-tG-EFT"/>
+                <outlet property="attributesView" destination="Jl7-4Z-2be" id="0Sz-38-bzs"/>
+                <outlet property="buttonViewConstraint" destination="cnr-sa-4yc" id="Mpb-vT-aoB"/>
+                <outlet property="buttonsView" destination="4zd-OV-0Wy" id="ddQ-ne-g7U"/>
+                <outlet property="centerLogoLocation" destination="aWG-Jq-mue" id="IEP-gi-JYW"/>
+                <outlet property="deviceLogo" destination="6av-B5-q1a" id="jzG-Yo-h6y"/>
+                <outlet property="dimmerView" destination="CEW-ht-Zcf" id="alQ-9H-WQV"/>
+                <outlet property="eventLabel" destination="7d3-8T-eY1" id="2mq-U3-jOY"/>
+                <outlet property="offLabel" destination="b1T-eS-cBm" id="hgT-pQ-afH"/>
+                <outlet property="onLabel" destination="rhV-c1-Cc2" id="Txj-Ut-EyQ"/>
+                <outlet property="tapOff" destination="XlM-7M-epo" id="0SX-1L-Lvk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7d3-8T-eY1" customClass="DeviceNotificationLabel">
+                    <rect key="frame" x="256" y="40" width="89" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dimmer_dots" translatesAutoresizingMaskIntoConstraints="NO" id="CEW-ht-Zcf">
+                    <rect key="frame" x="165" y="139" width="271" height="253"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="253" id="Pzm-RK-Q4B"/>
+                        <constraint firstAttribute="width" constant="271" id="enc-lL-Wgv"/>
+                    </constraints>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="6av-B5-q1a">
+                    <rect key="frame" x="205" y="175" width="190" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="BX5-Vp-aM0"/>
+                        <constraint firstAttribute="width" constant="190" id="Y7x-pU-cUE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1T-eS-cBm">
+                    <rect key="frame" x="254" y="377" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XlM-7M-epo">
+                    <rect key="frame" x="228" y="205" width="142" height="129"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="142" id="FHB-U7-4un"/>
+                        <constraint firstAttribute="height" constant="129" id="Pp2-iu-C97"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhV-c1-Cc2">
+                    <rect key="frame" x="316" y="377" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jl7-4Z-2be" customClass="DeviceAttributeGroupView">
+                    <rect key="frame" x="150" y="495" width="300" height="70"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="5YQ-gP-8nY"/>
+                        <constraint firstAttribute="width" constant="300" id="pZQ-JX-epr"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zd-OV-0Wy" customClass="DeviceButtonGroupView">
+                    <rect key="frame" x="150" y="406" width="300" height="64"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="GCo-6l-IfW"/>
+                        <constraint firstAttribute="height" constant="64" id="g58-bA-YfL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="7d3-8T-eY1" secondAttribute="centerX" id="0pQ-BN-9Xd"/>
+                <constraint firstAttribute="centerX" secondItem="4zd-OV-0Wy" secondAttribute="centerX" id="365-3O-lOS"/>
+                <constraint firstItem="7d3-8T-eY1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="Dmn-p6-WBN"/>
+                <constraint firstItem="rhV-c1-Cc2" firstAttribute="leading" secondItem="b1T-eS-cBm" secondAttribute="trailing" constant="20" id="HnS-9I-c3N"/>
+                <constraint firstAttribute="centerX" secondItem="Jl7-4Z-2be" secondAttribute="centerX" id="I6L-cy-x3m"/>
+                <constraint firstItem="rhV-c1-Cc2" firstAttribute="top" secondItem="CEW-ht-Zcf" secondAttribute="bottom" constant="-15" id="Oe3-EL-E0q"/>
+                <constraint firstItem="6av-B5-q1a" firstAttribute="top" secondItem="CEW-ht-Zcf" secondAttribute="top" constant="36" id="PRz-jW-Ego"/>
+                <constraint firstItem="CEW-ht-Zcf" firstAttribute="top" secondItem="7d3-8T-eY1" secondAttribute="bottom" constant="28" id="RfM-Hq-kif"/>
+                <constraint firstItem="7d3-8T-eY1" firstAttribute="centerX" secondItem="CEW-ht-Zcf" secondAttribute="centerX" id="T7P-PM-zz9"/>
+                <constraint firstItem="7d3-8T-eY1" firstAttribute="centerX" secondItem="6av-B5-q1a" secondAttribute="centerX" id="UAi-Kd-HDc"/>
+                <constraint firstAttribute="centerY" secondItem="6av-B5-q1a" secondAttribute="centerY" constant="30" id="aWG-Jq-mue"/>
+                <constraint firstItem="4zd-OV-0Wy" firstAttribute="top" secondItem="6av-B5-q1a" secondAttribute="bottom" constant="41" id="cnr-sa-4yc"/>
+                <constraint firstItem="XlM-7M-epo" firstAttribute="top" secondItem="6av-B5-q1a" secondAttribute="bottom" constant="-160" id="flH-U4-frC"/>
+                <constraint firstItem="6av-B5-q1a" firstAttribute="leading" secondItem="XlM-7M-epo" secondAttribute="trailing" constant="-165" id="jtC-sg-msM"/>
+                <constraint firstAttribute="centerX" secondItem="b1T-eS-cBm" secondAttribute="centerX" constant="25" id="snd-hb-En1"/>
+                <constraint firstItem="Jl7-4Z-2be" firstAttribute="top" secondItem="6av-B5-q1a" secondAttribute="bottom" constant="130" id="vGl-JC-fUj"/>
+                <constraint firstItem="b1T-eS-cBm" firstAttribute="top" secondItem="CEW-ht-Zcf" secondAttribute="bottom" constant="-15" id="ziL-ab-pc8"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="RfM-Hq-kif"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="dimmer_dots" width="273" height="253"/>
+    </resources>
+</document>

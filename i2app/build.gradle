@@ -1,0 +1,82 @@
+buildscript {
+   repositories {
+      maven {
+         credentials {
+            username "${maven_username}"
+            password "${maven_password}"
+         }
+
+         url 'http://eyerisbuild.cloudapp.net/artifactory/repo'
+      }
+   }
+}
+
+repositories {
+    maven {
+        credentials {
+            username "${maven_username}"
+            password "${maven_password}"
+        }
+
+        url 'http://eyerisbuild.irisbylowes.com/artifactory/repo'
+    }
+}
+
+ext.iris_captools = "com.iris:iris2-captools:${platform_version}"
+ext.iris_model = "com.iris:iris2-model:${common_version}"
+
+configurations {
+   tools
+}
+
+configurations.all {
+   resolutionStrategy {
+      force "com.iris:iris2-model:${common_version}"
+   }
+}
+
+dependencies {
+   tools iris_captools
+   tools iris_model
+}
+
+def findJar(prefix) {
+    configurations.tools.files.find { it.name.startsWith(prefix) }
+}
+
+task downloadDependencies(type: Copy) {
+   mkdir "${buildDir}/lib"
+   from configurations.tools
+   into "${buildDir}/lib"
+}
+
+task extractModels(type: Copy) {
+   mkdir "${buildDir}/models"
+   from(zipTree(findJar('iris2-model'))) { include '**/*.xml' }
+   into "${buildDir}/models"
+   includeEmptyDirs = false
+}
+
+task generateSource(type: JavaExec, dependsOn: ['clean', 'downloadDependencies', 'extractModels', 'generateSwiftSource', 'generateObjCSource']) {
+  println 'Generating Source'
+}
+
+task generateSwiftSource(type: JavaExec, dependsOn: ['clean', 'downloadDependencies', 'extractModels']) {
+   description "Generates the Swift Source"
+   classpath = files("${buildDir}/lib/*")
+
+   main = "com.iris.capability.generator.swift.SwiftGenerator"
+   args = ["-i", "${buildDir}/models", "-t", "swift/swift", "-o", "../i2app/CorneaPod/Cornea/Classes/"]
+}
+
+task generateObjCSource(type: JavaExec, dependsOn: ['clean', 'downloadDependencies', 'extractModels']) {
+   description "Generates the Objective-C Source"
+   classpath = files("${buildDir}/lib/*")
+
+   main = "com.iris.capability.generator.objc.ObjCGenerator"
+   args = ["-i", "${buildDir}/models", "-t", "objc/objc", "-o", "Cornea/"]
+}
+
+task clean << {
+   delete "${buildDir}"
+}
