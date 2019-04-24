@@ -507,6 +507,9 @@ Contact Support</string>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderlined" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="Uag-mo-OQM" kind="custom" customClass="ArcusPopupSegue" customModule="i2app" customModuleProvider="target" id="7d0-aC-7DP"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="um0-qX-Oz7" customClass="ScleraButton" customModule="i2app" customModuleProvider="target">
                                                         <rect key="frame" x="201" y="228" width="126" height="32"/>
@@ -518,6 +521,9 @@ Contact Support</string>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderlined" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="Waq-HT-7Nm" kind="custom" customClass="ArcusPopupSegue" customModule="i2app" customModuleProvider="target" id="1Rz-R4-P0G"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -593,6 +599,9 @@ If the issue persists, please call 1-0</mutableString>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderlined" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <segue destination="kJv-Yd-EHr" kind="custom" customClass="ArcusPopupSegue" customModule="i2app" customModuleProvider="target" id="K97-sH-hUD"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
