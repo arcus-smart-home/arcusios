@@ -493,6 +493,9 @@ Contact Support</string>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="hasCaps" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="loginButtonPressed:" destination="2kW-NF-GPV" eventType="touchUpInside" id="ZhP-Tx-ULx"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9Y-yQ-DTw" customClass="ScleraButton" customModule="i2app" customModuleProvider="target">
                                                         <rect key="frame" x="14" y="228" width="113" height="32"/>
