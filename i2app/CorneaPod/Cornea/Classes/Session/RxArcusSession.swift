@@ -147,7 +147,7 @@ public class RxArcusSession: ArcusSession, RxSwiftSession, UrlBuilder, ArcusSess
         return
       }
       
-      if let tokenValue = response?.getValue("arcusAuthToken") {
+      if let tokenValue = response?.getValue("irisAuthToken") {
         completion(true, nil)
         
         self.setActiveUser(username)
