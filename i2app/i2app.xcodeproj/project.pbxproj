@@ -356,6 +356,7 @@
 		3FC5EFF71B7BC5FB00BCD819 /* UIView+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5EFF61B7BC5FB00BCD819 /* UIView+FirstResponder.m */; };
 		3FC5EFFA1B7BDD9E00BCD819 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5EFF91B7BDD9E00BCD819 /* ChangePasswordViewController.m */; };
 		3FF6E71F1B73D85100793C01 /* PasswordTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF6E71E1B73D85100793C01 /* PasswordTextField.m */; };
+		49E1C95E230664B300F5137C /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49E1C95D230664B200F5137C /* logo.jpg */; };
 		690E5D141B5D49F5007EF7F2 /* GeneralDeviceOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690E5D131B5D49F5007EF7F2 /* GeneralDeviceOperationController.m */; };
 		690E5D191B5D746C007EF7F2 /* DeviceTextIconAttributeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 690E5D181B5D746C007EF7F2 /* DeviceTextIconAttributeControl.m */; };
 		690E5D1C1B5D7D37007EF7F2 /* DeviceTextAttributeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 690E5D1B1B5D7D37007EF7F2 /* DeviceTextAttributeControl.m */; };
@@ -2041,6 +2042,7 @@
 		3FC5EFF91B7BDD9E00BCD819 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
 		3FF6E71D1B73D85100793C01 /* PasswordTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordTextField.h; sourceTree = "<group>"; };
 		3FF6E71E1B73D85100793C01 /* PasswordTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordTextField.m; sourceTree = "<group>"; };
+		49E1C95D230664B200F5137C /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpg; path = Assets/logo.jpg; sourceTree = "<group>"; };
 		571D8B10C37B125025C32D56 /* Pods_i2appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_i2appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		682D37737DFB82F183564646 /* Pods-i2app-ad-hoc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i2app-ad-hoc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-i2app-ad-hoc/Pods-i2app-ad-hoc.debug.xcconfig"; sourceTree = "<group>"; };
 		690E5D121B5D49F5007EF7F2 /* GeneralDeviceOperationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralDeviceOperationController.h; sourceTree = "<group>"; };
@@ -9213,6 +9215,7 @@
 			children = (
 				F296F7511AD478000049AE58 /* i2app-Prefix.pch */,
 				F230E3B61ACAEF8F005D953A /* Info.plist */,
+				49E1C95D230664B200F5137C /* logo.jpg */,
 				7EED389E1FB913D500E12E06 /* main.swift */,
 			);
 			name = "Supporting Files";
@@ -10174,6 +10177,7 @@
 				DAB25C231F339BCC005819B4 /* CameraCard.storyboard in Resources */,
 				69733D291BC4626700DC849D /* CommonCheckableCell.xib in Resources */,
 				692ED20F1B6693C500E29E02 /* PopupSelectionTitleTableView.xib in Resources */,
+				49E1C95E230664B300F5137C /* logo.jpg in Resources */,
 				69C458C91B9607A000342F0C /* PopupSelectionMinsTimerView.xib in Resources */,
 				E657D65F20D2FD2E00A32CD0 /* SlideMenu.storyboard in Resources */,
 				6928395B1B56DA3700D724FE /* PopupMessageViewController.xib in Resources */,
