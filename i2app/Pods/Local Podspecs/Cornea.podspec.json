@@ -3,21 +3,18 @@
   "version": "0.1.0",
   "summary": "A short description of Cornea.",
   "description": "Communicate with the Arcus Platform using Observables",
-  "homepage": "https://www.arcusbylowes.com",
-  "license": {
-    "type": "© Lowes Corporation",
-    "file": "LICENSE"
-  },
+  "homepage": "https://github.com/arcus-smart-home/arcusios",
+  "license": "Apache 2.0",
   "authors": {
-    "Arcus By Lowe's": "support@arcusbylowes.com"
+    "Arcus Smart Home": ""
   },
   "source": {
     "path": "."
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "swift_version": "3.2",
+  "swift_versions": "3.2",
   "source_files": [
     "Cornea/Classes/**/*",
     "Cornea/Classes/**/**/*"
@@ -52,5 +49,6 @@
     "RxReachability": [
 
     ]
-  }
+  },
+  "swift_version": "3.2"
 }
