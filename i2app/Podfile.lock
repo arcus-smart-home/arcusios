@@ -9,7 +9,7 @@ PODS:
     - RxReachability
     - RxSwift
     - RxSwiftExt (= 2.5.1)
-    - Starscream (= 2.1.1)
+    - Starscream (= 3.0.6)
   - CryptoSwift (0.10.0)
   - Differentiator (2.0.2)
   - Locksmith (3.0.0)
@@ -39,7 +39,7 @@ PODS:
   - SDWebImage/Core (3.7.5)
   - SocketRocket (0.4.2)
   - SSKeychain (1.4.1)
-  - Starscream (2.1.1)
+  - Starscream (3.0.6)
   - SwiftLint (0.18.1)
   - SWRevealViewController (2.3.0)
 
@@ -93,7 +93,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
-  Cornea: 69646b70175165b7636d3e8e2be62b15a44d5ae0
+  Cornea: 4f2aa6a836e3c54c29cc3e3b5baeeb7f30c2dfcc
   CryptoSwift: 6c778d69282bed3b4e975ff97a79d074f20bb011
   Differentiator: caa9b3957981a2ac8e6b2eac8a676af461caa604
   Locksmith: 310b4cc5031af5728bf4db5d4de547a5100c6a3b
@@ -111,7 +111,7 @@ SPEC CHECKSUMS:
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
-  Starscream: 142bd8ef24592d985daee9fa48c936070b85b15f
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   SwiftLint: b467d08f5b25dc3b3cfed243d8e1b74b91714c67
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 

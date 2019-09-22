@@ -142,6 +142,7 @@ public class SSArcusSocket: ArcusSocket, StarscreamSocket {
 
     self.config = config
     configure(WebSocket(url: config.uri))
+    var request = URLRequest(url: config.uri)
   }
 
   // MARK: SSSocket Configuration

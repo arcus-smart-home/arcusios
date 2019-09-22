@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   s.dependency  'PromiseKit/Promise'
   s.dependency  'CocoaLumberjack/Swift', '~> 3.0'
   s.dependency  'Locksmith'
-  s.dependency  'Starscream', '2.1.1'
+  s.dependency  'Starscream', '3.0.6'
   s.dependency  'RxSwift'
   s.dependency  'RxSwiftExt', '2.5.1'
   s.dependency  'RxReachability'
