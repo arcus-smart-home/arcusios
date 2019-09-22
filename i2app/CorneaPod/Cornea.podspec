@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit', 'Foundation'
   s.dependency  'PromiseKit/Promise'
   s.dependency  'CocoaLumberjack/Swift', '~> 3.0'
-  s.dependency  'Locksmith'
+  s.dependency  'Locksmith', '4.0'
   s.dependency  'Starscream', '3.0.6'
   s.dependency  'RxSwift'
   s.dependency  'RxSwiftExt', '2.5.1'
