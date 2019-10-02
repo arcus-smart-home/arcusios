@@ -19,7 +19,7 @@ def shared_pods
   pod 'MZDownloadManager', '3.0' # BSD
   pod 'SwiftLint', '0.18.1' #MIT
   pod 'Locksmith', '4.0'
-  pod 'CryptoSwift', '0.10.0'
+  pod 'CryptoSwift', '0.12.0'
 
   # Pods for RxArcusClient
   pod 'RxSwift' # Mit
