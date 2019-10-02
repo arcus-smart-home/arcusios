@@ -46,7 +46,7 @@
  
  NOTE: Access to this variable is not synchronized (and should only be done on the main thread).
  */
-static __NSMutableArray_of(__NSMutableArray_of(NSLayoutConstraint *) *) *_al_arraysOfCreatedConstraints = nil;
+static PL__NSMutableArray_of(PL__NSMutableArray_of(NSLayoutConstraint *) *) *_al_arraysOfCreatedConstraints = nil;
 
 /**
  A global variable that is set to YES when installing a batch of constraints collected from a call to +[autoCreateAndInstallConstraints].
@@ -59,7 +59,7 @@ static BOOL _al_isInstallingCreatedConstraints = NO;
 /**
  Accessor for the global state that stores arrays of constraints created without being installed.
  */
-+ (__NSMutableArray_of(__NSMutableArray_of(NSLayoutConstraint *) *) *)al_arraysOfCreatedConstraints
++ (PL__NSMutableArray_of(PL__NSMutableArray_of(NSLayoutConstraint *) *) *)al_arraysOfCreatedConstraints
 {
     NSAssert([NSThread isMainThread], @"PureLayout is not thread safe, and must be used exclusively from the main thread.");
     if (!_al_arraysOfCreatedConstraints) {
@@ -71,7 +71,7 @@ static BOOL _al_isInstallingCreatedConstraints = NO;
 /**
  Accessor for the current mutable array of constraints created without being immediately installed.
  */
-+ (__NSMutableArray_of(NSLayoutConstraint *) *)al_currentArrayOfCreatedConstraints
++ (PL__NSMutableArray_of(NSLayoutConstraint *) *)al_currentArrayOfCreatedConstraints
 {
     return [[self al_arraysOfCreatedConstraints] lastObject];
 }
@@ -138,12 +138,12 @@ static BOOL _al_isInstallingCreatedConstraints = NO;
  constraints created by this library (even if automatic constraint installation is being prevented).
  NOTE: Access to this variable is not synchronized (and should only be done on the main thread).
  */
-static __NSMutableArray_of(NSNumber *) *_al_globalConstraintPriorities = nil;
+static PL__NSMutableArray_of(NSNumber *) *_al_globalConstraintPriorities = nil;
 
 /**
  Accessor for the global stack of layout priorities.
  */
-+ (__NSMutableArray_of(NSNumber *) *)al_globalConstraintPriorities
++ (PL__NSMutableArray_of(NSNumber *) *)al_globalConstraintPriorities
 {
     NSAssert([NSThread isMainThread], @"PureLayout is not thread safe, and must be used exclusively from the main thread.");
     if (!_al_globalConstraintPriorities) {
@@ -159,7 +159,7 @@ static __NSMutableArray_of(NSNumber *) *_al_globalConstraintPriorities = nil;
  */
 + (ALLayoutPriority)al_currentGlobalConstraintPriority
 {
-    __NSMutableArray_of(NSNumber *) *globalConstraintPriorities = [self al_globalConstraintPriorities];
+    PL__NSMutableArray_of(NSNumber *) *globalConstraintPriorities = [self al_globalConstraintPriorities];
     if ([globalConstraintPriorities count] == 0) {
         return ALLayoutPriorityRequired;
     }
@@ -207,12 +207,12 @@ static __NSMutableArray_of(NSNumber *) *_al_globalConstraintPriorities = nil;
  constraints created by this library (even if automatic constraint installation is being prevented).
  NOTE: Access to this variable is not synchronized (and should only be done on the main thread).
  */
-static __NSMutableArray_of(NSString *) *_al_globalConstraintIdentifiers = nil;
+static PL__NSMutableArray_of(NSString *) *_al_globalConstraintIdentifiers = nil;
 
 /**
  Accessor for the global state of constraint identifiers.
  */
-+ (__NSMutableArray_of(NSString *) *)al_globalConstraintIdentifiers
++ (PL__NSMutableArray_of(NSString *) *)al_globalConstraintIdentifiers
 {
     NSAssert([NSThread isMainThread], @"PureLayout is not thread safe, and must be used exclusively from the main thread.");
     if (!_al_globalConstraintIdentifiers) {
@@ -228,7 +228,7 @@ static __NSMutableArray_of(NSString *) *_al_globalConstraintIdentifiers = nil;
  */
 + (NSString *)al_currentGlobalConstraintIdentifier
 {
-    __NSMutableArray_of(NSString *) *globalConstraintIdentifiers = [self al_globalConstraintIdentifiers];
+    PL__NSMutableArray_of(NSString *) *globalConstraintIdentifiers = [self al_globalConstraintIdentifiers];
     if ([globalConstraintIdentifiers count] == 0) {
         return nil;
     }
@@ -373,73 +373,73 @@ static __NSMutableArray_of(NSString *) *_al_globalConstraintIdentifiers = nil;
 {
     NSLayoutAttribute layoutAttribute = NSLayoutAttributeNotAnAttribute;
     switch (attribute) {
-        case ALEdgeLeft:
+        case ALAttributeLeft:
             layoutAttribute = NSLayoutAttributeLeft;
             break;
-        case ALEdgeRight:
+        case ALAttributeRight:
             layoutAttribute = NSLayoutAttributeRight;
             break;
-        case ALEdgeTop:
+        case ALAttributeTop:
             layoutAttribute = NSLayoutAttributeTop;
             break;
-        case ALEdgeBottom:
+        case ALAttributeBottom:
             layoutAttribute = NSLayoutAttributeBottom;
             break;
-        case ALEdgeLeading:
+        case ALAttributeLeading:
             layoutAttribute = NSLayoutAttributeLeading;
             break;
-        case ALEdgeTrailing:
+        case ALAttributeTrailing:
             layoutAttribute = NSLayoutAttributeTrailing;
             break;
-        case ALDimensionWidth:
+        case ALAttributeWidth:
             layoutAttribute = NSLayoutAttributeWidth;
             break;
-        case ALDimensionHeight:
+        case ALAttributeHeight:
             layoutAttribute = NSLayoutAttributeHeight;
             break;
-        case ALAxisVertical:
+        case ALAttributeVertical:
             layoutAttribute = NSLayoutAttributeCenterX;
             break;
-        case ALAxisHorizontal:
+        case ALAttributeHorizontal:
             layoutAttribute = NSLayoutAttributeCenterY;
             break;
-        case ALAxisBaseline: // same value as ALAxisLastBaseline
+        case ALAttributeBaseline: // same value as ALAxisLastBaseline
             layoutAttribute = NSLayoutAttributeBaseline;
             break;
 #if PL__PureLayout_MinBaseSDK_iOS_8_0
-        case ALAxisFirstBaseline:
+        case ALAttributeFirstBaseline:
             NSAssert(PL__PureLayout_MinSysVer_iOS_8_0, @"ALAxisFirstBaseline is only supported on iOS 8.0 or higher.");
             layoutAttribute = NSLayoutAttributeFirstBaseline;
             break;
-        case ALMarginLeft:
+        case ALAttributeMarginLeft:
             NSAssert(PL__PureLayout_MinSysVer_iOS_8_0, @"ALEdgeLeftMargin is only supported on iOS 8.0 or higher.");
             layoutAttribute = NSLayoutAttributeLeftMargin;
             break;
-        case ALMarginRight:
+        case ALAttributeMarginRight:
             NSAssert(PL__PureLayout_MinSysVer_iOS_8_0, @"ALEdgeRightMargin is only supported on iOS 8.0 or higher.");
             layoutAttribute = NSLayoutAttributeRightMargin;
             break;
-        case ALMarginTop:
+        case ALAttributeMarginTop:
             NSAssert(PL__PureLayout_MinSysVer_iOS_8_0, @"ALEdgeTopMargin is only supported on iOS 8.0 or higher.");
             layoutAttribute = NSLayoutAttributeTopMargin;
             break;
-        case ALMarginBottom:
+        case ALAttributeMarginBottom:
             NSAssert(PL__PureLayout_MinSysVer_iOS_8_0, @"ALEdgeBottomMargin is only supported on iOS 8.0 or higher.");
             layoutAttribute = NSLayoutAttributeBottomMargin;
             break;
-        case ALMarginLeading:
+        case ALAttributeMarginLeading:
             NSAssert(PL__PureLayout_MinSysVer_iOS_8_0, @"ALEdgeLeadingMargin is only supported on iOS 8.0 or higher.");
             layoutAttribute = NSLayoutAttributeLeadingMargin;
             break;
-        case ALMarginTrailing:
+        case ALAttributeMarginTrailing:
             NSAssert(PL__PureLayout_MinSysVer_iOS_8_0, @"ALEdgeTrailingMargin is only supported on iOS 8.0 or higher.");
             layoutAttribute = NSLayoutAttributeTrailingMargin;
             break;
-        case ALMarginAxisVertical:
+        case ALAttributeMarginAxisVertical:
             NSAssert(PL__PureLayout_MinSysVer_iOS_8_0, @"ALAxisVerticalMargin is only supported on iOS 8.0 or higher.");
             layoutAttribute = NSLayoutAttributeCenterXWithinMargins;
             break;
-        case ALMarginAxisHorizontal:
+        case ALAttributeMarginAxisHorizontal:
             NSAssert(PL__PureLayout_MinSysVer_iOS_8_0, @"ALAxisHorizontalMargin is only supported on iOS 8.0 or higher.");
             layoutAttribute = NSLayoutAttributeCenterYWithinMargins;
             break;

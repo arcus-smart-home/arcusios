@@ -183,8 +183,8 @@
 		3C17C7221F991A82003540BC /* LutronBridgeC2CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C17C7211F991A82003540BC /* LutronBridgeC2CViewController.swift */; };
 		3C17C7241F991A98003540BC /* LutronBridgeC2CPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C17C7231F991A98003540BC /* LutronBridgeC2CPresenter.swift */; };
 		3C17C7261F991AAC003540BC /* LutronPairing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C17C7251F991AAC003540BC /* LutronPairing.storyboard */; };
-		3C1DD5B61E53897A0007990A /* (null) in Sources */ = {isa = PBXBuildFile; };
-		3C1DD5B81E53899D0007990A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		3C1DD5B61E53897A0007990A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		3C1DD5B81E53899D0007990A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		3C1DED49205FF76A007B2719 /* PlaceModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DED48205FF769007B2719 /* PlaceModel+Extension.swift */; };
 		3C1DED4C205FF796007B2719 /* PersonModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DED4B205FF795007B2719 /* PersonModel+Extension.swift */; };
 		3C1DED4F205FF7FE007B2719 /* RecordingModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DED4E205FF7FD007B2719 /* RecordingModel+Extension.swift */; };
@@ -10227,7 +10227,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-i2app/Pods-i2app-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-i2app/Pods-i2app-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/Cornea/Cornea.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
@@ -10276,7 +10276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-i2app/Pods-i2app-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-i2app/Pods-i2app-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9851E53A1F5DD5F8C052EA69 /* [CP] Check Pods Manifest.lock */ = {
@@ -10460,7 +10460,7 @@
 				C97216961CF879A60023FE18 /* PlacePeopleListViewController.swift in Sources */,
 				A0BBF3741C625C7E00149462 /* CareStatusViewController.m in Sources */,
 				C990976A1E54A73E00326AA0 /* ProMonPermitSettingsViewController.swift in Sources */,
-				3C1DD5B81E53899D0007990A /* (null) in Sources */,
+				3C1DD5B81E53899D0007990A /* BuildFile in Sources */,
 				7E7FFFBE1CDD05680087A518 /* PlaceListPresenter.swift in Sources */,
 				F27400551C4D8672003B1735 /* OrderedDictionary.m in Sources */,
 				F294F86C1AD31E5600B53C4B /* UIImage+ImageEffects.m in Sources */,
@@ -11172,7 +11172,7 @@
 				7EE7F6F11C246EC1004037DE /* ZWaveDeviceRemovedCell.m in Sources */,
 				695E0B1D1BA70E9B001D76BA /* PersonCallTreeViewController.m in Sources */,
 				14CA06F01D1DC9EC00C98399 /* CameraPremiumRequiredViewController.swift in Sources */,
-				3C1DD5B61E53897A0007990A /* (null) in Sources */,
+				3C1DD5B61E53897A0007990A /* BuildFile in Sources */,
 				3C1DED52205FF913007B2719 /* HubModel+Extension.swift in Sources */,
 				7E3D9C991E6A056700E74EBB /* WhatsNewInVersionTwo.swift in Sources */,
 				F24C07D31C89D98000446C20 /* WaterHeaterTemperatureViewController.m in Sources */,
