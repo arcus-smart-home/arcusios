@@ -18,9 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = "Communicate with the Arcus Platform using Observables"
-  s.homepage         = ''
-  s.license          = { :type => '', :file => '' }
-  s.author           = { ''s' => '' }
+  s.homepage         = 'https://github.com/arcus-smart-home/arcusios'
+  s.license          = 'Apache 2.0'
+  s.author           = { 'Arcus Smart Home' => '' }
   s.source           = { :path => "." }
 
   s.ios.deployment_target = '8.0'
@@ -37,8 +37,8 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit', 'Foundation'
   s.dependency  'PromiseKit/Promise'
   s.dependency  'CocoaLumberjack/Swift', '~> 3.0'
-  s.dependency  'Locksmith'
-  s.dependency  'Starscream', '2.1.1'
+  s.dependency  'Locksmith', '4.0'
+  s.dependency  'Starscream', '3.0.6'
   s.dependency  'RxSwift'
   s.dependency  'RxSwiftExt', '2.5.1'
   s.dependency  'RxReachability'

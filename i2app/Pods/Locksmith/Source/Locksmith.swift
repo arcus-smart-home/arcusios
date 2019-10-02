@@ -319,7 +319,7 @@ public extension GenericPasswordSecureStorable {
 }
 
 // dear god what have i done...
-public protocol GenericPasswordSecureStorableResultType: GenericPasswordSecureStorable, SecureStorableResultType, AccountBasedSecureStorableResultType, DescribableSecureStorableResultType, CommentableSecureStorableResultType, CreatorDesignatableSecureStorableResultType, LabellableSecureStorableResultType, TypeDesignatableSecureStorableResultType, IsInvisibleAssignableSecureStorableResultType, IsNegativeAssignableSecureStorableResultType {}
+public protocol GenericPasswordSecureStorableResultType: GenericPasswordSecureStorable, AccountBasedSecureStorableResultType, DescribableSecureStorableResultType, CommentableSecureStorableResultType, CreatorDesignatableSecureStorableResultType, LabellableSecureStorableResultType, TypeDesignatableSecureStorableResultType, IsInvisibleAssignableSecureStorableResultType, IsNegativeAssignableSecureStorableResultType {}
 
 public extension GenericPasswordSecureStorableResultType {
     var service: String {
@@ -559,7 +559,9 @@ public extension CreateableSecureStorable where Self : InternetPasswordSecureSto
 public extension CreateableSecureStorable {
     var performCreateRequestClosure: PerformRequestClosureType {
         return { (requestReference: CFDictionary, result: inout AnyObject?) in
-            return withUnsafeMutablePointer(to: &result) { SecItemAdd(requestReference, UnsafeMutablePointer($0)) }
+            return withUnsafeMutablePointer(to: &result) { mutablePointer in
+                SecItemAdd(requestReference, mutablePointer)
+            }
         }
     }
 }

@@ -24,7 +24,7 @@ import Foundation
 import Starscream
 import CocoaLumberjack
 
-public class SSArcusSocket: ArcusSocket, StarscreamSocket {
+public class SSArcusSocket: ArcusSocket, StarscreamSocket, WebSocketDelegate {
   weak public var delegate: ArcusSocketDelegate?
   public var config: ArcusSocketConfig = SocketConfig.emptyConfig()
 
@@ -141,7 +141,14 @@ public class SSArcusSocket: ArcusSocket, StarscreamSocket {
     DDLogInfo("SSArcusSocket: Configuring Socket with Config: \(config).")
 
     self.config = config
-    configure(WebSocket(url: config.uri))
+    var request = URLRequest(url: config.uri)
+
+    // Add headers
+    for (header, value) in config.headers {
+        request.setValue(value, forHTTPHeaderField: header)
+    }
+
+    configure(WebSocket(request: request))
   }
 
   // MARK: SSSocket Configuration
@@ -154,14 +161,6 @@ public class SSArcusSocket: ArcusSocket, StarscreamSocket {
    */
   func configure(_ socket: WebSocket) {
     DDLogInfo("SSArcusSocket: Configuring Socket.")
-
-    // Drop Origin
-    socket.origin = nil
-
-    // Add headers
-    for (header, value) in config.headers {
-      socket.headers[header] = value
-    }
 
     // Set Callbacks for Delegation
     configureDelegateHandling(socket)
@@ -181,30 +180,15 @@ public class SSArcusSocket: ArcusSocket, StarscreamSocket {
 
     socket.callbackQueue = callbackQueue
 
-    socket.onConnect = { [weak self] in
-      self?.websocketDidConnect()
-    }
-    socket.onDisconnect = { [weak self] error in
-      var err: NSError? = nil
-      if let error = error as NSError? {
-        err = error
-    }
-      self?.websocketDidDisconnect(err)
-    }
-    socket.onText = { [weak self] (text: String) in
-      self?.websocketDidReceiveMessage(text)
-    }
-    socket.onData = { [weak self] (data: Data) in
-      self?.websocketDidReceiveData(data)
-    }
+    socket.delegate = self
   }
 
   // MARK: Socket Delegation Handling
-
+    
   /**
    Websocket did connect.
    */
-  fileprivate func websocketDidConnect() {
+  public func websocketDidConnect(socket: WebSocketClient) {
     DDLogInfo("SSArcusSocket: Websocket did connect.")
 
     // Update connection state
@@ -223,10 +207,12 @@ public class SSArcusSocket: ArcusSocket, StarscreamSocket {
    - Parameters:
    - error: The error (if any) received on disconnect.
    */
-  fileprivate func websocketDidDisconnect(_ error: NSError?) {
+  public func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
     DDLogInfo("SSArcusSocket: Websocket did disconnect.")
 
     // Process Error
+    let error = error as? WSError
+
     if let code = error?.code {
       // If Platform issues closes connection app should receive a 4001
       if code == 4001 {
@@ -256,7 +242,7 @@ public class SSArcusSocket: ArcusSocket, StarscreamSocket {
    - Parameters:
    - text: The string received.
    */
-  fileprivate func websocketDidReceiveMessage(_ text: String) {
+  public func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
     DDLogInfo("SSArcusSocket: Websocket did receive message.")
     DDLogVerbose("SSArcusSocket: message: \(text)")
 
@@ -273,7 +259,7 @@ public class SSArcusSocket: ArcusSocket, StarscreamSocket {
    - Parameters:
    - data: The data received.
    */
-  fileprivate func websocketDidReceiveData(_ data: Data) {
+  public func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
     DDLogInfo("SSArcusSocket: Websocket did receive data.")
     DDLogVerbose("SSArcusSocket: data: \(data)")
 

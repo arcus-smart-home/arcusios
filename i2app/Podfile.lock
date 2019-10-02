@@ -4,19 +4,19 @@ PODS:
     - CocoaLumberjack/Default
   - Cornea (0.1.0):
     - CocoaLumberjack/Swift (~> 3.0)
-    - Locksmith
+    - Locksmith (= 4.0)
     - PromiseKit/Promise
     - RxReachability
     - RxSwift
     - RxSwiftExt (= 2.5.1)
-    - Starscream (= 2.1.1)
-  - CryptoSwift (0.10.0)
+    - Starscream (= 3.0.6)
+  - CryptoSwift (0.12.0)
   - Differentiator (2.0.2)
-  - Locksmith (3.0.0)
+  - Locksmith (4.0.0)
   - MZDownloadManager (3.0)
   - PromiseKit/Promise (1.5.3)
   - Proposer (1.1.0)
-  - PureLayout (3.0.2)
+  - PureLayout (3.1.5)
   - Reachability (3.2)
   - ReachabilitySwift (3)
   - RxCocoa (3.6.1):
@@ -39,15 +39,15 @@ PODS:
   - SDWebImage/Core (3.7.5)
   - SocketRocket (0.4.2)
   - SSKeychain (1.4.1)
-  - Starscream (2.1.1)
+  - Starscream (3.0.6)
   - SwiftLint (0.18.1)
   - SWRevealViewController (2.3.0)
 
 DEPENDENCIES:
   - CocoaLumberjack/Swift (~> 3.4.1)
   - Cornea (from `./CorneaPod`)
-  - CryptoSwift (= 0.10.0)
-  - Locksmith (= 3.0)
+  - CryptoSwift (= 0.12.0)
+  - Locksmith (= 4.0)
   - MZDownloadManager (= 3.0)
   - PromiseKit/Promise (= 1.5.3)
   - Proposer (= 1.1.0)
@@ -93,14 +93,14 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
-  Cornea: f9ce85f757aca35965a766de389a47d1b1fcaeb3
-  CryptoSwift: 6c778d69282bed3b4e975ff97a79d074f20bb011
+  Cornea: 82ef89d41e8daacf68c116a53110afa662a9b4d7
+  CryptoSwift: 1c07ca50843dd48bc54e6ea53d7a4dba3b645716
   Differentiator: caa9b3957981a2ac8e6b2eac8a676af461caa604
-  Locksmith: 310b4cc5031af5728bf4db5d4de547a5100c6a3b
+  Locksmith: e9bebbaaa4cee3c511bc358a44f843c3fe00e21f
   MZDownloadManager: fcb5e609595e520ca07192463c60cac61d752279
   PromiseKit: ecdccab1791b95b4752a9fac57223044f5a6c105
   Proposer: 422c693b1917a461af30e7139b0d05eefe999e16
-  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  PureLayout: 9b4ad47b2f0388c84ff534af23d96e720c1b875a
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
@@ -111,10 +111,10 @@ SPEC CHECKSUMS:
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
-  Starscream: 142bd8ef24592d985daee9fa48c936070b85b15f
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   SwiftLint: b467d08f5b25dc3b3cfed243d8e1b74b91714c67
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
-PODFILE CHECKSUM: c6361433e8e174466f7c66f2e56504e8d3741b8d
+PODFILE CHECKSUM: 604ee10d2229d0bb8ef79b31cdfb5cbcda46dbb2
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.5
