@@ -86,8 +86,8 @@ UITextFieldDelegate {
     }
 
     @IBAction func doneButtonPressed(_ sender: AnyObject) {
-        if self.SSID.characters.count > 0 &&
-            self.confirmSSID.characters.count > 0 &&
+        if self.SSID.count > 0 &&
+            self.confirmSSID.count > 0 &&
             self.SSID == self.confirmSSID {
 
             self.completion(self.SSID, self.confirmSSID)
@@ -126,7 +126,7 @@ UITextFieldDelegate {
                                   fontType: FontDataType_Medium_18_Black_NoSpace,
                                   placeholderFontType: FontDataTypeAccountTextFieldPlaceholder)
 
-        cell?.clearButton.isHidden = (cell!.textField.text?.characters.count == 0)
+        cell?.clearButton.isHidden = (cell!.textField.text?.count == 0)
 
         if indexPath.row == 0 {
             self.ssidTextField = cell?.textField

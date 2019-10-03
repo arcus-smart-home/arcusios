@@ -77,7 +77,7 @@ class AddPersonPhoneNumberViewController: BaseTextViewController {
   func configureForm(_ addPersonModel: AddPersonModel?) {
     if addPersonModel != nil {
       self.phoneTextField.text = addPersonModel?.phoneNumber
-      if (self.phoneTextField.text?.characters.count)! > 0 {
+      if (self.phoneTextField.text?.count)! > 0 {
         self.nextButton.isEnabled = true
       }
 

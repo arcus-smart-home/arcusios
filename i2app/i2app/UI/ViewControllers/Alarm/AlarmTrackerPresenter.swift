@@ -277,7 +277,7 @@ BatchNotificationObserver {
 
           guard let title = response.getWarningTitle(),
             let warningMessage = response.getWarningMessage(),
-            title.characters.count > 0 && warningMessage.characters.count > 0 else {
+            title.count > 0 && warningMessage.count > 0 else {
               self.delegate?.dismissTracker()
               return nil
           }

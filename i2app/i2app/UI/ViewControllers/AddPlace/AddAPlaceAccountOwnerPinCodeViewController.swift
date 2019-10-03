@@ -61,7 +61,7 @@ class AddAPlaceAccountOwnerPinCodeViewController: ArcusPinCodeViewController {
     //-------------------------------------------------------------------------------
     @IBAction override func numericButtonPressed(_ sender: UIButton!) {
         super.numericButtonPressed(sender)
-        if enteredPin.characters.count == 4 {
+        if enteredPin.count == 4 {
             performSegue(withIdentifier: pinCodeConfirmSegueIdentifier, sender: self)
         }
     }

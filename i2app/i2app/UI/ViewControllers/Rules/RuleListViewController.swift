@@ -258,7 +258,7 @@ RuleListPresenterDelegate {
       selectedRule = group!.rules[indexPath.row]
 
       let templateId: String? = selectedRule!.getAttribute(kAttrRuleTemplate) as? String
-      if let count = templateId?.characters.count, count > 0 {
+      if let count = templateId?.count, count > 0 {
         performSegue(withIdentifier: "EditRuleTemplateSegue", sender: self)
       } else {
         if let buttonView =

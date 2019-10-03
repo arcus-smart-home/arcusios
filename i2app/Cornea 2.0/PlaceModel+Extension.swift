@@ -154,7 +154,7 @@ extension PlaceModel {
       let state = PlaceCapability.getStateFrom(self),
       let zipCode = PlaceCapability.getZipCode(from: self) {
       if let address2 = PlaceCapability.getStreetAddress2(from: self) {
-        if address2.characters.count > 0 {
+        if address2.count > 0 {
           return "\(address1) \(address2)\n\(city), \(state) \(zipCode)"
         }
       }

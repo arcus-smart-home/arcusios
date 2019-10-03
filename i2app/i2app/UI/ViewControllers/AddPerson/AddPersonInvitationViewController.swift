@@ -161,7 +161,7 @@ ArcusInputAccessoryProtocol {
                 shouldChangeTextIn range: NSRange,
                 replacementText text: String) -> Bool {
     self.textLength =
-      textView.text.characters.count + (text.characters.count - range.length)
+      textView.text.count + (text.count - range.length)
 
     return self.textLength < self.maxTextLength
   }

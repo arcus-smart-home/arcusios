@@ -102,7 +102,7 @@ extension HubModel {
 
   var isDown: Bool {
     if let hubState = HubCapability.getStateFrom(self) {
-      if hubState.characters.count > 0 {
+      if hubState.count > 0 {
         return hubState == kEnumHubStateDOWN
       }
     }

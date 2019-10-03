@@ -147,7 +147,7 @@ class HaloPlusPickCountyViewController: BasePairingViewController, HaloSetupPres
     }
 
     @IBAction func setupWeatherRadioPressed(_ sender: AnyObject) {
-        if self.selectedCode == nil || self.selectedCode?.characters.count == 0 {
+        if self.selectedCode == nil || self.selectedCode?.count == 0 {
             self.displayErrorMessage("You must select a state and a " +
                 "county in order to identify the location for the weather radio.",
                                      withTitle:"Location Information")
@@ -168,7 +168,7 @@ class HaloPlusPickCountyViewController: BasePairingViewController, HaloSetupPres
 
     // Needed for Device Detail/More page
     override func back(_ sender: NSObject) {
-        if self.step == nil && (self.selectedCode?.characters.count)! > 0 {
+        if self.step == nil && (self.selectedCode?.count)! > 0 {
             self.createGif()
             DispatchQueue.global(qos: .background).async {
                 self.presenter.setNoaaLocation(self.selectedCode!,
