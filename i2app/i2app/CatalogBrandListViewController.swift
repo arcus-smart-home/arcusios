@@ -237,6 +237,7 @@ extension CatalogBrandListViewController: UITableViewDataSource {
 
   private func bind(_ cell: CatalogBrandListCell, viewModel: CatalogBrandViewModel) {
     cell.deviceCount.text = "\(viewModel.productList.count)"
+    cell.brandName.text = "\(viewModel.name)"
     cell.brandImage.sd_setImage(with: viewModel.imageURL)
   }
 }

@@ -32,7 +32,12 @@ class CatalogBrandListCell: UITableViewCell {
    Image for the brand.
    */
   @IBOutlet weak var brandImage: UIImageView!
-  
+
+  /**
+   Device's vendor.
+   */
+  @IBOutlet weak var brandName: UILabel!
+
   /**
    Count of devices available in the brand.
    */
