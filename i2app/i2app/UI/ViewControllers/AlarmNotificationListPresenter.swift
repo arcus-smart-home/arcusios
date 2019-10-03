@@ -139,7 +139,7 @@ public protocol AlarmNotificationListDelegate: class {
 }
 
 public protocol AlarmNotificationListPresenterProtocol: class {
-  weak var delegate: AlarmNotificationListDelegate? { get set }
+  var delegate: AlarmNotificationListDelegate? { get set }
   init(delegate: AlarmNotificationListDelegate)
 
   /// True if People can be added to the data list

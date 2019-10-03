@@ -28,7 +28,7 @@ fileprivate extension Constants {
 }
 
 protocol ArcusDebugMenuPresenter {
-  weak var delegate: ArcusDebugMenuPresenterDelegate? { get set }
+  var delegate: ArcusDebugMenuPresenterDelegate? { get set }
   var debugItems: [ArcusDebugMenuViewModel] { get set }
 
   func setUp()

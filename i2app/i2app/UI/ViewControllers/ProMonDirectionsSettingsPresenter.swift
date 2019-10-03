@@ -25,7 +25,7 @@ import Cornea
 import PromiseKit
 
 protocol ProMonDirectionsSettingsPresenterProtocol {
-  weak var proMonDirectionsSettingsDelegate: ProMonDirectionsSettingsDelegate? {get set}
+  var proMonDirectionsSettingsDelegate: ProMonDirectionsSettingsDelegate? {get set}
   init (delegate: ProMonDirectionsSettingsDelegate, placeId: String)
 
   func saveAdditionalDirections(_ additionalDirections: String)

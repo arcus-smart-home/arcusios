@@ -21,7 +21,7 @@
 //
 
 protocol CancelLegacyAlarmPresenter {
-  weak var delegate: CancelLegacyAlarmDelegate? { get set }
+  var delegate: CancelLegacyAlarmDelegate? { get set }
   var alarmState: LegacyAlarmState { get }
   var alarmColor: UIColor { get }
   var alarmTitle: String { get }

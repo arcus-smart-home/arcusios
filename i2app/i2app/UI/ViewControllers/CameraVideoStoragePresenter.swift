@@ -31,7 +31,7 @@ extension Notification.Name {
  `CameraVideoStoragePresenter` protocol
  */
 protocol CameraVideoStoragePresenter {
-  weak var delegate: CameraVideoStoragePresenterDelegate? { get set }
+  var delegate: CameraVideoStoragePresenterDelegate? { get set }
 
   /**
    Confirm that user wants to clean up their video storage.
