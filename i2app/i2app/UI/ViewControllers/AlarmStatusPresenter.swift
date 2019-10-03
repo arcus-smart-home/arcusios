@@ -645,7 +645,6 @@ extension AlarmStatusPresenter {
   }
 
   private func isProMonitored() -> Bool {
-    var isProMonitored: Bool = false
     guard let settings = RxCornea.shared.settings else {
       return false
     }
