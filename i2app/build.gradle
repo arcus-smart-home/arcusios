@@ -2,9 +2,7 @@ buildscript {
 }
 
 repositories {
-  maven {
-    url "https://plugins.gradle.org/m2/"
-  }
+  mavenCentral()
 }
 
 ext.iris_captools = "com.iris:iris2-captools:${platform_version}"
