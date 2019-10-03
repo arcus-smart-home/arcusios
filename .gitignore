@@ -1,3 +1,4 @@
 .DS_Store
+.gradle
 i2app/build
 xcuserdata
