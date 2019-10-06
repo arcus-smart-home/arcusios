@@ -19,6 +19,7 @@
 #import "ArcusPinCodeViewController.h"
 #import "ArcusTitleDetailTableViewCell.h"
 #import "UIImage+ImageEffects.h"
+#import "UIImage+CustomEffects.h"
 #import "UIView+Blur.h"
 #import "UIView+Subviews.h"
 #import "PasswordTextField.h"
