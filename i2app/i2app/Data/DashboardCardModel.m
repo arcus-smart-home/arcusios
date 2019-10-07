@@ -82,8 +82,6 @@
             return [UIImage imageNamed:@"icon_unfilled_water"];
         case DashboardCardTypeWindowsBlinds:
             return [UIImage imageNamed:@"icon_unfilled_windowblinds"];
-        case DashboardCardTypeSantaTracker:
-            return [UIImage imageNamed:@"santa_hat"];
         default:
             return [UIImage imageNamed:@"PlaceholderWhite"];
     }
@@ -121,8 +119,6 @@
             return [UIImage imageNamed:@"icon_water"];
         case DashboardCardTypeWindowsBlinds:
             return [UIImage imageNamed:@"icon_windowblinds"];
-        case DashboardCardTypeSantaTracker:
-            return [UIImage imageNamed:@"santa_hat"];
         default:
             return [UIImage imageNamed:@"PlaceholderWhite"];
     }

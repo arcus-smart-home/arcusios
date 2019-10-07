@@ -49,11 +49,10 @@ typedef enum {
     DashboardCardTypeWater,
     DashboardCardTypeEnergy,
     
-    DashboardCardTypeSantaTracker,
     DashboardCardTypeAlarms,
 } DashboardCardType;
-#define DashboardCardTypeToString(enum) [@[@"Favorites", @"History", @"Safety Alarm", @"Security Alarm", @"Lights & Switches", @"Climate", @"Doors & Locks", @"Home & Family", @"Windows & Blinds", @"Cameras", @"Lawn & Garden", @"Care", @"Water", @"Energy", @"Santa Tracker™", @"Alarms"] objectAtIndex:enum]
-#define DashboardCardTypeToCellIdentifier(enum) [@[@"favoritesCell", @"historyCell", @"safetyAlarmCell", @"securityAlarmCell", @"lightSwitchsCell", @"climateCell", @"doorsLocksCell", @"homeFamilyCell", @"windowsBlindsCell", @"camerasCell", @"lawnGardenCell", @"careCell", @"watersCell", @"energyCell", @"santaTrackerCell", @"alarms"] objectAtIndex:enum]
+#define DashboardCardTypeToString(enum) [@[@"Favorites", @"History", @"Safety Alarm", @"Security Alarm", @"Lights & Switches", @"Climate", @"Doors & Locks", @"Home & Family", @"Windows & Blinds", @"Cameras", @"Lawn & Garden", @"Care", @"Water", @"Energy", @"Alarms"] objectAtIndex:enum]
+#define DashboardCardTypeToCellIdentifier(enum) [@[@"favoritesCell", @"historyCell", @"safetyAlarmCell", @"securityAlarmCell", @"lightSwitchsCell", @"climateCell", @"doorsLocksCell", @"homeFamilyCell", @"windowsBlindsCell", @"camerasCell", @"lawnGardenCell", @"careCell", @"watersCell", @"energyCell", @"alarms"] objectAtIndex:enum]
 
 typedef enum {
     DashboardCardStatusDisabled     = 0,
