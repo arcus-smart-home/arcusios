@@ -1,25 +1,8 @@
 buildscript {
-   repositories {
-      maven {
-         credentials {
-            username "${maven_username}"
-            password "${maven_password}"
-         }
-
-         url 'http://eyerisbuild.cloudapp.net/artifactory/repo'
-      }
-   }
 }
 
 repositories {
-    maven {
-        credentials {
-            username "${maven_username}"
-            password "${maven_password}"
-        }
-
-        url 'http://eyerisbuild.irisbylowes.com/artifactory/repo'
-    }
+  mavenCentral()
 }
 
 ext.iris_captools = "com.iris:iris2-captools:${platform_version}"
