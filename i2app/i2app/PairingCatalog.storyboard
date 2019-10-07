@@ -179,6 +179,13 @@
                                                         <constraint firstAttribute="width" constant="8" id="wwK-n9-fvk"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brand Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ad-hs-Re2" userLabel="Device Name">
+                                                    <rect key="frame" x="95" y="31" width="237" height="27.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="rrf-rR-Gm9" firstAttribute="centerY" secondItem="Z8p-LB-wwb" secondAttribute="centerY" id="1tV-cZ-OYm"/>
@@ -192,6 +199,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="brandImage" destination="t41-P6-YAm" id="u3w-B6-M6N"/>
+                                            <outlet property="brandName" destination="9ad-hs-Re2" id="b1c-1Y-XXz"/>
                                             <outlet property="deviceCount" destination="rrf-rR-Gm9" id="h6V-s6-hRJ"/>
                                             <segue destination="efo-TV-bQz" kind="show" identifier="showDeviceList" id="XfK-Xr-m6G"/>
                                         </connections>

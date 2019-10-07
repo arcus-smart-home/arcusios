@@ -29,6 +29,7 @@
 
 @property (nonatomic, strong) IBOutlet UIImageView *brandImage;
 @property (nonatomic, strong) IBOutlet UIImageView *disclosureImage;
+@property (nonatomic, strong) IBOutlet UILabel *brandName;
 @property (nonatomic, strong) IBOutlet UILabel *countLabel;
 
 - (void)setMarked:(BOOL)marked;
