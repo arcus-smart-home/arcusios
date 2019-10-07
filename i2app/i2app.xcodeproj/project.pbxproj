@@ -356,6 +356,8 @@
 		3FC5EFF71B7BC5FB00BCD819 /* UIView+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5EFF61B7BC5FB00BCD819 /* UIView+FirstResponder.m */; };
 		3FC5EFFA1B7BDD9E00BCD819 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5EFF91B7BDD9E00BCD819 /* ChangePasswordViewController.m */; };
 		3FF6E71F1B73D85100793C01 /* PasswordTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF6E71E1B73D85100793C01 /* PasswordTextField.m */; };
+		49CA8012234A851E00948B93 /* UIImage+CustomEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CA8011234A851E00948B93 /* UIImage+CustomEffects.m */; };
+		49CA8013234A874E00948B93 /* UIImage+CustomEffects.h in Sources */ = {isa = PBXBuildFile; fileRef = 49CA8010234A84FD00948B93 /* UIImage+CustomEffects.h */; };
 		49E1C95E230664B300F5137C /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49E1C95D230664B200F5137C /* logo.jpg */; };
 		690E5D141B5D49F5007EF7F2 /* GeneralDeviceOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690E5D131B5D49F5007EF7F2 /* GeneralDeviceOperationController.m */; };
 		690E5D191B5D746C007EF7F2 /* DeviceTextIconAttributeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 690E5D181B5D746C007EF7F2 /* DeviceTextIconAttributeControl.m */; };
@@ -2042,6 +2044,8 @@
 		3FC5EFF91B7BDD9E00BCD819 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
 		3FF6E71D1B73D85100793C01 /* PasswordTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordTextField.h; sourceTree = "<group>"; };
 		3FF6E71E1B73D85100793C01 /* PasswordTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordTextField.m; sourceTree = "<group>"; };
+		49CA8010234A84FD00948B93 /* UIImage+CustomEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CustomEffects.h"; sourceTree = "<group>"; };
+		49CA8011234A851E00948B93 /* UIImage+CustomEffects.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CustomEffects.m"; sourceTree = "<group>"; };
 		49E1C95D230664B200F5137C /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpg; path = Assets/logo.jpg; sourceTree = "<group>"; };
 		571D8B10C37B125025C32D56 /* Pods_i2appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_i2appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		682D37737DFB82F183564646 /* Pods-i2app-ad-hoc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i2app-ad-hoc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-i2app-ad-hoc/Pods-i2app-ad-hoc.debug.xcconfig"; sourceTree = "<group>"; };
@@ -9632,6 +9636,8 @@
 				F28BBCC91CA058A600FC6A02 /* UIViewController+Keyboard.m */,
 				F2A23A101AD424F1004AC366 /* UIViewController+Navigation.h */,
 				F2A23A111AD424F1004AC366 /* UIViewController+Navigation.m */,
+				49CA8010234A84FD00948B93 /* UIImage+CustomEffects.h */,
+				49CA8011234A851E00948B93 /* UIImage+CustomEffects.m */,
 			);
 			name = Categories;
 			path = UI/Categories;
@@ -10304,6 +10310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CA8012234A851E00948B93 /* UIImage+CustomEffects.m in Sources */,
+				49CA8013234A874E00948B93 /* UIImage+CustomEffects.h in Sources */,
 				3C28697C1E242BF50095CAC9 /* AlarmGracePeriodsViewController.swift in Sources */,
 				1BFD8C011E156D8E00CD9CBE /* DashboardLearnMoreCard.swift in Sources */,
 				7E11FBD21FE0D3390089EEA6 /* IpInfoCapability.m in Sources */,
