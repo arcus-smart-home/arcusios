@@ -25,12 +25,10 @@
 #import <PureLayout/PureLayout.h>
 #import <objc/message.h>
 
-#import "SantaTracker.h"
 
 @interface FullScreenImageView()
 
 @property (weak, nonatomic) IBOutlet UIImageView *mainPhoto;
-@property (weak, nonatomic) IBOutlet UILabel *santaTrackerLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *arcusByArcusLogo;
 
 @property (nonatomic, strong) UIImage *image;
@@ -56,7 +54,6 @@
     
     [self.mainPhoto setImage:rotatedImage];
     
-    self.santaTrackerLabel.transform = CGAffineTransformMakeRotation(3.14/2);
     self.arcusByArcusLogo.transform = CGAffineTransformMakeRotation(3.14/2);
 }
 

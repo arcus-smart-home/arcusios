@@ -71,8 +71,6 @@ extension DashboardCardOrderProvider {
             viewModel = DashboardAlarmsViewModel()
           case DashboardCardTypeHomeFamily:
             viewModel = DashboardHomeFamilyViewModel()
-          case DashboardCardTypeSantaTracker:
-            viewModel = DashboardSantaTrackerViewModel()
           default: break
           }
 

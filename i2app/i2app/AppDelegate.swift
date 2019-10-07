@@ -114,8 +114,6 @@ extension AppDelegate: UIApplicationDelegate {
     let event = ApplicationEvent(application,
                                  type: .didBecomeActive)
     eventObservable.onNext(event)
-
-    SantaTracker.shareInstance().provisionReminders()
   }
 
   func applicationWillTerminate(_ application: UIApplication) {

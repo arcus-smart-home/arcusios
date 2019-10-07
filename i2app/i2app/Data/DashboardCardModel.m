@@ -257,9 +257,6 @@
         case DashboardCardTypeEnergy:
             return DashboardCardStatusDisabled;
             
-        case DashboardCardTypeSantaTracker:
-            return DashboardCardStatusActive;
-            
         default:
             return DashboardCardStatusDisabled;
     }

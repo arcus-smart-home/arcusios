@@ -25,7 +25,6 @@
 #import "DashboardCardModel.h"
 
 #import "NSDate+Convert.h"
-#import "SantaTracker.h"
 #import "SubsystemsController.h"
 #import "SecuritySubsystemCapability.h"
 #import "SafetySubsystemCapability.h"
@@ -133,24 +132,7 @@
 }
 
 - (void) checkAdditionalCards {
-    // Check Santa Tracker
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy:MM:dd HH:mm:ss"];
-    
-    NSDate *openingDate = [SantaTracker dynamicOpenTime];
-    NSDate *closingDate = [SantaTracker dynamicCloseTime];
-    
-    if ([NSDate isTimeOfDate:[NSDate date] betweenStartDate:openingDate andEndDate:closingDate]) {
-        [self addServiceCardIfNotExist:DashboardCardTypeSantaTracker withIndex:1];
-    }
-    else {
-        for (DashboardCardModel *cardModel in _cards) {
-            if (cardModel.type == DashboardCardTypeSantaTracker) {
-                [_cards removeObject:cardModel];
-                break;
-            }
-        }
-    }
+    // Useful for adding additional cards, like the old Santa Tracker
 }
 
 - (void)addServiceCardIfNotExist:(DashboardCardType)type {

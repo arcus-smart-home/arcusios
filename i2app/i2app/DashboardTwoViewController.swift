@@ -68,7 +68,6 @@ internal enum DashboardCardIdentifier {
   static let water = "DashboardWaterCard"
   static let climate = "DashboardClimateCard"
   static let learnMore = "DashboardLearnMoreCard"
-  static let santaTracker = "DashboardSantaTrackerCard"
 }
 
 // MARK: DashboardTwoViewController
@@ -666,8 +665,6 @@ extension DashboardTwoViewController: UITableViewDelegate {
         } else {
           presentHistoryController()
         }
-        case .SantaTracker:
-          navigationController?.pushViewController(SantaTracker.shareInstance().getController(), animated: true)
       default:
         return
       }
