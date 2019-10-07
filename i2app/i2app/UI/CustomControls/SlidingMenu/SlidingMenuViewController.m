@@ -279,18 +279,7 @@
     line.bounds = CGRectMake(0, 0, 165, 1);
     line.center = CGPointMake(centerX, 47 + line.bounds.size.height/2);
     [footerView addSubview:line];
-    
-    ArcusLabel *patentPendingLabel = [ArcusLabel new];
-    patentPendingLabel.font = [UIFont fontWithName:@"AvenirNext-Medium" size:9.0f];
-    patentPendingLabel.textColor = [[UIColor blackColor] colorWithAlphaComponent:0.6f];
-    patentPendingLabel.text = NSLocalizedString(@"Patent Pending", nil);
-    patentPendingLabel.allCaps = YES;
-    patentPendingLabel.wideSpacing = YES;
-    [patentPendingLabel sizeToFit];
-    patentPendingLabel.center = CGPointMake(centerX, 59 + patentPendingLabel.bounds.size.height/2);
-    
-    [footerView addSubview:patentPendingLabel];
-    
+
     return footerView;
 }
 

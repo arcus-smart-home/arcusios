@@ -14,7 +14,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SlideMenuTableViewFooterView" customModule="i2app" customModuleProvider="target">
             <connections>
                 <outlet property="logoutButton" destination="De1-Lg-4be" id="qsh-wh-tm5"/>
-                <outlet property="patentPendingLabel" destination="I1L-jE-zZ2" id="SCC-5N-Wp4"/>
                 <outlet property="versionInfoLabel" destination="KK9-4X-XRs" id="T8M-WE-CvQ"/>
             </connections>
         </placeholder>
@@ -54,19 +53,6 @@
                         </attributedString>
                     </state>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patent Pending" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1L-jE-zZ2" customClass="ArcusLabel">
-                    <rect key="frame" x="105" y="126" width="105" height="15"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="15" id="k5c-Kw-P75"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="9"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="wideSpacing" value="YES"/>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="allCaps" value="YES"/>
-                    </userDefinedRuntimeAttributes>
-                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -74,13 +60,9 @@
                 <constraint firstItem="De1-Lg-4be" firstAttribute="trailing" secondItem="KK9-4X-XRs" secondAttribute="trailing" id="1dK-fK-Usb"/>
                 <constraint firstItem="De1-Lg-4be" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="105" id="1td-HW-Ooh"/>
                 <constraint firstItem="U1J-my-rpz" firstAttribute="top" secondItem="De1-Lg-4be" secondAttribute="bottom" constant="8" symbolic="YES" id="7tG-fS-lKq"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="I1L-jE-zZ2" secondAttribute="bottom" constant="34" id="FwY-uW-F6e"/>
                 <constraint firstItem="KK9-4X-XRs" firstAttribute="top" secondItem="U1J-my-rpz" secondAttribute="bottom" constant="8" symbolic="YES" id="Gp5-89-Vcq"/>
-                <constraint firstItem="KK9-4X-XRs" firstAttribute="trailing" secondItem="I1L-jE-zZ2" secondAttribute="trailing" id="Lx2-IT-fbP"/>
                 <constraint firstItem="De1-Lg-4be" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Pf6-tf-IdK"/>
-                <constraint firstItem="I1L-jE-zZ2" firstAttribute="top" secondItem="KK9-4X-XRs" secondAttribute="bottom" constant="29" id="eme-8g-XmL"/>
                 <constraint firstItem="De1-Lg-4be" firstAttribute="leading" secondItem="KK9-4X-XRs" secondAttribute="leading" id="khx-Jf-Fzm"/>
-                <constraint firstItem="KK9-4X-XRs" firstAttribute="leading" secondItem="I1L-jE-zZ2" secondAttribute="leading" id="oLi-XU-lF5"/>
                 <constraint firstItem="U1J-my-rpz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="75" id="vJs-9W-InD"/>
                 <constraint firstItem="U1J-my-rpz" firstAttribute="centerX" secondItem="KK9-4X-XRs" secondAttribute="centerX" id="xjf-Ds-QlA"/>
             </constraints>
