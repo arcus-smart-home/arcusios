@@ -76,7 +76,7 @@ class HaloNamePhotoRoomViewController: UIViewController {
       } else {
         if let productId = DeviceCapability.getProductId(from: self.deviceModel) {
           let urlString: String = ImagePaths.getLargeProductImage(fromProductId: productId)
-          if urlString.characters.count > 0 {
+          if urlString.count > 0 {
             _ = ImageDownloader.downloadDeviceImage(urlString,
                                                     withDevTypeId:self.deviceModel.devTypeHintToImageName(),
                                                     withPlaceHolder:nil, isLarge:

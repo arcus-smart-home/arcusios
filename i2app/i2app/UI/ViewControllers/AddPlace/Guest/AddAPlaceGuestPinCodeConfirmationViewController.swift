@@ -54,7 +54,7 @@ class AddAPlaceGuestPinCodeConfirmationViewController: ArcusPinCodeViewControlle
   @IBAction override func numericButtonPressed(_ sender: UIButton!) {
     super.numericButtonPressed(sender)
 
-    if enteredPin.characters.count == 4 {
+    if enteredPin.count == 4 {
       if let initiallyEnteredPin = initiallyEnteredPin, initiallyEnteredPin == enteredPin {
         createGif()
         DispatchQueue.global(qos: .background).async {

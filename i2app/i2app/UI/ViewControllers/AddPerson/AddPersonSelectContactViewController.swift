@@ -71,7 +71,7 @@ UITableViewDelegate, UITextFieldDelegate {
     let attributedString: NSMutableAttributedString =
       NSMutableAttributedString.init(string: text)
 
-    let range: NSRange = NSRange(location: 0, length: text.characters.count)
+    let range: NSRange = NSRange(location: 0, length: text.count)
 
     attributedString.addAttribute(NSKernAttributeName, value: 2.0, range: range)
     textField.attributedText = attributedString

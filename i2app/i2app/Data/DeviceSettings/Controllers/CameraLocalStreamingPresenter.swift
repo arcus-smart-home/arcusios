@@ -64,7 +64,7 @@ class CameraLocalStreamingPresenter {
           guard let response = response as? HubSercommGetCameraPasswordResponse else { return nil }
 
           if let fullPassword = response.getPassword() {
-            let index = fullPassword.characters.index(fullPassword.startIndex, offsetBy: 8)
+            let index = fullPassword.index(fullPassword.startIndex, offsetBy: 8)
 
             let password = fullPassword.substring(to: index)
             let streamUrl = "\"/img/video.sav\""

@@ -54,7 +54,7 @@ class AccountInvitationPinCodeEntryViewController: ArcusPinCodeViewController,
   @IBAction override func numericButtonPressed(_ sender: UIButton!) {
     super.numericButtonPressed(sender)
 
-    if self.enteredPin.characters.count == 4 {
+    if self.enteredPin.count == 4 {
       self.pinCode = self.enteredPin
       self.performSegue(withIdentifier: "AccountInvitationConfirmPinCodeSegue", sender: self)
     }

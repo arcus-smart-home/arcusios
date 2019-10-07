@@ -93,7 +93,7 @@ enum AlarmGracePeriodType: String {
 
 protocol AlarmGracePeriodsPresenterProtocol {
 
-  weak var delegate: GenericPresenterDelegate? { get set }
+  var delegate: GenericPresenterDelegate? { get set }
   init(delegate: GenericPresenterDelegate)
   var data: AlarmGracePeriodsModel { get }
   func timeIntervalOfType(_ type: AlarmGracePeriodType,

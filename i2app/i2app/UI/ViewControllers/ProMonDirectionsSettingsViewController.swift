@@ -71,18 +71,18 @@ ProMonDirectionsSettingsDelegate {
     }
 
     var currentCharacterCount = 0
-    if let count = textView.text?.characters.count {
+    if let count = textView.text?.count {
       currentCharacterCount = count
     }
     if range.length + range.location > currentCharacterCount {
       return false
     }
-    let newLength = currentCharacterCount + text.characters.count - range.length
+    let newLength = currentCharacterCount + text.count - range.length
     return newLength <= maxCharCount
   }
 
   fileprivate func updateCharacterCount() {
-    charLimitField.text = "CHARACTER LIMIT \(directionsField.text.characters.count) / \(maxCharCount)"
+    charLimitField.text = "CHARACTER LIMIT \(directionsField.text.count) / \(maxCharCount)"
   }
 
   // MARK: ProMonDirectionsSettingsDelegate

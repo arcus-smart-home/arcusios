@@ -45,7 +45,7 @@ class AddPersonCustomInvitationViewController: UIViewController, UITextViewDeleg
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        self.textLength = self.addPersonModel!.personalizedMessage!.characters.count
+        self.textLength = self.addPersonModel!.personalizedMessage!.count
         self.invitationTextView.text = self.addPersonModel?.invitationMessage
 
         self.invitationTextView.becomeFirstResponder()
@@ -72,7 +72,7 @@ class AddPersonCustomInvitationViewController: UIViewController, UITextViewDeleg
                   shouldChangeTextIn range: NSRange,
                   replacementText text: String) -> Bool {
         self.textLength =
-            textView.text.characters.count + (text.characters.count - range.length)
+            textView.text.count + (text.count - range.length)
 
         return textLength < maxTextLength
     }

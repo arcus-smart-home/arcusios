@@ -40,7 +40,7 @@ class PersonChangePinController: NSObject {
 
     var newPin: String? {
         didSet {
-            let isValid: Bool = (self.newPin?.characters.count == self.pinLength)
+            let isValid: Bool = (self.newPin?.count == self.pinLength)
 
             self.delegate.newPinIsValid?(isValid)
         }
@@ -48,7 +48,7 @@ class PersonChangePinController: NSObject {
 
     var confirmPin: String? {
         didSet {
-            let isValid: Bool = (self.confirmPin?.characters.count == self.pinLength)
+            let isValid: Bool = (self.confirmPin?.count == self.pinLength)
                 && (self.confirmPin! == self.newPin!)
 
             self.delegate.confirmPinIsValid?(isValid)

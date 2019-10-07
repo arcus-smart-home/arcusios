@@ -186,7 +186,7 @@ class BillingOptionsViewController: UIViewController, UITableViewDataSource, UIT
     if hasCellularBackup {
       cellBackupText = "Backup Cellular"
     }
-    if address.characters.count > 0 {
+    if address.count > 0 {
       cell?.descriptionLabel.text = address
         + "\n"
         + servicePlan

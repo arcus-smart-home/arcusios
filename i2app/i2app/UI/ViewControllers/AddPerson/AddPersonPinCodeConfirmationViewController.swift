@@ -40,7 +40,7 @@ class AddPersonPinCodeConfirmationViewController: ArcusPinCodeViewController {
   @IBAction override func numericButtonPressed(_ sender: UIButton!) {
     super.numericButtonPressed(sender)
 
-    if self.enteredPin.characters.count == 4 {
+    if self.enteredPin.count == 4 {
       if self.enteredPin == self.addPersonModel?.pinCode {
         createGif()
 

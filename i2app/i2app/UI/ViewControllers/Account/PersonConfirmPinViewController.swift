@@ -51,7 +51,7 @@ class PersonConfirmPinViewController: ArcusPinCodeViewController, PersonChangePi
     func confirmPinIsValid(_ isValid: Bool) {
       if isValid {
         self.pinController?.changePin()
-      } else if pinController?.confirmPin?.characters.count == pinController?.pinLength &&
+      } else if pinController?.confirmPin?.count == pinController?.pinLength &&
         pinController?.confirmPin != pinController?.newPin {
         let title = NSLocalizedString("Pin Codes Do Not Match", comment: "")
         let body = NSLocalizedString("Please re-enter the PIN Code.", comment: "")

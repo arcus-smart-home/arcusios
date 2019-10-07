@@ -442,7 +442,7 @@ open class SkyFloatingLabelTextField: UITextField {
       alpha = 1.0
     }
 
-    var frame: CGRect = self.titleLabelRectForBounds(self.bounds, editing: self.isTitleVisible())
+    let frame: CGRect = self.titleLabelRectForBounds(self.bounds, editing: self.isTitleVisible())
     let updateBlock = { () -> Void in
       self.titleLabel.alpha = alpha
       self.titleLabel.frame = frame

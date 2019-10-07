@@ -99,7 +99,7 @@ ArcusInputAccessoryProtocol {
       networkKeyTextField?.resignFirstResponder()
     }
 
-    if networkName.characters.count > 0 {
+    if networkName.count > 0 {
       createGif()
 
       if let externalSettingsViewController = DevicePairingManager.sharedInstance().pairingWizard
@@ -179,7 +179,7 @@ ArcusInputAccessoryProtocol {
                               placeholderFontType: FontDataTypeAccountTextFieldPlaceholder)
 
     cell?.selectionStyle = .none
-    cell?.clearButton.isHidden = (cell!.textField.text?.characters.count == 0)
+    cell?.clearButton.isHidden = (cell!.textField.text?.count == 0)
 
     networkSSIDTextField = cell!.textField
     ssidClearButton = cell!.clearButton
@@ -207,7 +207,7 @@ ArcusInputAccessoryProtocol {
                               placeholderFontType: FontDataTypeAccountTextFieldPlaceholder)
 
     cell?.selectionStyle = .none
-    cell?.clearButton.isHidden = (cell!.textField.text?.characters.count == 0)
+    cell?.clearButton.isHidden = (cell!.textField.text?.count == 0)
 
     cell?.configureTapGesture()
 
