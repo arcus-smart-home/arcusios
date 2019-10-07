@@ -132,7 +132,6 @@
 		1BC244EB210664AF00C8EA23 /* PairingWarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC244EA210664AF00C8EA23 /* PairingWarningViewController.swift */; };
 		1BC244ED210664BE00C8EA23 /* PairingWarningPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC244EC210664BE00C8EA23 /* PairingWarningPresenter.swift */; };
 		1BC244EF210664CE00C8EA23 /* PairingWarningSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC244EE210664CE00C8EA23 /* PairingWarningSectionCell.swift */; };
-		1BCFA5CC1E1F1BE6002DBBD0 /* DashboardSantaTrackerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCFA5CB1E1F1BE6002DBBD0 /* DashboardSantaTrackerCard.swift */; };
 		1BDC8CDE2118884B00517CF3 /* RadialAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC8CDD2118884B00517CF3 /* RadialAnimationView.swift */; };
 		1BDCEC591EBCFFF40083B7A3 /* AlarmCertificatePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDCEC581EBCFFF40083B7A3 /* AlarmCertificatePreviewViewController.swift */; };
 		1BE150B81EE9FA9C00F811EC /* AddPlaceCongratsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BE150B71EE9FA9C00F811EC /* AddPlaceCongratsView.xib */; };
@@ -183,8 +182,8 @@
 		3C17C7221F991A82003540BC /* LutronBridgeC2CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C17C7211F991A82003540BC /* LutronBridgeC2CViewController.swift */; };
 		3C17C7241F991A98003540BC /* LutronBridgeC2CPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C17C7231F991A98003540BC /* LutronBridgeC2CPresenter.swift */; };
 		3C17C7261F991AAC003540BC /* LutronPairing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C17C7251F991AAC003540BC /* LutronPairing.storyboard */; };
-		3C1DD5B61E53897A0007990A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
-		3C1DD5B81E53899D0007990A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		3C1DD5B61E53897A0007990A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		3C1DD5B81E53899D0007990A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		3C1DED49205FF76A007B2719 /* PlaceModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DED48205FF769007B2719 /* PlaceModel+Extension.swift */; };
 		3C1DED4C205FF796007B2719 /* PersonModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DED4B205FF795007B2719 /* PersonModel+Extension.swift */; };
 		3C1DED4F205FF7FE007B2719 /* RecordingModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DED4E205FF7FD007B2719 /* RecordingModel+Extension.swift */; };
@@ -435,9 +434,6 @@
 		692ED2401B695E7D00E29E02 /* DashboardCardsSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692ED23F1B695E7D00E29E02 /* DashboardCardsSettingViewController.m */; };
 		6931FDD91B34D97200B0EE8D /* ContolsStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6931FDD81B34D97200B0EE8D /* ContolsStyleSheet.m */; };
 		693927AD1BB9F10900FC1835 /* PeopleContactInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693927AC1BB9F10900FC1835 /* PeopleContactInformationViewController.m */; };
-		693B793B1BEBC1AE002C82B7 /* SantaConfigruredController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693B793A1BEBC1AE002C82B7 /* SantaConfigruredController.m */; };
-		693B793E1BEBC1CB002C82B7 /* SantaConfigruredEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693B793D1BEBC1CB002C82B7 /* SantaConfigruredEditController.m */; };
-		693B79411BEBC226002C82B7 /* SantaConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693B79401BEBC226002C82B7 /* SantaConfirmViewController.m */; };
 		693DCD621C2DEE9800F4B50D /* lightsSwitches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693DCD601C2DEE9800F4B50D /* lightsSwitches.storyboard */; };
 		693DCD661C2DF03800F4B50D /* LightsSwitchesTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693DCD651C2DF03800F4B50D /* LightsSwitchesTabbarController.m */; };
 		693DCD691C2DF21300F4B50D /* LightsSwitchesDevicesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 693DCD681C2DF21300F4B50D /* LightsSwitchesDevicesController.m */; };
@@ -511,14 +507,6 @@
 		699319851C4F4CD600408304 /* PopupSelectionSearching.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699319831C4F4CD600408304 /* PopupSelectionSearching.xib */; };
 		699319881C4F503B00408304 /* PopupSelectionSearching.m in Sources */ = {isa = PBXBuildFile; fileRef = 699319871C4F503B00408304 /* PopupSelectionSearching.m */; };
 		69935F491B84D3970078CB03 /* PopupSelectionDeviceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69935F481B84D3970078CB03 /* PopupSelectionDeviceView.xib */; };
-		699654E91BE963B40099D53A /* SantaTracker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699654E71BE963B40099D53A /* SantaTracker.storyboard */; };
-		699654ED1BE966160099D53A /* SantaGetStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699654EC1BE966160099D53A /* SantaGetStartViewController.m */; };
-		699654F11BE969C20099D53A /* SantaTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 699654F01BE969C20099D53A /* SantaTracker.m */; };
-		699654F51BE973B80099D53A /* SantaReindeerLandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699654F41BE973B80099D53A /* SantaReindeerLandViewController.m */; };
-		699654F81BE973E30099D53A /* SantaEnterHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699654F71BE973E30099D53A /* SantaEnterHomeViewController.m */; };
-		699654FB1BE974060099D53A /* SantaMotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699654FA1BE974060099D53A /* SantaMotionViewController.m */; };
-		699654FE1BE974270099D53A /* SantaTakePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699654FD1BE974270099D53A /* SantaTakePhotoViewController.m */; };
-		699655011BE9744F0099D53A /* SantaDoneConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699655001BE9744F0099D53A /* SantaDoneConfigViewController.m */; };
 		699ADB3C1B8CC59F000885E4 /* AlarmDeviceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699ADB3B1B8CC59F000885E4 /* AlarmDeviceListViewController.m */; };
 		699ADB421B8D02E8000885E4 /* AlarmNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699ADB411B8D02E8000885E4 /* AlarmNotificationViewController.m */; };
 		699E3E851C38519300325CB7 /* FullScreenImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 699E3E841C38519300325CB7 /* FullScreenImageView.m */; };
@@ -1024,7 +1012,6 @@
 		7EEB5C311BE7F25D0027F069 /* PairingStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EEB5C301BE7F25D0027F069 /* PairingStep.m */; };
 		7EEB5C3A1BE960E30027F069 /* IPCDInputModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EEB5C391BE960E30027F069 /* IPCDInputModel.m */; };
 		7EEBC7D11F86AC5E0077EDFE /* CameraStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEBC7D01F86AC5E0077EDFE /* CameraStatus.swift */; };
-		7EEC35D61BF5605900A5FB09 /* SantaConfirmViewControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC35D51BF5605900A5FB09 /* SantaConfirmViewControllerCell.m */; };
 		7EED389F1FB913D500E12E06 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED389E1FB913D500E12E06 /* main.swift */; };
 		7EF048CD1D39315800CCF3C0 /* WSSSecuritySettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF048CC1D39315800CCF3C0 /* WSSSecuritySettingsTableViewCell.swift */; };
 		7EF235FF1D49393A003ACC93 /* WSSPairingSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF235FE1D49393A003ACC93 /* WSSPairingSuccessViewController.swift */; };
@@ -1802,7 +1789,6 @@
 		1BC244EA210664AF00C8EA23 /* PairingWarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingWarningViewController.swift; sourceTree = "<group>"; };
 		1BC244EC210664BE00C8EA23 /* PairingWarningPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingWarningPresenter.swift; sourceTree = "<group>"; };
 		1BC244EE210664CE00C8EA23 /* PairingWarningSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingWarningSectionCell.swift; sourceTree = "<group>"; };
-		1BCFA5CB1E1F1BE6002DBBD0 /* DashboardSantaTrackerCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardSantaTrackerCard.swift; sourceTree = "<group>"; };
 		1BD689521E5A841C0039B064 /* AlarmStatusArmBypassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmStatusArmBypassViewController.swift; sourceTree = "<group>"; };
 		1BDC8CDD2118884B00517CF3 /* RadialAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialAnimationView.swift; sourceTree = "<group>"; };
 		1BDCEC581EBCFFF40083B7A3 /* AlarmCertificatePreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmCertificatePreviewViewController.swift; sourceTree = "<group>"; };
@@ -2185,12 +2171,6 @@
 		6931FDD81B34D97200B0EE8D /* ContolsStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContolsStyleSheet.m; sourceTree = "<group>"; };
 		693927AB1BB9F10900FC1835 /* PeopleContactInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleContactInformationViewController.h; sourceTree = "<group>"; };
 		693927AC1BB9F10900FC1835 /* PeopleContactInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleContactInformationViewController.m; sourceTree = "<group>"; };
-		693B79391BEBC1AE002C82B7 /* SantaConfigruredController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SantaConfigruredController.h; path = SantaTracker/SantaConfigruredController.h; sourceTree = "<group>"; };
-		693B793A1BEBC1AE002C82B7 /* SantaConfigruredController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SantaConfigruredController.m; path = SantaTracker/SantaConfigruredController.m; sourceTree = "<group>"; };
-		693B793C1BEBC1CB002C82B7 /* SantaConfigruredEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SantaConfigruredEditController.h; path = SantaTracker/SantaConfigruredEditController.h; sourceTree = "<group>"; };
-		693B793D1BEBC1CB002C82B7 /* SantaConfigruredEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SantaConfigruredEditController.m; path = SantaTracker/SantaConfigruredEditController.m; sourceTree = "<group>"; };
-		693B793F1BEBC226002C82B7 /* SantaConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SantaConfirmViewController.h; path = SantaTracker/SantaConfirmViewController.h; sourceTree = "<group>"; };
-		693B79401BEBC226002C82B7 /* SantaConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SantaConfirmViewController.m; path = SantaTracker/SantaConfirmViewController.m; sourceTree = "<group>"; };
 		693DCD611C2DEE9800F4B50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/lightsSwitches.storyboard; sourceTree = "<group>"; };
 		693DCD641C2DF03800F4B50D /* LightsSwitchesTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LightsSwitchesTabbarController.h; path = LightsSwitches/LightsSwitchesTabbarController.h; sourceTree = "<group>"; };
 		693DCD651C2DF03800F4B50D /* LightsSwitchesTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LightsSwitchesTabbarController.m; path = LightsSwitches/LightsSwitchesTabbarController.m; sourceTree = "<group>"; };
@@ -2326,21 +2306,6 @@
 		699319861C4F503B00408304 /* PopupSelectionSearching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopupSelectionSearching.h; path = PopupSelections/PopupSelectionSearching.h; sourceTree = "<group>"; };
 		699319871C4F503B00408304 /* PopupSelectionSearching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopupSelectionSearching.m; path = PopupSelections/PopupSelectionSearching.m; sourceTree = "<group>"; };
 		69935F481B84D3970078CB03 /* PopupSelectionDeviceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopupSelectionDeviceView.xib; path = Base.lproj/Popups/PopupSelectionDeviceView.xib; sourceTree = "<group>"; };
-		699654E81BE963B40099D53A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SantaTracker.storyboard; sourceTree = "<group>"; };
-		699654EB1BE966160099D53A /* SantaGetStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SantaGetStartViewController.h; path = SantaTracker/SantaGetStartViewController.h; sourceTree = "<group>"; };
-		699654EC1BE966160099D53A /* SantaGetStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SantaGetStartViewController.m; path = SantaTracker/SantaGetStartViewController.m; sourceTree = "<group>"; };
-		699654EF1BE969C20099D53A /* SantaTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SantaTracker.h; path = SantaTracker/SantaTracker.h; sourceTree = "<group>"; };
-		699654F01BE969C20099D53A /* SantaTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SantaTracker.m; path = SantaTracker/SantaTracker.m; sourceTree = "<group>"; };
-		699654F31BE973B80099D53A /* SantaReindeerLandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SantaReindeerLandViewController.h; path = SantaTracker/SantaReindeerLandViewController.h; sourceTree = "<group>"; };
-		699654F41BE973B80099D53A /* SantaReindeerLandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SantaReindeerLandViewController.m; path = SantaTracker/SantaReindeerLandViewController.m; sourceTree = "<group>"; };
-		699654F61BE973E30099D53A /* SantaEnterHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SantaEnterHomeViewController.h; path = SantaTracker/SantaEnterHomeViewController.h; sourceTree = "<group>"; };
-		699654F71BE973E30099D53A /* SantaEnterHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SantaEnterHomeViewController.m; path = SantaTracker/SantaEnterHomeViewController.m; sourceTree = "<group>"; };
-		699654F91BE974060099D53A /* SantaMotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SantaMotionViewController.h; path = SantaTracker/SantaMotionViewController.h; sourceTree = "<group>"; };
-		699654FA1BE974060099D53A /* SantaMotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SantaMotionViewController.m; path = SantaTracker/SantaMotionViewController.m; sourceTree = "<group>"; };
-		699654FC1BE974270099D53A /* SantaTakePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SantaTakePhotoViewController.h; path = SantaTracker/SantaTakePhotoViewController.h; sourceTree = "<group>"; };
-		699654FD1BE974270099D53A /* SantaTakePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SantaTakePhotoViewController.m; path = SantaTracker/SantaTakePhotoViewController.m; sourceTree = "<group>"; };
-		699654FF1BE9744F0099D53A /* SantaDoneConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SantaDoneConfigViewController.h; path = SantaTracker/SantaDoneConfigViewController.h; sourceTree = "<group>"; };
-		699655001BE9744F0099D53A /* SantaDoneConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SantaDoneConfigViewController.m; path = SantaTracker/SantaDoneConfigViewController.m; sourceTree = "<group>"; };
 		699ADB3A1B8CC59F000885E4 /* AlarmDeviceListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlarmDeviceListViewController.h; path = Alarm/AlarmDeviceListViewController.h; sourceTree = "<group>"; };
 		699ADB3B1B8CC59F000885E4 /* AlarmDeviceListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlarmDeviceListViewController.m; path = Alarm/AlarmDeviceListViewController.m; sourceTree = "<group>"; };
 		699ADB3D1B8CEA6F000885E4 /* AlarmConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlarmConfiguration.h; path = Alarm/AlarmConfiguration.h; sourceTree = "<group>"; };
@@ -3132,8 +3097,6 @@
 		7EEB5C381BE960E30027F069 /* IPCDInputModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPCDInputModel.h; sourceTree = "<group>"; };
 		7EEB5C391BE960E30027F069 /* IPCDInputModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPCDInputModel.m; sourceTree = "<group>"; };
 		7EEBC7D01F86AC5E0077EDFE /* CameraStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraStatus.swift; sourceTree = "<group>"; };
-		7EEC35D41BF5605900A5FB09 /* SantaConfirmViewControllerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SantaConfirmViewControllerCell.h; sourceTree = "<group>"; };
-		7EEC35D51BF5605900A5FB09 /* SantaConfirmViewControllerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SantaConfirmViewControllerCell.m; sourceTree = "<group>"; };
 		7EED389E1FB913D500E12E06 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7EF048CC1D39315800CCF3C0 /* WSSSecuritySettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSSSecuritySettingsTableViewCell.swift; sourceTree = "<group>"; };
 		7EF235FE1D49393A003ACC93 /* WSSPairingSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSSPairingSuccessViewController.swift; sourceTree = "<group>"; };
@@ -5797,26 +5760,6 @@
 			isa = PBXGroup;
 			children = (
 				7EEC35D31BF5600600A5FB09 /* TableViewCells */,
-				699654EF1BE969C20099D53A /* SantaTracker.h */,
-				699654F01BE969C20099D53A /* SantaTracker.m */,
-				699654EB1BE966160099D53A /* SantaGetStartViewController.h */,
-				699654EC1BE966160099D53A /* SantaGetStartViewController.m */,
-				699654F31BE973B80099D53A /* SantaReindeerLandViewController.h */,
-				699654F41BE973B80099D53A /* SantaReindeerLandViewController.m */,
-				699654F61BE973E30099D53A /* SantaEnterHomeViewController.h */,
-				699654F71BE973E30099D53A /* SantaEnterHomeViewController.m */,
-				699654F91BE974060099D53A /* SantaMotionViewController.h */,
-				699654FA1BE974060099D53A /* SantaMotionViewController.m */,
-				699654FC1BE974270099D53A /* SantaTakePhotoViewController.h */,
-				699654FD1BE974270099D53A /* SantaTakePhotoViewController.m */,
-				699654FF1BE9744F0099D53A /* SantaDoneConfigViewController.h */,
-				699655001BE9744F0099D53A /* SantaDoneConfigViewController.m */,
-				693B79391BEBC1AE002C82B7 /* SantaConfigruredController.h */,
-				693B793A1BEBC1AE002C82B7 /* SantaConfigruredController.m */,
-				693B793C1BEBC1CB002C82B7 /* SantaConfigruredEditController.h */,
-				693B793D1BEBC1CB002C82B7 /* SantaConfigruredEditController.m */,
-				693B793F1BEBC226002C82B7 /* SantaConfirmViewController.h */,
-				693B79401BEBC226002C82B7 /* SantaConfirmViewController.m */,
 				BB0C46ED43E2DD4A230F21F6 /* CareAlarmBaseViewControllerCell.h */,
 				BB0C437639EBE1A60B987B7E /* CareAlarmBaseViewControllerCell.m */,
 			);
@@ -7400,8 +7343,6 @@
 		7EEC35D31BF5600600A5FB09 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				7EEC35D41BF5605900A5FB09 /* SantaConfirmViewControllerCell.h */,
-				7EEC35D51BF5605900A5FB09 /* SantaConfirmViewControllerCell.m */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -7650,7 +7591,6 @@
 				1BFD8BF81E134D8300CD9CBE /* DashboardWaterCard.swift */,
 				1B62AE341E1C4042003DC863 /* DashboardServiceCard.swift */,
 				1B62AE401E1EE9A1003DC863 /* DashboardHomeFamilyCard.swift */,
-				1BCFA5CB1E1F1BE6002DBBD0 /* DashboardSantaTrackerCard.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -9162,7 +9102,6 @@
 				7E6A34F81BAA0A1300912353 /* Person.storyboard */,
 				7EB185DE1B83C9E0009B8F7B /* PlaceSettings.storyboard */,
 				694338C81B39F5570053A249 /* Rules.storyboard */,
-				699654E71BE963B40099D53A /* SantaTracker.storyboard */,
 				692432E21BD98142007707A3 /* Scenes.storyboard */,
 				F263DE7E1C125361002143A2 /* Scheduler.storyboard */,
 				69C458CD1B96410300342F0C /* ServicesDetail.storyboard */,
@@ -10061,7 +10000,6 @@
 				7E66CC8B1C20AC8F004FF410 /* ZWaveTools.storyboard in Resources */,
 				1B2423051E89B64900F1217E /* PremiumRequiredSubcontent.xib in Resources */,
 				C6284CC21B0B935700F269BF /* SlidingMenuTableViewCell.xib in Resources */,
-				699654E91BE963B40099D53A /* SantaTracker.storyboard in Resources */,
 				694338CA1B39F5570053A249 /* Rules.storyboard in Resources */,
 				E657D65E20D2FD2E00A32CD0 /* SlideMenuTableViewFooterView.xib in Resources */,
 				7EB79D5D1F4CAF60008DD1D0 /* CamerasMore.storyboard in Resources */,
@@ -10430,7 +10368,6 @@
 				C990976C1E54C04100326AA0 /* ProMonDirectionsSettingsPresenter.swift in Sources */,
 				3C22A39C21416CCD00700449 /* BrandSectionViewModel.swift in Sources */,
 				C9E65279208645F800400610 /* ZWRebuildLater.swift in Sources */,
-				699654FB1BE974060099D53A /* SantaMotionViewController.m in Sources */,
 				C942AB741C5FA45B008C608F /* RingTextContentsView.m in Sources */,
 				1B52EA321E60C005004EAFA5 /* AlarmStatusViewModel.swift in Sources */,
 				7E11FBA61FE0D3390089EEA6 /* CameraStatusCapability.m in Sources */,
@@ -10452,7 +10389,6 @@
 				A03DFFDA1C6BDB9D00892269 /* CareTestAlarmViewController.m in Sources */,
 				C93C7D4A1F4DC6A500FBA1EB /* RecordingCameraTableViewCell.swift in Sources */,
 				6931FDD91B34D97200B0EE8D /* ContolsStyleSheet.m in Sources */,
-				699654FE1BE974270099D53A /* SantaTakePhotoViewController.m in Sources */,
 				F2FF7F991C5166BB00A1247B /* DevicePairingFormEntryViewController.m in Sources */,
 				7E11FCF41FE0D33B0089EEA6 /* CentraLiteSmartPlugCapability.m in Sources */,
 				69C458D31B9646D800342F0C /* ServiceControlsViewController.m in Sources */,
@@ -10468,7 +10404,7 @@
 				C97216961CF879A60023FE18 /* PlacePeopleListViewController.swift in Sources */,
 				A0BBF3741C625C7E00149462 /* CareStatusViewController.m in Sources */,
 				C990976A1E54A73E00326AA0 /* ProMonPermitSettingsViewController.swift in Sources */,
-				3C1DD5B81E53899D0007990A /* BuildFile in Sources */,
+				3C1DD5B81E53899D0007990A /* (null) in Sources */,
 				7E7FFFBE1CDD05680087A518 /* PlaceListPresenter.swift in Sources */,
 				F27400551C4D8672003B1735 /* OrderedDictionary.m in Sources */,
 				F294F86C1AD31E5600B53C4B /* UIImage+ImageEffects.m in Sources */,
@@ -10537,7 +10473,6 @@
 				3C94E04E1F3369A700C9D2DA /* CameraTabBarViewController.swift in Sources */,
 				7E92AF7221271FA200FB1748 /* BLEWifiScanTableViewCell.swift in Sources */,
 				DA9534FB20FF74E10043D906 /* HubBLEPostPairingPresenter.swift in Sources */,
-				7EEC35D61BF5605900A5FB09 /* SantaConfirmViewControllerCell.m in Sources */,
 				D40F27ED20868F4000BBFA82 /* RoomSelectionCell.swift in Sources */,
 				7E11FCEE1FE0D33B0089EEA6 /* AlarmService.m in Sources */,
 				F21E17881D77EFC800691622 /* HaloPairingTestViewController.swift in Sources */,
@@ -10566,7 +10501,6 @@
 				A055300F1C62726000F59532 /* CareSafetyAlarmViewController.m in Sources */,
 				C9B7DA811E53845500C01D4B /* ProMonitoringSettingsController.swift in Sources */,
 				F21207481B14244E006D567A /* UIView+Blur.m in Sources */,
-				699655011BE9744F0099D53A /* SantaDoneConfigViewController.m in Sources */,
 				7E11FCB21FE0D33A0089EEA6 /* PresenceCapability.m in Sources */,
 				3FC5EFF41B7A8D2E00BCD819 /* SettingsBaseViewController.m in Sources */,
 				7E50836F20F4F00D002BF0A4 /* WiFiScanItem.swift in Sources */,
@@ -10737,7 +10671,6 @@
 				7E8825E71D21919500E800A0 /* UIColor+Extension.swift in Sources */,
 				7EA83EE8210A00C200AB9B63 /* BLEPairingErrorViewController.swift in Sources */,
 				7E11FC481FE0D33A0089EEA6 /* SecuritySubsystemCapability.m in Sources */,
-				693B793E1BEBC1CB002C82B7 /* SantaConfigruredEditController.m in Sources */,
 				7ED8964520A3C67C001353F6 /* WSSPairingPresenter.swift in Sources */,
 				690E5D651B600655007EF7F2 /* DeviceButtonBase.m in Sources */,
 				7ED8964E20A47B27001353F6 /* WSSPairingDeviceClaimedErrorPopupViewController.swift in Sources */,
@@ -10888,7 +10821,6 @@
 				F2D8B5E41C7B6D70002D1A86 /* SceneScheduleController.m in Sources */,
 				7E95713120E148E10046A21B /* BLEListViewController.swift in Sources */,
 				3C360FC020F63E6900B14F33 /* HubVersion+PairingStepsPresenterFactory.swift in Sources */,
-				1BCFA5CC1E1F1BE6002DBBD0 /* DashboardSantaTrackerCard.swift in Sources */,
 				7E2C81B71EF1DD5B00F89B90 /* WaterSoftenerDeviceMorePresenter.swift in Sources */,
 				69C389141B7EA1AA00422CAC /* PinCodeEntryViewController.m in Sources */,
 				1BFD8BFD1E134DD200CD9CBE /* DashboardLawnGardenCard.swift in Sources */,
@@ -10952,7 +10884,6 @@
 				3CE53C421F4372EC001CB28B /* TableView+LastIndex.swift in Sources */,
 				F2B231D61C7D11470042B2D4 /* ThermostatScheduledEventModel.m in Sources */,
 				3C0A30EE1FE96413003A4E6E /* BiometricObjCAdapter.swift in Sources */,
-				693B79411BEBC226002C82B7 /* SantaConfirmViewController.m in Sources */,
 				69E611151BCEB44100BC5B37 /* CustomHoursOnlyPicker.m in Sources */,
 				7E4A51812100C6FD00FCE56E /* DeviceBLEPairingDontSeeNetworkViewController.swift in Sources */,
 				3C2AE6D3207277B70044E06C /* HubPairing.swift in Sources */,
@@ -11099,7 +11030,6 @@
 				F27400341C4D8640003B1735 /* CameraSettingsController.m in Sources */,
 				14459D441CE235BA00374EC3 /* PersonInvitationPinCodeConfirmationViewController.swift in Sources */,
 				1B3CEDD21F1E3E4400F57F4B /* GenericThermostatOperationViewController.swift in Sources */,
-				693B793B1BEBC1AE002C82B7 /* SantaConfigruredController.m in Sources */,
 				69C3891B1B825E2B00422CAC /* AlarmTabBarViewController.m in Sources */,
 				3CE4AE6E1EFC46B300584002 /* HubIdValidator.swift in Sources */,
 				7E11FC1C1FE0D33A0089EEA6 /* HoneywellTCCCapability.m in Sources */,
@@ -11138,7 +11068,6 @@
 				C9610A881D63BA3900829C73 /* SpaceHeaterScheduledEventModel.swift in Sources */,
 				C933F5C61CF38D8600DAA424 /* AccountSettingsPinCodeViewController.swift in Sources */,
 				F26637D51BBC75FD0047F01B /* DeviceUnpairingManager.m in Sources */,
-				699654ED1BE966160099D53A /* SantaGetStartViewController.m in Sources */,
 				7E50835020F4E57D002BF0A4 /* ArcusBLEAvailability.swift in Sources */,
 				14080B151CEE534900258E5D /* InvitationRegistrationConfig.swift in Sources */,
 				3C81945D2058238F00C22103 /* ExitPairingPresenter.swift in Sources */,
@@ -11180,7 +11109,7 @@
 				7EE7F6F11C246EC1004037DE /* ZWaveDeviceRemovedCell.m in Sources */,
 				695E0B1D1BA70E9B001D76BA /* PersonCallTreeViewController.m in Sources */,
 				14CA06F01D1DC9EC00C98399 /* CameraPremiumRequiredViewController.swift in Sources */,
-				3C1DD5B61E53897A0007990A /* BuildFile in Sources */,
+				3C1DD5B61E53897A0007990A /* (null) in Sources */,
 				3C1DED52205FF913007B2719 /* HubModel+Extension.swift in Sources */,
 				7E3D9C991E6A056700E74EBB /* WhatsNewInVersionTwo.swift in Sources */,
 				F24C07D31C89D98000446C20 /* WaterHeaterTemperatureViewController.m in Sources */,
@@ -11296,7 +11225,6 @@
 				696365B31BCC364B0055CBB6 /* WaterSoftenerSettings.m in Sources */,
 				D428B1A82072B35300C1C7E1 /* PromonAlarmCustomizationViewController.swift in Sources */,
 				1B2D17DF210B90AB009B440C /* KitSetupHelper.swift in Sources */,
-				699654F81BE973E30099D53A /* SantaEnterHomeViewController.m in Sources */,
 				7EFBEC9A1CECC63A00A9CD87 /* EditPlaceInfoViewController.swift in Sources */,
 				3C3E43B420D9363F002C3528 /* ArcusModelProvider.swift in Sources */,
 				3CEA2187203DC09600C658B4 /* ArcusPopupViewController.swift in Sources */,
@@ -11547,7 +11475,6 @@
 				3C8A18711E2833F20085C272 /* GenericPresenterDelegates.swift in Sources */,
 				3C28698E1E2582310095CAC9 /* ReuseableViews.swift in Sources */,
 				6993197C1C4D945000408304 /* DeviceDetailsPetDoor.m in Sources */,
-				699654F51BE973B80099D53A /* SantaReindeerLandViewController.m in Sources */,
 				C944D89A1CCEAD30005D136E /* TagRoute.swift in Sources */,
 				692BAF3D1BAB462900CB2C55 /* AlertActionSheetViewController.m in Sources */,
 				F28F8FD11C95D80800B6633B /* LawnNGardenSchedulerListCell.m in Sources */,
@@ -11597,7 +11524,6 @@
 				DA0A4EA020FD13D3005CAB7C /* HubBLEPairingStepViewModel.swift in Sources */,
 				3CEA2182203DC08000C658B4 /* ArcusPopupAnimationController.swift in Sources */,
 				C9574D8D1C85F92000129348 /* SchedulerListCell.m in Sources */,
-				699654F11BE969C20099D53A /* SantaTracker.m in Sources */,
 				1BDCEC591EBCFFF40083B7A3 /* AlarmCertificatePreviewViewController.swift in Sources */,
 				D428B1A3206ECC2500C1C7E1 /* SecurityModeChoiceViewModel.swift in Sources */,
 				7E11FC921FE0D33A0089EEA6 /* WeatherSubsystemCapability.m in Sources */,
@@ -11863,14 +11789,6 @@
 			);
 			name = PopupSelectionSearching.xib;
 			path = UI/CustomControls;
-			sourceTree = "<group>";
-		};
-		699654E71BE963B40099D53A /* SantaTracker.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				699654E81BE963B40099D53A /* Base */,
-			);
-			name = SantaTracker.storyboard;
 			sourceTree = "<group>";
 		};
 		69B2699F1BFCEA0400B17BAE /* PopupSelectionPersonView.xib */ = {

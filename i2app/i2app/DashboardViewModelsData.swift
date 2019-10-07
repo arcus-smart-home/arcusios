@@ -33,7 +33,6 @@ struct DashboardCardTitle {
   static let water: String = NSLocalizedString("Water", comment: "")
   static let homeFamily: String = NSLocalizedString("Home & Family", comment: "")
   static let alarms: String = NSLocalizedString("Alarms", comment: "")
-  static let santaTracker: String = NSLocalizedString("Santa Tracker", comment: "")
 }
 
 struct DashboardCardImageName {
@@ -47,7 +46,6 @@ struct DashboardCardImageName {
   static let water: String = "Dashboard_water"
   static let homeFamily: String = "Dashboard_homefamily"
   static let alarms: String = "Dashboard_alarm"
-  static let santaTracker: String = "dashboard_santatracker"
 }
 
 enum DashboardCardType: String {
@@ -62,7 +60,6 @@ enum DashboardCardType: String {
   case Water
   case HomeFamily
   case Alarms
-  case SantaTracker
 }
 
 protocol DashboardCardViewModel {
@@ -72,24 +69,6 @@ protocol DashboardCardViewModel {
   var isEnabled: Bool {get set}
 
   func isEquals(_ cardViewModel: DashboardCardViewModel) -> Bool
-}
-
-class DashboardSantaTrackerViewModel: DashboardCardViewModel {
-  let title: String = DashboardCardTitle.santaTracker
-  let imageName: String = DashboardCardImageName.santaTracker
-  let type: DashboardCardType = DashboardCardType.SantaTracker
-  var isEnabled: Bool = true
-
-  func isEquals(_ cardViewModel: DashboardCardViewModel) -> Bool {
-    guard let viewModel = cardViewModel as? DashboardSantaTrackerViewModel else {
-      return false
-    }
-
-    return title == viewModel.title &&
-      imageName == viewModel.imageName &&
-      type == viewModel.type &&
-      isEnabled == viewModel.isEnabled
-  }
 }
 
 class DashboardLightsSwitchesViewModel: DashboardCardViewModel {

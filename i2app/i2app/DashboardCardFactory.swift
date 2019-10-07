@@ -29,7 +29,7 @@ class DashboardCardFactory {
   static func createCell(tableView: UITableView, viewModel: DashboardCardViewModel) -> UITableViewCell {
     var cell = UITableViewCell()
 
-    if viewModel.isEnabled || viewModel.type == .SantaTracker {
+    if viewModel.isEnabled {
       switch viewModel.type {
       case .Favorites:
         var isPremium = false
@@ -92,11 +92,6 @@ class DashboardCardFactory {
         if let viewModel = viewModel as? DashboardHomeFamilyViewModel {
           cell = DashboardCardFactory.createHomeFamilyCell(tableView,
                                                            viewModel: viewModel)
-        }
-      case .SantaTracker:
-        if let viewModel = viewModel as? DashboardSantaTrackerViewModel {
-          cell = DashboardCardFactory.createSantaTrackerCell(tableView,
-                                                             viewModel: viewModel)
         }
       }
     } else {
@@ -496,36 +491,6 @@ class DashboardCardFactory {
 
       if let image = UIImage(named:imageName) {
         cell.cardImage.image = image
-      }
-      cell.backgroundColor = UIColor.clear
-      return cell
-    }
-
-    return UITableViewCell()
-  }
-
-  static func createSantaTrackerCell(_ tableView: UITableView,
-                                     viewModel: DashboardSantaTrackerViewModel) -> UITableViewCell {
-    if let cell = tableView.dequeueReusableCell(withIdentifier: DashboardCardIdentifier.santaTracker)
-      as? DashboardSantaTrackerCard {
-
-      let santaStatus = SantaTracker.shareInstance().getStatus()
-      switch santaStatus {
-        case SantaTrackerStatusGetStart:
-          cell.santaStatus.text = "Prove that Santa Visited Your Home"
-        case SantaTrackerStatusConfigured:
-          cell.santaStatus.text = "Configured and ready for Santa!"
-        case SantaTrackerStatusConfirmed:
-          cell.santaStatus.text = "Santa sighting confirmed!"
-        
-        default:
-          cell.santaStatus.text = ""
-      }
-      
-      cell.cardTitle.text = viewModel.title
-
-      if let cardImage = UIImage(named: viewModel.imageName) {
-        cell.cardImage.image = cardImage
       }
       cell.backgroundColor = UIColor.clear
       return cell

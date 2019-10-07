@@ -40,7 +40,6 @@
 #import "DeviceDetailsThermostat.h"
 #import "BuildConfigure.h"
 #import "UpdateManager.h"
-#import "SantaTracker.h"
 #import "BillingRequestBuilder.h"
 #import "BillingTokenClient.h"
 
@@ -68,7 +67,6 @@
 #import "LaunchScreenViewController.h"
 #import "DebugInfoViewController.h"
 #import "AlertActionSheetViewController.h"
-#import "SantaTracker.h"
 #import "SceneListViewController.h"
 #import "TutorialListViewController.h"
 
