@@ -7,20 +7,6 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "NO"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F230E3B11ACAEF8F005D953A"
-               BuildableName = "i2app.app"
-               BlueprintName = "i2app"
-               ReferencedContainer = "container:i2app.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
@@ -31,6 +17,20 @@
                BlueprintIdentifier = "CBC201151D6DF4E4004B2469"
                BuildableName = "i2app-ad-hoc.app"
                BlueprintName = "i2app-ad-hoc"
+               ReferencedContainer = "container:i2app.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F230E3B11ACAEF8F005D953A"
+               BuildableName = "i2app.app"
+               BlueprintName = "i2app"
                ReferencedContainer = "container:i2app.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +46,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CBC201151D6DF4E4004B2469"
-            BuildableName = "i2app-ad-hoc.app"
-            BlueprintName = "i2app-ad-hoc"
+            BlueprintIdentifier = "F230E3B11ACAEF8F005D953A"
+            BuildableName = "i2app.app"
+            BlueprintName = "i2app"
             ReferencedContainer = "container:i2app.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -69,9 +69,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CBC201151D6DF4E4004B2469"
-            BuildableName = "i2app-ad-hoc.app"
-            BlueprintName = "i2app-ad-hoc"
+            BlueprintIdentifier = "F230E3B11ACAEF8F005D953A"
+            BuildableName = "i2app.app"
+            BlueprintName = "i2app"
             ReferencedContainer = "container:i2app.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
