@@ -55,7 +55,7 @@ enum AlarmSoundType: Int {
 }
 
 protocol AlarmSoundTogglePresenterProtocol {
-  weak var delegate: GenericPresenterDelegate? { get set }
+  var delegate: GenericPresenterDelegate? { get set }
   init(delegate: GenericPresenterDelegate)
   var data: [AlarmSoundToggleViewModel]? { get }
   func toggleObject(_ state: Bool, atIndex: Int)

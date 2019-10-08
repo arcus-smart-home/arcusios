@@ -64,7 +64,7 @@ protocol IncidentTrackerDelegate: class {
 }
 
 protocol IncidentTrackerPresenter {
-  weak var delegate: IncidentTrackerDelegate? { get set }
+  var delegate: IncidentTrackerDelegate? { get set }
 
   // MARK: Public Configuration Properties
 
