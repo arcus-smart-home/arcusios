@@ -5103,7 +5103,7 @@
 		3C94E0421F33683C00C9D2DA /* Legacy Code */ = {
 			isa = PBXGroup;
 			children = (
-				F2FCB44B1C347597005D01FF /* Data/Camera */,
+				F2FCB44B1C347597005D01FF /* Camera */,
 			);
 			name = "Legacy Code";
 			sourceTree = "<group>";
@@ -7050,13 +7050,6 @@
 			name = Generated;
 			path = Cornea/Generated;
 			sourceTree = SOURCE_ROOT;
-		};
-		7EAF91631F7EB6370020D22C /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
-			sourceTree = "<group>";
 		};
 		7EB185DD1B83C9D1009B8F7B /* Places & People */ = {
 			isa = PBXGroup;
@@ -9847,14 +9840,13 @@
 			name = Halo;
 			sourceTree = "<group>";
 		};
-		F2FCB44B1C347597005D01FF /* Data/Camera */ = {
+		F2FCB44B1C347597005D01FF /* Camera */ = {
 			isa = PBXGroup;
 			children = (
 				7E62CDCA1CAC3EE0009E4ADF /* CameraVideoPlayerProvider.h */,
 				7E62CDCB1CAC3EE0009E4ADF /* CameraVideoPlayerProvider.m */,
-				7EAF91631F7EB6370020D22C /* New Group */,
 			);
-			name = Data/Camera;
+			name = Camera;
 			path = ../../Data;
 			sourceTree = "<group>";
 		};
