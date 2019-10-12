@@ -29,7 +29,7 @@ public protocol GenericPresenterDelegate: class {
   func updateLayout()
 }
 
-public protocol GenericListPresenterDelegate: class, GenericPresenterDelegate {
+public protocol GenericListPresenterDelegate: GenericPresenterDelegate {
   /// update the data of a specific index path
   func updateAtIndexPath(_ indexPath: IndexPath)
 }
