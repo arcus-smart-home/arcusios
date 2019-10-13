@@ -405,7 +405,7 @@
             //Tag Left Rail Menu - Shop:
             [ArcusAnalytics tag:AnalyticsTags.LeftSlidingMenuShop attributes:@{}];
             
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@""]];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@""] options:@{} completionHandler:nil];
         }
             break;
             

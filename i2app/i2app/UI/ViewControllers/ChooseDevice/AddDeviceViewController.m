@@ -315,7 +315,7 @@
 }
 
 - (void)updateApp {
-  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appUrlInAppStore]];
+  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appUrlInAppStore] options:@{} completionHandler:nil];
 }
 
 - (BOOL)isSomfyControllerPaired:(DeviceProductCatalog *)product {

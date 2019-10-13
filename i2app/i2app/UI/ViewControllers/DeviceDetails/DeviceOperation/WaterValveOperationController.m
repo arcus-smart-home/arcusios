@@ -140,7 +140,7 @@
 }
 
 -(void)onCallSupport {
-    [[UIApplication sharedApplication] openURL:[NSURL SupportLeakSmart]];
+    [[UIApplication sharedApplication] openURL:[NSURL SupportLeakSmart] options:@{} completionHandler:nil];
 }
 
 @end

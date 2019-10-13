@@ -369,7 +369,7 @@ NSString *const kSegueSetRuleName = @"SetRuleNameSegue";
         }
     }
     else {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@""]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@""] options:@{} completionHandler:nil];
     }
 }
 

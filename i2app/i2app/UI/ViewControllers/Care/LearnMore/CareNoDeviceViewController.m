@@ -67,7 +67,7 @@
 }
 
 - (void)pressedContactButton:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL ProductsCare]];
+    [[UIApplication sharedApplication] openURL:[NSURL ProductsCare] options:@{} completionHandler:nil];
 }
 
 @end

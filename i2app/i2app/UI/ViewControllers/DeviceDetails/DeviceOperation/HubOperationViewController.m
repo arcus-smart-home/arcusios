@@ -244,7 +244,7 @@ typedef NS_ENUM(NSInteger, HubBannerType) {
 
 #pragma mark - No connection alert bar
 - (void)didTapNoConnectionAlertBar {
-    [[UIApplication sharedApplication] openURL: NSURL.SupportHub];
+    [[UIApplication sharedApplication] openURL: NSURL.SupportHub options:@{} completionHandler:nil];
 }
 
 #pragma mark - Cellular Backup Callback

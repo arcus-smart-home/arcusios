@@ -251,7 +251,7 @@
 }
 
 - (void)updateApp {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appUrlInAppStore]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appUrlInAppStore] options:@{} completionHandler:nil];
 }
 
 #pragma mark - HubRequiredModalDelegate
