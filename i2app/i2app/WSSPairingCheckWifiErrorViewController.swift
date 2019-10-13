@@ -26,7 +26,7 @@ import Cornea
 class WSSPairingCheckWifiErrorViewController: ArcusPopupViewController {
   @IBAction func contactSupport(_ sender: AnyObject) {
     if UIApplication.shared.canOpenURL(Constants.customerSupportPrompt) == true {
-      UIApplication.shared.openURL(Constants.customerSupportPrompt)
+      UIApplication.shared.open(Constants.customerSupportPrompt)
     }
   }
 

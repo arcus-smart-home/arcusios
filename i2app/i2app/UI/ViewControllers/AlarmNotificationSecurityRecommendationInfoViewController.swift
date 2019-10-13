@@ -32,6 +32,6 @@ class AlarmNotificationSecurityRecommendationInfoViewController: UIViewControlle
   }
 
   @IBAction func learnMorePressed() {
-    UIApplication.shared.openURL(NSURL.SupportProMonitoring)
+    UIApplication.shared.open(NSURL.SupportProMonitoring)
   }
 }

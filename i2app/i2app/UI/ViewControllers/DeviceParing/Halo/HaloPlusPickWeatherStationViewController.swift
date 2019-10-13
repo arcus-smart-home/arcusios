@@ -408,7 +408,7 @@ UITableViewDelegate, UITableViewDataSource {
           self.subtitleLabel.attributedText = NSAttributedString(string: string, attributes: attributes)
           let handler = {(hyperLabel: ArcusHyperLabel?, substring: String?) -> Void in
             DispatchQueue.main.async {
-              UIApplication.shared.openURL(NSURL.NoaaMaps)
+              UIApplication.shared.open(NSURL.NoaaMaps)
             }
           }
           self.subtitleLabel.setLinksForSubstrings(["NOAA Weather Radio Coverage"], withLinkHandler: handler)

@@ -171,7 +171,7 @@ class SlideMenuViewController: UIViewController, SlideMenuPresenterProtocol {
       navController.pushViewController(controller, animated: true)
     case .url:
       guard let url = model.actionObject as? URL else { return }
-      UIApplication.shared.openURL(url)
+      UIApplication.shared.open(url)
     default:
       break
     }

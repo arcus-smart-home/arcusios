@@ -134,7 +134,7 @@ class HaloTestingViewController: UIViewController {
   }
 
   @IBAction func getSupportPressed(_ sender: AnyObject) {
-    UIApplication.shared.openURL(NSURL.SupportDeviceTroubleshooting)
+    UIApplication.shared.open(NSURL.SupportDeviceTroubleshooting)
   }
 
 }

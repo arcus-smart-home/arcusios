@@ -56,7 +56,7 @@ class AccountCreationCreateViewController: UIViewController {
   @IBAction func nextButtonPressed(_ sender: Any) {
     if let presenter = presenter, let url = presenter.urlForWebCreation() {
       dismiss(animated: false, completion: nil)
-      UIApplication.shared.openURL(url)
+      UIApplication.shared.open(url)
     }
   }
 }

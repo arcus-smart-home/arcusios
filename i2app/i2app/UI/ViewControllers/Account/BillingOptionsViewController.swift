@@ -215,7 +215,7 @@ class BillingOptionsViewController: UIViewController, UITableViewDataSource, UIT
   // MARK: IBActions
   @IBAction func shopButtonTapped(_ sender: AnyObject) {
     if let shopURL = URL(string:"") {
-      UIApplication.shared.openURL(shopURL)
+      UIApplication.shared.open(shopURL)
     }
   }
 }

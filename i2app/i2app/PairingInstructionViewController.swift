@@ -150,7 +150,7 @@ class PairingInstructionViewController: UIViewController {
     if linkUrl != nil {
       performSegue(withIdentifier: "linkUrlInstructionsSegue", sender: self)
     } else if let appUrl = externalAppUrl {
-      UIApplication.shared.openURL(appUrl)
+      UIApplication.shared.open(appUrl)
     }
   }
 

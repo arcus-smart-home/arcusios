@@ -89,7 +89,7 @@ class PairingInfomercialViewController: UIViewController {
   
   @IBAction func linkURLButtonPressed(_ sender: Any) {
     if let urlString = currentStepViewModel()?.linkURL, let url = URL(string: urlString) {
-      UIApplication.shared.openURL(url)
+      UIApplication.shared.open(url)
     }
   }
   

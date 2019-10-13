@@ -139,7 +139,7 @@ class WSSExternalSettingsInfoViewController: UIViewController, WSSPairingPresent
   // MARK: - IBActions
 
   @IBAction func needHelpPressed(_ sender: AnyObject) {
-    UIApplication.shared.openURL(NSURL.SupportWifiSmartSwitch)
+    UIApplication.shared.open(NSURL.SupportWifiSmartSwitch)
   }
 
   fileprivate func handlePairingError(_ error: (Error)) -> String {

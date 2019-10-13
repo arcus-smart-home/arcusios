@@ -63,7 +63,7 @@ class AccountCreationCompleteAccountViewController: UIViewController {
    */
   @IBAction func completeButtonPressed(_ sender: Any) {
     if let presenter = presenter, let url = presenter.viewModel.completeAccountURL {
-      UIApplication.shared.openURL(url)
+      UIApplication.shared.open(url)
     }
   }
 

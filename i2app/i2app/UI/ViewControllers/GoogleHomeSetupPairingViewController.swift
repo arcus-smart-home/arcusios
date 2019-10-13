@@ -59,7 +59,7 @@ class GoogleHomeSetupPairingViewController: BaseDeviceStepViewController {
   }
 
   @IBAction func setupInstructionsButtonPressed(_ sender: ArcusButton) {
-    UIApplication.shared.openURL(NSURL.SupportGoogleAsst)
+    UIApplication.shared.open(NSURL.SupportGoogleAsst)
   }
 
   @IBAction func done(_ sender: UIButton) {

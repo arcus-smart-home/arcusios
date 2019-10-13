@@ -34,7 +34,7 @@ class AlarmsLearnMoreViewController: UIViewController, AlarmsLearnMorePresenterD
   @IBOutlet weak var deviceListCollapse: NSLayoutConstraint!
 
   @IBAction func shopButtonPressed(_ sender: AnyObject) {
-    UIApplication.shared.openURL(URL(string: presenter.viewModel.buttonURL)!)
+    UIApplication.shared.open(URL(string: presenter.viewModel.buttonURL)!)
   }
 
   // MARK: Lifecycle

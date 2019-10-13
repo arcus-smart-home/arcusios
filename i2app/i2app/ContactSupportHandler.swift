@@ -54,7 +54,7 @@ extension ContactSupportHandler {
   fileprivate func performTelPrompt(_ prompt: String) {
     if let promptUrl = URL(string: prompt) {
       if UIApplication.shared.canOpenURL(promptUrl) {
-        UIApplication.shared.openURL(promptUrl)
+        UIApplication.shared.open(promptUrl)
       }
     }
   }

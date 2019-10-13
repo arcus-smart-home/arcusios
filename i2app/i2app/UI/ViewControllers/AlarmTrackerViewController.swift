@@ -256,7 +256,7 @@ class AlarmTrackerViewController: UIViewController {
     let phoneNo = "telprompt:+18445716006"
     if let phoneUrl = URL(string: phoneNo),
       UIApplication.shared.canOpenURL(phoneUrl) == true {
-      UIApplication.shared.openURL(phoneUrl)
+      UIApplication.shared.open(phoneUrl)
     }
   }
 
