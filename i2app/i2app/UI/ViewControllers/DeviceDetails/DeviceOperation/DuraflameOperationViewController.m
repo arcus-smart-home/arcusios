@@ -287,11 +287,13 @@
 }
 
 -(void)onCallSupport {
-    NSURL *phoneUrl = [NSURL URLWithString:@"tel://+18003189373"];
-    
-    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
-        [[UIApplication sharedApplication] openURL:phoneUrl];
-    }
+    // This will need to be addressed if support is added.
+//
+//    NSURL *phoneUrl = [NSURL URLWithString:@"tel://+18003189373"];
+//    
+//    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
+//        [[UIApplication sharedApplication] openURL:phoneUrl];
+//    }
 }
 
 -(void)onOpenErrorsView {
