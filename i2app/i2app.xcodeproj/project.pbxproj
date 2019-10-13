@@ -358,6 +358,7 @@
 		49CA8012234A851E00948B93 /* UIImage+CustomEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CA8011234A851E00948B93 /* UIImage+CustomEffects.m */; };
 		49CA8013234A874E00948B93 /* UIImage+CustomEffects.h in Sources */ = {isa = PBXBuildFile; fileRef = 49CA8010234A84FD00948B93 /* UIImage+CustomEffects.h */; };
 		49E1C95E230664B300F5137C /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49E1C95D230664B200F5137C /* logo.jpg */; };
+		49E31BE32352F95600FB4AF9 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E31BE22352F95500FB4AF9 /* CoreImage.framework */; };
 		690E5D141B5D49F5007EF7F2 /* GeneralDeviceOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690E5D131B5D49F5007EF7F2 /* GeneralDeviceOperationController.m */; };
 		690E5D191B5D746C007EF7F2 /* DeviceTextIconAttributeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 690E5D181B5D746C007EF7F2 /* DeviceTextIconAttributeControl.m */; };
 		690E5D1C1B5D7D37007EF7F2 /* DeviceTextAttributeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 690E5D1B1B5D7D37007EF7F2 /* DeviceTextAttributeControl.m */; };
@@ -2033,6 +2034,7 @@
 		49CA8010234A84FD00948B93 /* UIImage+CustomEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CustomEffects.h"; sourceTree = "<group>"; };
 		49CA8011234A851E00948B93 /* UIImage+CustomEffects.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CustomEffects.m"; sourceTree = "<group>"; };
 		49E1C95D230664B200F5137C /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpg; path = Assets/logo.jpg; sourceTree = "<group>"; };
+		49E31BE22352F95500FB4AF9 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		571D8B10C37B125025C32D56 /* Pods_i2appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_i2appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		682D37737DFB82F183564646 /* Pods-i2app-ad-hoc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i2app-ad-hoc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-i2app-ad-hoc/Pods-i2app-ad-hoc.debug.xcconfig"; sourceTree = "<group>"; };
 		690E5D121B5D49F5007EF7F2 /* GeneralDeviceOperationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralDeviceOperationController.h; sourceTree = "<group>"; };
@@ -4038,6 +4040,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E31BE32352F95600FB4AF9 /* CoreImage.framework in Frameworks */,
 				3A58C3BA1BC56B4000434C11 /* AVKit.framework in Frameworks */,
 				C67F3C851AF9658C009D480E /* AudioToolbox.framework in Frameworks */,
 				AFB69FF489E2C7557B20CAD8 /* Pods_i2app.framework in Frameworks */,
@@ -5263,6 +5266,7 @@
 		613ECA4FC0CC05AF8D63EE22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49E31BE22352F95500FB4AF9 /* CoreImage.framework */,
 				7E6967B51DBE6C0500C8A972 /* LocalAuthentication.framework */,
 				3A58C3B91BC56B4000434C11 /* AVKit.framework */,
 				C67F3C841AF9658C009D480E /* AudioToolbox.framework */,
