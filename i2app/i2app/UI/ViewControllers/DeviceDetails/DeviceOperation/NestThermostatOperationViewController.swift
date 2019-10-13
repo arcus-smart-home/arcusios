@@ -118,7 +118,7 @@ class NestThermostatOperationViewController: DeviceOperationBaseController {
   }
   
   func handleTimeoutBanner() {
-    UIApplication.shared.openURL(NSURL.SupportNest)
+    UIApplication.shared.open(NSURL.SupportNest)
   }
 }
 

@@ -44,7 +44,7 @@ public class MispairedFailureViewController: MispairedBaseViewController,
 
   @IBAction func onCallSupport(_ sender: Any?) {
     if let url = URL(string: "tel://18554694747") {
-      UIApplication.shared.openURL(url)
+      UIApplication.shared.open(url)
     }
   }
 }
