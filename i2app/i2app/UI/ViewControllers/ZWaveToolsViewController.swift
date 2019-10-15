@@ -198,7 +198,7 @@ class ZWaveToolsViewController: UIViewController, UITableViewDataSource, UITable
     self.addDarkOverlay(BackgroupOverlayLightLevel)
   }
 
-  open static func isZWaveRebuildSupported () -> Bool {
+  public static func isZWaveRebuildSupported () -> Bool {
 
     let kMinMajorVersion = 2, kMinMinorVersion = 0, kMinMaintenanceVersion = 2, kMinBuildVersion = 6
 

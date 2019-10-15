@@ -121,7 +121,7 @@
   NSURL *productSupportUrl = [NSURL productSupportUrlWithDeviceType:deviceTypeHint
                                                           productId:self.deviceModel.productId
                                                           devadvErr:@"err_obstruction"];
-  [[UIApplication sharedApplication] openURL:productSupportUrl];
+  [[UIApplication sharedApplication] openURL:productSupportUrl options:@{} completionHandler:nil];
 }
 
 - (void) dismissErrorBanner {

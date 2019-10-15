@@ -74,7 +74,7 @@ class HueFallbackOperationViewController: DeviceOperationBaseController {
   }
 
   @objc private func handleBannerTap() {
-    UIApplication.shared.openURL(NSURL.SupportImproperlyPairedHue)
+    UIApplication.shared.open(NSURL.SupportImproperlyPairedHue)
   }
 
 }

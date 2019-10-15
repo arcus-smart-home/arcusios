@@ -54,7 +54,7 @@ class AlarmOfflineWarningViewController: UIViewController, GradientColorable {
       let incident = presenter.viewModel.activeIncident
       
       if incident.isEmpty {
-        UIApplication.shared.openURL(NSURL.SupportHub)
+        UIApplication.shared.open(NSURL.SupportHub)
       } else {
         // Navigate to the alarm tracket if there is an incident
         dismiss(animated: true, completion: nil)

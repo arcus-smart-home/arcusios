@@ -88,12 +88,13 @@
 }
 
 - (IBAction)onClickCallingButton:(id)sender {
-    NSString *phNo = @"+18554694747";
-    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt:%@",phNo]];
-    
-    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
-        [[UIApplication sharedApplication] openURL:phoneUrl];
-    }
+    // This will need to be addressed if support is added.
+//    NSString *phNo = @"+18554694747";
+//    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt:%@",phNo]];
+//
+//    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
+//        [[UIApplication sharedApplication] openURL:phoneUrl];
+//    }
 }
 
 - (IBAction)submitPressed:(id)sender {

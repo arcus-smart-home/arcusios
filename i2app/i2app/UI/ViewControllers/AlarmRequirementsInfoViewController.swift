@@ -34,6 +34,6 @@ class AlarmRequirementsInfoViewController: UIViewController {
 
   // TODO: use a better function name like shopPressed
   @IBAction func learnMorePressed() {
-    UIApplication.shared.openURL(URL(string: AlarmRequirementsConstants.shopURL)!)
+    UIApplication.shared.open(URL(string: AlarmRequirementsConstants.shopURL)!)
   }
 }

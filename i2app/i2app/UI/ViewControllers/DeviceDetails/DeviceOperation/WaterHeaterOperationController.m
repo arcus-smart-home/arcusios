@@ -146,11 +146,13 @@ const int kMinHeatingPointInFah = 60;
 }
 
 - (void)supportPhoneCall {
-    NSURL *phoneUrl = [NSURL URLWithString:@"tel://+18887756937"];
-    
-    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
-        [[UIApplication sharedApplication] openURL:phoneUrl];
-    }
+    // This will need to be addressed if support is added.
+//
+//    NSURL *phoneUrl = [NSURL URLWithString:@"tel://+18887756937"];
+//    
+//    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
+//        [[UIApplication sharedApplication] openURL:phoneUrl];
+//    }
 }
 
 

@@ -78,7 +78,7 @@ struct AlarmRequirementsType {
 }
 
 protocol AlarmRequirementsPresenterProtocol {
-  weak var delegate: GenericPresenterDelegate? { get set }
+  var delegate: GenericPresenterDelegate? { get set }
   init(delegate: GenericPresenterDelegate)
   func fetch()
   var data: AlarmRequirementsViewModel { get }

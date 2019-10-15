@@ -27,7 +27,7 @@ import UIKit
 class HubOfflinePopupViewController: ArcusPopupViewController {
 
   @IBAction func getSupportPressed(_ sender: Any) {
-    UIApplication.shared.openURL(NSURL.SupportHub)
+    UIApplication.shared.open(NSURL.SupportHub)
     self.presentingViewController?.dismiss(animated: true, completion: nil)
   }
 

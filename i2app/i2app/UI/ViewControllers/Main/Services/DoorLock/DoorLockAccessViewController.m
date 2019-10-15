@@ -79,7 +79,7 @@
 }
 
 - (void)onClickShopButton:(UIButton *)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @""]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @""] options:@{} completionHandler:nil];
 }
 
 - (void)loadControls {

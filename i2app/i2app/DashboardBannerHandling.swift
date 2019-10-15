@@ -261,7 +261,7 @@ extension DashboardTwoViewController: CellularBackupCallback {
     }
 
     if UIApplication.shared.canOpenURL(phoneUrl) {
-      UIApplication.shared.openURL(phoneUrl)
+      UIApplication.shared.open(phoneUrl)
     }
   }
 }

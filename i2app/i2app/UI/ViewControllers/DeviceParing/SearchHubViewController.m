@@ -114,7 +114,7 @@ const int kRegisterHubRetrySec = 5;
 - (void)callSupport {
     NSString *URLString = [@"tel://" stringByAppendingString:NSLocalizedString(@"Customer support phone", nil)];
     NSURL *URL = [NSURL URLWithString:URLString];
-    [[UIApplication sharedApplication] openURL:URL];
+    [[UIApplication sharedApplication] openURL:URL options:@{} completionHandler:nil];
     [self slideOutTwoButtonAlert];
     [[DevicePairingManager sharedInstance].pairingWizard backToPreviousPage];
     [self.navigationController popViewControllerAnimated:YES];

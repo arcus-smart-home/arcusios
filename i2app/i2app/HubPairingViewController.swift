@@ -360,7 +360,7 @@ extension HubPairingViewController: HubPairingDelegate {
   func callSupport() {
     let supportNumber = "telprompt://" + NSLocalizedString("Customer support phone", comment:"")
     if let url = URL(string: supportNumber) {
-      UIApplication.shared.openURL(url)
+      UIApplication.shared.open(url)
     }
   }
 

@@ -244,7 +244,7 @@ typedef NS_ENUM(NSInteger, HubBannerType) {
 
 #pragma mark - No connection alert bar
 - (void)didTapNoConnectionAlertBar {
-    [[UIApplication sharedApplication] openURL: NSURL.SupportHub];
+    [[UIApplication sharedApplication] openURL: NSURL.SupportHub options:@{} completionHandler:nil];
 }
 
 #pragma mark - Cellular Backup Callback
@@ -331,12 +331,13 @@ typedef NS_ENUM(NSInteger, HubBannerType) {
 }
 
 - (void)callSupport {
-    NSString *phNo = @"+18554694747";
-    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt:%@",phNo]];
-
-    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
-        [[UIApplication sharedApplication] openURL:phoneUrl];
-    }
+    // This will need to be addressed if support is added.
+//    NSString *phNo = @"+18554694747";
+//    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt:%@",phNo]];
+//
+//    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
+//        [[UIApplication sharedApplication] openURL:phoneUrl];
+//    }
 }
 
 #pragma mark - Banner Presenter

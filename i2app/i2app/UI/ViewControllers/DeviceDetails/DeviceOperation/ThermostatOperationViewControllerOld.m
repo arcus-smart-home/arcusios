@@ -881,13 +881,15 @@ static inline float AngleFromNorth(CGPoint p1, CGPoint p2, BOOL flipped) {
 }
 
 - (void)callSupport {
-    // Callout
-    NSString *phNo = NSLocalizedString(@"+18772718620", nil);
-    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt:%@",phNo]];
-
-    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
-        [[UIApplication sharedApplication] openURL:phoneUrl];
-    }
+    // This will need to be addressed if support is added.
+//
+//    // Callout
+//    NSString *phNo = NSLocalizedString(@"+18772718620", nil);
+//    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt:%@",phNo]];
+//
+//    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
+//        [[UIApplication sharedApplication] openURL:phoneUrl];
+//    }
 }
 
 - (void)disableWaiting {

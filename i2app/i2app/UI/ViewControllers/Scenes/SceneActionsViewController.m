@@ -165,7 +165,7 @@ const int kNumberOfSections = 2;
 }
 
 - (void)shopNow {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@""]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@""] options:@{} completionHandler:nil];
 }
 
 - (void)popup:(PopupSelectionBaseContainer *)container complete:(SEL)selector {

@@ -87,7 +87,7 @@ extension WhatsNewInVersionTwo: UIWebViewDelegate {
     if url == presenter.urlToLoad {
       return true
     } else {
-      UIApplication.shared.openURL(url)
+      UIApplication.shared.open(url)
       return false
     }
   }

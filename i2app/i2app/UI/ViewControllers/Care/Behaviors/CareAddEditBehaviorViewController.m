@@ -524,7 +524,7 @@ NSString* (^daysLabelTransform)(NSNumber* durationDays) = ^NSString *(NSNumber* 
 #pragma mark - IBActions
 - (IBAction)saveButtonTapped:(id)sender {
     if (_isUnsatisfiableBehavior) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@""]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@""] options:@{} completionHandler:nil];
     } else {
         void (^saveBlock) (void);
         

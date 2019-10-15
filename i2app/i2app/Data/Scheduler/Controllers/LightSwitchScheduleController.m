@@ -132,7 +132,7 @@ NSString *const kLightSchedule = @"LIGHT";
 }
 
 - (void)shopClicked:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @""]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @""] options:@{} completionHandler:nil];
 }
 
 #pragma mark - Scheduler Utilities

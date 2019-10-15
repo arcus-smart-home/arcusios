@@ -34,11 +34,11 @@ class PersonInvitationTutorialViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     _ = prefersStatusBarHidden
-    self.createGradientBackground(withTopColor: UIColor(colorLiteralRed: 110.0/255.0,
+    self.createGradientBackground(withTopColor: UIColor(red: 110.0/255.0,
                                                         green: 137.0/255.0,
                                                         blue: 200.0/255.0,
                                                         alpha: 1),
-                                  bottomColor: UIColor(colorLiteralRed: 77.0/255.0,
+                                  bottomColor: UIColor(red: 77.0/255.0,
                                                        green:71.0/255.0,
                                                        blue:143.0/255.0,
                                                        alpha:1))

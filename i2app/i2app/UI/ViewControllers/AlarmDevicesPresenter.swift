@@ -42,7 +42,7 @@ protocol AlarmDevicesDelegate : class {
 }
 
 protocol AlarmDevicesPresenterProtocol {
-  weak var delegate: AlarmDevicesDelegate? { get set }
+  var delegate: AlarmDevicesDelegate? { get set }
   var alarmDevicesViewModel: AlarmDevicesViewModel { get set }
   var sections: [AlarmDevicesSectionType] { get set }
 

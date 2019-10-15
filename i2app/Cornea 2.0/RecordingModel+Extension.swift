@@ -107,6 +107,5 @@ extension RecordingModel {
     } else {
       return "\(seconds)s"
     }
-    return nil
   }
 }

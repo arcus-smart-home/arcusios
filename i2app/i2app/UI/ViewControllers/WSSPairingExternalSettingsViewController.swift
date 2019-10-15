@@ -198,12 +198,12 @@ IPCDServiceDelegate {
     let settingsUrl = URL(string: "App-Prefs:")
     if let url = settingsUrl {
       beginPairingAttempt()
-      UIApplication.shared.openURL(url)
+      UIApplication.shared.open(url)
     }
   }
 
   @IBAction func needHelpPressed(_ sender: AnyObject) {
-    UIApplication.shared.openURL(NSURL.SupportWifiSmartSwitch)
+    UIApplication.shared.open(NSURL.SupportWifiSmartSwitch)
   }
 
   override func back(_ sender: NSObject!) {
@@ -321,7 +321,7 @@ IPCDServiceDelegate {
     let phoneNo: String = "telprompt:+18554694747"
     if let phoneUrl = URL(string: phoneNo) {
       if UIApplication.shared.canOpenURL(phoneUrl) == true {
-        UIApplication.shared.openURL(phoneUrl)
+        UIApplication.shared.open(phoneUrl)
       }
     }
   }

@@ -479,11 +479,11 @@ const int kHaloMaxBrightnessValue = 100;
 }
 
 - (void)goToSupportPressed {
-    [[UIApplication sharedApplication] openURL:[NSURL SupportDeviceTroubleshooting]];
+    [[UIApplication sharedApplication] openURL:[NSURL SupportDeviceTroubleshooting] options:@{} completionHandler:nil];
 }
 
 - (void)shopPressed {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @""]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @""] options:@{} completionHandler:nil];
 }
 
 @end

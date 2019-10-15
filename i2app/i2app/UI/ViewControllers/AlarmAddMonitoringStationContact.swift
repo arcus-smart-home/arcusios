@@ -96,7 +96,7 @@ public class AlarmAddMonitoringStationContact: UIViewController, AlarmAddContact
   }
 
   @IBAction func onLearnMore(_ sender: AnyObject) {
-    UIApplication.shared.openURL(AlarmAddContactConstants.supportUrl)
+    UIApplication.shared.open(AlarmAddContactConstants.supportUrl)
   }
 
   @IBAction func onAddContact(_ sender: AnyObject) {

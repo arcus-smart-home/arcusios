@@ -215,7 +215,7 @@
 #pragma mark - button actions
 
 - (void)shopClicked:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @""]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @""] options:@{} completionHandler:nil];
 }
 
 #pragma mark - Notifications

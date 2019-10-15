@@ -114,7 +114,7 @@ class AlarmMoreViewController: UIViewController,
   }
 
   @IBAction func discoverMorePressed() {
-    UIApplication.shared.openURL(AlarmMoreConstants.discoverMoreUrl as URL)
+    UIApplication.shared.open(AlarmMoreConstants.discoverMoreUrl as URL)
   }
 
   deinit {

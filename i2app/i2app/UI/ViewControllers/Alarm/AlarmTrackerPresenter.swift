@@ -22,19 +22,19 @@
 
 import Cornea
 
-let kProMonConfirmColor = UIColor(colorLiteralRed: 225.0/255.0,
+let kProMonConfirmColor = UIColor(red: 225.0/255.0,
                                   green: 24.0/255.0,
                                   blue: 19.0/255.0,
                                   alpha: 1.0)
-let kProMonCancelColor = UIColor(colorLiteralRed: 0.0,
+let kProMonCancelColor = UIColor(red: 0.0,
                                  green: 174.0/255.0,
                                  blue: 239.0/255.0,
                                  alpha: 1.0)
-let kCancelDisabledColor = UIColor(colorLiteralRed: 136.0/255.0,
+let kCancelDisabledColor = UIColor(red: 136.0/255.0,
                                    green: 136.0/255.0,
                                    blue: 136.0/255.0,
                                    alpha: 1.0)
-let kTrackerInactiveColor = UIColor(colorLiteralRed: 204.0/255.0,
+let kTrackerInactiveColor = UIColor(red: 204.0/255.0,
                                     green: 204.0/255.0,
                                     blue: 204.0/255.0,
                                     alpha: 1.0)
@@ -64,7 +64,7 @@ protocol IncidentTrackerDelegate: class {
 }
 
 protocol IncidentTrackerPresenter {
-  weak var delegate: IncidentTrackerDelegate? { get set }
+  var delegate: IncidentTrackerDelegate? { get set }
 
   // MARK: Public Configuration Properties
 

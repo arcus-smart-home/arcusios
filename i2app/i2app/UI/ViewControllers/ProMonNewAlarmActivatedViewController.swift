@@ -62,6 +62,6 @@ class ProMonNewAlarmActivatedViewController: BasePairingViewController, UITableV
   }
 
   @IBAction func onWhatToExpectTapped(_ sender: AnyObject) {
-    UIApplication.shared.openURL(URL(string: "")!)
+    UIApplication.shared.open(URL(string: "")!)
   }
 }

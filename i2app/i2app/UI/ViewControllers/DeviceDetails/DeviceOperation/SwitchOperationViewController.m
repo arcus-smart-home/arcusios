@@ -173,7 +173,7 @@
     NSURL *productSupportUrl = [NSURL productSupportUrlWithDeviceType:deviceTypeHint
                                                             productId:self.deviceModel.productId
                                                             devadvErr:error];
-    [[UIApplication sharedApplication] openURL:productSupportUrl];
+    [[UIApplication sharedApplication] openURL:productSupportUrl options:@{} completionHandler:nil];
 }
 
 - (void) dismissErrorBanner {

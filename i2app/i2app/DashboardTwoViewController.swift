@@ -678,44 +678,44 @@ extension DashboardTwoViewController: UITableViewDelegate {
           navigationController?.pushViewController(CareNoDeviceViewController.create(), animated: true)
         } else {
           ArcusAnalytics.tag(named: AnalyticsTags.DashboardCareInfo)
-          UIApplication.shared.openURL(NSURL.ProductsCare)
+          UIApplication.shared.open(NSURL.ProductsCare)
         }
         return
 
       case .LightsSwitches:
         ArcusAnalytics.tag(named: AnalyticsTags.DashboardLightsswitchesInfo)
-        UIApplication.shared.openURL(NSURL.ProductsLights)
+        UIApplication.shared.open(NSURL.ProductsLights)
         break
       case .Climate:
         ArcusAnalytics.tag(named: AnalyticsTags.DashboardClimateInfo)
-        UIApplication.shared.openURL(NSURL.ProductsClimate)
+        UIApplication.shared.open(NSURL.ProductsClimate)
         break
       case .DoorsLocks:
         ArcusAnalytics.tag(named: AnalyticsTags.DashboardDoorslocksInfo)
-        UIApplication.shared.openURL(NSURL.ProductsDoors)
+        UIApplication.shared.open(NSURL.ProductsDoors)
         break
       case .Cameras:
         ArcusAnalytics.tag(named: AnalyticsTags.DashboardCamerasInfo)
-        UIApplication.shared.openURL(NSURL.ProductsCameras)
+        UIApplication.shared.open(NSURL.ProductsCameras)
         break
       case .LawnGarden:
         ArcusAnalytics.tag(named: AnalyticsTags.DashboardLawngardenInfo)
-        UIApplication.shared.openURL(NSURL.ProductsLawn)
+        UIApplication.shared.open(NSURL.ProductsLawn)
         break
       case .HomeFamily:
         ArcusAnalytics.tag(named: AnalyticsTags.DashboardHomefamilyInfo)
-        UIApplication.shared.openURL(NSURL.ProductsHome)
+        UIApplication.shared.open(NSURL.ProductsHome)
         break
       case .Alarms:
         ArcusAnalytics.tag(named: AnalyticsTags.DashboardCamerasInfo)
-        UIApplication.shared.openURL(NSURL.ProductsSecurity)
+        UIApplication.shared.open(NSURL.ProductsSecurity)
         break
       case .Water:
         ArcusAnalytics.tag(named: AnalyticsTags.DashboardWaterInfo)
-        UIApplication.shared.openURL(NSURL.ProductsWater)
+        UIApplication.shared.open(NSURL.ProductsWater)
         break
       default:
-        UIApplication.shared.openURL(NSURL.Support)
+        UIApplication.shared.open(NSURL.Support)
         break
       }
     }

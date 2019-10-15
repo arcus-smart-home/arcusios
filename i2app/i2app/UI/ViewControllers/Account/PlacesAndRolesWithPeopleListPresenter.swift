@@ -38,7 +38,7 @@ protocol PlacesAndRolesWithPeopleListPresenter {
   var ownedPlaceAndRoles: [PlaceAndRoleModel] { get set }
   var guestPlaceAndRoles: [PlaceAndRoleModel] { get set }
 
-  weak var delegate: PlacesAndRolesWithPeopleListPresenterDelegate? { get set }
+  var delegate: PlacesAndRolesWithPeopleListPresenterDelegate? { get set }
 
   func fetchList()
 }

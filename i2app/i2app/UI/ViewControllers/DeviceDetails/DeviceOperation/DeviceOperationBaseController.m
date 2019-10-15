@@ -514,7 +514,7 @@ typedef void(^animationBlock)(void);
  }
 
 - (void)didTapNoConnectionAlertBar {
-    [[UIApplication sharedApplication] openURL: NSURL.SupportDeviceTroubleshooting];
+    [[UIApplication sharedApplication] openURL: NSURL.SupportDeviceTroubleshooting options:@{} completionHandler:nil];
 }
 
 #pragma mark - Poor signal handling

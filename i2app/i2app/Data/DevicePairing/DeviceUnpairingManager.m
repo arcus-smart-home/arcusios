@@ -409,15 +409,17 @@ MessageWithButtonsControllerModel   *_currentStep;
 }
 
 - (void)call {
-    NSString *phNo = @"+18554694747";
-    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt:%@",phNo]];
-    
-    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
-        [[UIApplication sharedApplication] openURL:phoneUrl];
-    }
-    else {
-        // Call facility is not available
-    }
+    // This will need to be addressed if support is added.
+//
+//    NSString *phNo = @"+18554694747";
+//    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt:%@",phNo]];
+//    
+//    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
+//        [[UIApplication sharedApplication] openURL:phoneUrl];
+//    }
+//    else {
+//        // Call facility is not available
+//    }
 }
 
 @end

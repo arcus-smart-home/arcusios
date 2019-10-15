@@ -32,6 +32,6 @@ class HubRequiredViewController: UIViewController {
 
   @IBAction func buyHubPressed() {
     self.presentingViewController?.dismiss(animated: true, completion: nil)
-    UIApplication.shared.openURL(NSURL.ProductsHub)
+    UIApplication.shared.open(NSURL.ProductsHub)
   }
 }

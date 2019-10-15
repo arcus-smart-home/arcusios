@@ -177,7 +177,7 @@ class WeatherRadioStationViewController: UIViewController {
   }
   
   @objc private func openCoverateMap() {
-     UIApplication.shared.openURL(NSURL.NoaaMaps)
+     UIApplication.shared.open(NSURL.NoaaMaps)
   }
   
   fileprivate func displayWeakRadioSignalView() {

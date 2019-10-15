@@ -27,7 +27,7 @@ import Cornea
  `WaterSoftenerSettingPresenter` defines the expected properties of a presenter used by a `UIViewController` for WaterSoftener Settings.
  **/
 protocol WaterSoftenerSettingPresenter {
-  weak var delegate: WaterSoftenerSettingPresenterDelegate? { get set }
+  var delegate: WaterSoftenerSettingPresenterDelegate? { get set }
 
   var device: DeviceModel { get set }
   var settingItems: [DeviceMoreItemViewModel] { get }

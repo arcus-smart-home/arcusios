@@ -57,7 +57,7 @@ class AlexaSetupPairingViewController: BaseDeviceStepViewController {
 
   @IBAction func setupInstructionsButtonPressed(_ sender: ArcusButton) {
     // swiftlint:disable:next line_length
-    UIApplication.shared.openURL(NSURL.SupportAlexa)
+    UIApplication.shared.open(NSURL.SupportAlexa)
   }
 
   @IBAction func done(_ sender: UIButton) {
