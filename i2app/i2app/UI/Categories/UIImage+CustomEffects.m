@@ -21,11 +21,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreImage/CoreImage.h>
 #import "UIImage+CustomEffects.h"
 @implementation UIImage (CustomEffects)
 
 - (UIImage *)invertColor {
-    return nil;
+    @autoreleasepool {
+        // UIImage is not guarenteed to have a CIImage representation, convert it.
+        CIImage *coreImage = [CIImage imageWithCGImage:self.CGImage];
+
+        CIFilter* filter = [CIFilter filterWithName:@"CIColorInvert"];
+        [filter setValue:coreImage forKey:kCIInputImageKey];
+        CIImage *result = [filter valueForKey:kCIOutputImageKey];
+        UIImage *outputImg = [UIImage imageWithCIImage:result];
+
+        return outputImg;
+    }
 }
 
 + (UIImage *)gradientColorImageFromColors:(NSArray*)colors gradientType:(GradientType)gradientType imgSize:(CGSize)imgSize {
