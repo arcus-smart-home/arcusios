@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, '8.0'
+platform :ios, '10.0'
 
 # ignore all warnings from all pods
 inhibit_all_warnings!
@@ -16,7 +16,7 @@ def shared_pods
   pod 'SDWebImage', '3.7.5'
   pod 'CocoaLumberjack/Swift', '~>3.4.1'
   pod 'Proposer', '1.1.0' # MIT
-  pod 'MZDownloadManager', '3.0' # BSD
+  pod 'MZDownloadManager', '3.6' # BSD
   pod 'SwiftLint', '0.18.1' #MIT
   pod 'Locksmith', '4.0'
   pod 'CryptoSwift', '0.12.0'
